@@ -8,18 +8,36 @@
     <title>Apply Page</title>
   </head>
   <body>
-    <div class="background_container">
-      <div class="header" style="font-size: 25px; font-weight: bold">
-        <img src="img/logo-w.png" alt="logo" width="50px;" />
-        LIKELION
-        <span style="color: #ff7710">US</span>
+    <div class="header" id="header">
+      <div class="logo">
+        <a href="javascript:void(0);" onclick="toTop()"
+          ><img
+            src="img/logo-long.png"
+            alt="logo"
+            width="170px;"
+            height="auto"
+          />
+          <span style="color: #ff7710">US</span>
+        </a>
       </div>
-      <div class="intro">
-        <p>Create and lead a community that makes a differnence.</p>
-        <p>Start a LIKELION Club at Your School Now.</p>
+      <div class="menu">
+        <ul>
+          <a href="javascript:void(0);" onclick="toAbout()"><li>About</li></a>
+          <a href="javascript:void(0);" onclick="toUnivs()"><li>Univs</li></a>
+          <a href="javascript:void(0);" onclick="toApply()"><li>Apply</li></a>
+          <a href="javascript:void(0);" onclick="toFqa()"><li>FAQ</li></a>
+        </ul>
+      </div>
+      <div class="headerBtns">
+        <div class="btn fill">Apply</div>
+        <div class="btn empty">Contact</div>
       </div>
     </div>
-    <div class="elements">
+    <div class="intro bg">
+      <p>Create and lead a community that makes a differnence.</p>
+      <p>Start a LIKELION Club at Your School Now.</p>
+    </div>
+    <div class="elements" id="about">
       <div class="elements_title">
         <p>LiKE LION's</p>
         <p>Three Core Elements</p>
@@ -98,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="univs">
+    <div class="univs" id="univs">
       <div class="univs_container">
         <p>LIKE LION<br />US<br />UNIVs</p>
         <div class="univs_icons">
@@ -117,7 +135,6 @@
           <a href=""
             ><img src="../likelion-us-site/img/california.svg" alt=""
           /></a>
-          <br />
           <a href=""
             ><img src="../likelion-us-site/img/california.svg" alt=""
           /></a>
@@ -133,7 +150,6 @@
           <a href=""
             ><img src="../likelion-us-site/img/california.svg" alt=""
           /></a>
-          <br />
           <a href=""
             ><img src="../likelion-us-site/img/california.svg" alt=""
           /></a>
@@ -152,7 +168,7 @@
         </div>
       </div>
     </div>
-    <div class="apply">
+    <div class="apply" id="apply">
       <div class="apply_title">
         <div class="pointLine line1"></div>
         <p>HACK YOUR LIFE,<br />CHANGE YOUR LIFE WITH PROGRAMMING</p>
@@ -171,7 +187,7 @@
         </div>
       </div>
     </div>
-    <div class="FAQ">
+    <div class="FAQ" id="faq">
       <p class="FAQ_title">FAQ</p>
       <div class="sbContainer">
         <img src="img/mimo-q.png" alt="" />
@@ -225,4 +241,5 @@
     </div>
     <div class="footer">footer</div>
   </body>
+  <script src="js/index.js"></script>
 </html>

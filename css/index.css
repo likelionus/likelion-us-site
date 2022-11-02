@@ -1,24 +1,41 @@
-@import "../css/reset.css";
+@import "reset.css";
+@import "styles.css";
 
-/*main color : #ff7710, point color : #96FF00*/
+/*main color : #ff7710, point color : #96FF00, black: #1C1B1A */
 
-:root {
-  --main-color: #ff7710;
-  --point-color: #96ff00;
+* {
+  scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
-  background-color: black;
+  height: 100%;
+  background-color: var(--black-color);
   color: white;
+  line-height: 1.5;
+  font-family: Pretendard;
 }
 
 .header {
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5%;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 2;
 }
 
-.background_container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+.logo {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ),
     url("../img/service_img3.png");
   background-position: center;
   background-size: cover;
@@ -30,6 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .intro p:first-child {
@@ -38,8 +56,49 @@ body {
 }
 
 .intro p:last-child {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul a {
+  color: white;
+}
+
+.menu li {
+  margin: 0 20px;
+  /* border-bottom: solid 2px white; */
+}
+
+.headerBtns {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 3px 15px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.fill {
+  margin-right: 10px;
+  background-color: var(--main-color);
+  color: black;
+}
+
+.empty {
+  box-shadow: 0 0 0 1px var(--main-color) inset;
+  color: var(--main-color);
 }
 
 .elements {
@@ -47,14 +106,15 @@ body {
 }
 
 .elements {
-  color: black;
+  color: var(--black-color);
+  padding: 30px 0;
 }
 
 .elements_title {
-  padding: 70px 0 50px 0;
+  padding: 50px 0;
   text-align: center;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .elements_title p:first-child {
@@ -73,8 +133,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 60%;
-  border: solid 2px var(--main-color);
+  /* border: solid 2px var(--main-color); */
   border-radius: 20px;
+  background: white;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px white;
   padding: 30px 40px;
   margin-bottom: 30px;
 }
@@ -87,18 +149,18 @@ body {
 
 .element_p p:first-child {
   font-size: x-large;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .element_p p:last-child {
   font-size: large;
-  line-height: normal;
 }
 
 .stacks_container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
   padding-bottom: 50px;
 }
@@ -136,6 +198,7 @@ body {
 .univs {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: var(--main-color);
 }
 
@@ -146,13 +209,20 @@ body {
   padding: 10% 0;
   line-height: normal;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.univs_icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
 }
 
 .univs_icons img {
   width: 80px;
   height: 80px;
-  margin: 0 10px 10px 0;
+  margin: 0 20px 10px 0;
 }
 
 .apply {
@@ -165,7 +235,7 @@ body {
 .apply_title {
   padding: 10% 0 15% 0;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 70px;
 }
 
@@ -241,7 +311,7 @@ body {
 
 .p2 {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .FAQ {
@@ -253,7 +323,7 @@ body {
   padding: 100px 0;
   text-align: center;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .sbContainer {
@@ -284,7 +354,7 @@ body {
 
 .question {
   background-color: white;
-  color: black;
+  color: var(--black-color);
   margin-right: 300px;
 }
 
@@ -300,7 +370,7 @@ body {
 
 .answer {
   background-color: var(--main-color);
-  color: black;
+  color: var(--black-color);
   text-align: right;
   margin-left: 300px;
 }
@@ -320,7 +390,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  color: black;
+  color: var(--black-color);
   padding-bottom: 100px;
 }
 
@@ -328,7 +398,7 @@ body {
   padding: 100px 0;
   text-align: center;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .more ul {
@@ -337,7 +407,7 @@ body {
 }
 
 .more li {
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px var(--black-color);
   padding: 20px;
 }
 
@@ -347,7 +417,7 @@ body {
   padding: 20px;
   color: white;
   font-size: x-large;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 20px;
   text-align: center;
 }
