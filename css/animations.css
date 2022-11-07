@@ -1,0 +1,23 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes fadeLeftIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

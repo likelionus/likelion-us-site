@@ -1,19 +1,8 @@
 @import "reset.css";
 @import "styles.css";
+@import "animations.css";
 
 /*main color : #ff7710, point color : #96FF00, black: #1C1B1A */
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-    transform: translateZ(0);
-  }
-}
 
 /* @keyframes slideInLeft {
   from {
@@ -87,7 +76,7 @@ body {
 }
 
 :is(.introP1, .introP2) {
-  animation: fadeInUp 2s;
+  animation: fadeInUp 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -158,11 +147,11 @@ body {
 .elements {
   background-color: white;
   color: var(--black-color);
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .elements_title {
-  padding: 50px 0;
+  padding: 70px 0;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -184,7 +173,13 @@ body {
   background: white;
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px white;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.element.visible {
+  animation: fadeLeftIn 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .element_icon {
@@ -298,18 +293,17 @@ body {
 
 .line1 {
   left: 0;
-  /* animation: slideInLeft 1s ease-in-out forwards; */
+  /* animation: slideInLeft 2s ease-in-out forwards; */
 }
 
 .line2 {
   right: 0;
-  /* animation: slideInRight 1s ease-in-out forwards; */
+  /* animation: slideInRight 2s ease-in-out forwards; */
 }
 
 .apply_title p {
   margin: 15% 0;
   font-style: italic;
-  /* animation: fadeInUp 1s; */
 }
 
 .apply_section {
@@ -369,7 +363,7 @@ body {
 
 .FAQ {
   width: 100%;
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 .FAQ_title {
@@ -383,13 +377,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  height: 170px;
+  opacity: 0;
+}
+
+.first {
+  margin-bottom: 50px;
+}
+
+.last {
+  margin-bottom: 70px;
+}
+
+.sbContainer.visible {
+  animation: fadeInUp 1s;
+  animation-fill-mode: forwards;
+}
+
+.a.visible {
+  animation-delay: 0.5s;
 }
 
 .sbContainer img {
   width: 200px;
   height: 220px;
   margin: 0 20px;
+  overflow: visible;
 }
 
 .speechBubble {
@@ -399,7 +412,7 @@ body {
   justify-content: center;
   font-size: x-large;
   width: 700px;
-  height: fit-content;
+  height: 40px;
   padding: 40px 50px;
   border-radius: 30px;
   line-height: normal;
@@ -431,11 +444,16 @@ body {
 .answer:after {
   content: "";
   position: absolute;
-  top: 100px;
+  top: 40px;
   right: -20px;
   border-left: 30px solid var(--main-color);
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
+}
+
+.hidden {
+  min-width: 200px;
+  margin: 0 20px;
 }
 
 .more {
