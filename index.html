@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Apply Page</title>
   </head>
   <body>
@@ -12,20 +13,27 @@
       <div class="logo">
         <a href="javascript:void(0);" onclick="toTop()"
           ><img
-            src="img/logo-long.png"
+            src="img/LIKELION US_white_logo.svg"
             alt="logo"
-            width="150px;"
+            width="180px;"
             height="auto"
           />
-          <span style="color: #ff7710">US</span>
         </a>
       </div>
       <div class="menu">
         <ul>
-          <a href="javascript:void(0);" onclick="toAbout()"><li>About</li></a>
-          <a href="javascript:void(0);" onclick="toUnivs()"><li>Univs</li></a>
-          <a href="javascript:void(0);" onclick="toApply()"><li>Apply</li></a>
-          <a href="javascript:void(0);" onclick="toFqa()"><li>FAQ</li></a>
+          <a href="javascript:void(0);" onclick="toAbout()"
+            ><li class="menu_about">About</li></a
+          >
+          <a href="javascript:void(0);" onclick="toUnivs()"
+            ><li class="menu_univs">Univs</li></a
+          >
+          <a href="javascript:void(0);" onclick="toApply()"
+            ><li class="menu_apply">Apply</li></a
+          >
+          <a href="javascript:void(0);" onclick="toFaq()"
+            ><li class="menu_faq">FAQ</li></a
+          >
         </ul>
       </div>
       <div class="headerBtns">
@@ -120,44 +128,92 @@
     </div>
     <div class="univs" id="univs">
       <div class="univs_container">
-        <p>LIKE LION<br />US<br />UNIVs</p>
+        <p>With LikeLion</p>
         <div class="univs_icons">
+          <a href="https://www.instagram.com/likelion_usc/"
+            ><div class="aCon">
+              <img src="img/univs_logo/USC.png" alt="" />
+              <div class="pCon"><p>University of Southern California</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucla/">
+            <div class="aCon">
+              <img src="img/univs_logo/UCLA.png" alt="" />
+              <div class="pCon">
+                <p>University of California, Los Angeles</p>
+              </div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_uci/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCI.png" alt="" />
+              <div class="pCon"><p>University of California, Irvine</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucsb/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCSB.png" alt="" />
+              <div class="pCon">
+                <p>University College Sedaya International</p>
+              </div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucsd/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCSD.png" alt="" />
+              <div class="pCon"><p>University of California, San Diego</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucd/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCD.png" alt="" />
+              <div class="pCon"><p>University of California, Davis</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_berkeley/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCB.png" alt="" />
+              <div class="pCon"><p>University of California, Berkeley</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_smc/"
+            ><div class="aCon">
+              <img src="img/univs_logo/SMC.png" alt="" />
+              <div class="pCon"><p>Santa Monica College</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_sjsu/"
+            ><div class="aCon">
+              <img src="img/univs_logo/SJSU.png" alt="" />
+              <div class="pCon"><p>San Jose State University</p></div>
+            </div></a
+          >
           <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
+            ><div class="aCon">
+              <img src="img/univs_logo/Stanford.png" alt="" />
+              <div class="pCon"><p>222</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/riverside_likelion/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCR.png" alt="" />
+              <div class="pCon"><p>University of California, Riverside</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_dvc/"
+            ><div class="aCon">
+              <img src="img/univs_logo/DVC.png" alt="" />
+              <div class="pCon"><p>Diablo Valley College</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_csusb/"
+            ><div class="aCon">
+              <img src="img/univs_logo/CSUSB.png" alt="" />
+              <div class="pCon">
+                <p>California State University, San Bernardino</p>
+              </div>
+            </div></a
+          >
         </div>
       </div>
     </div>

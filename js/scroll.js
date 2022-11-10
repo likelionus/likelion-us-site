@@ -1,7 +1,7 @@
 const options = {
   root: null, // viewport
   rootMargin: "0px",
-  threshold: 0, // 1.0은 50%가 viewport에 들어와 있어야 callback 실행
+  threshold: 0.5,
 };
 
 const observer = new IntersectionObserver((entries) => {

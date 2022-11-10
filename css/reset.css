@@ -132,3 +132,8 @@ a:hover,
 a:active {
   text-decoration: none;
 }
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
