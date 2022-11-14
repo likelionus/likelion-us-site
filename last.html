@@ -4,32 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="last.css">
+    <link rel="stylesheet" href="css\last.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/ac6144a5c2.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <div>
-        <header>
-            <div class="navbarLogo">
-                <h1>
-                    <a href="www.likelion.net">
-                        <img src="asset\ll_univ_final_rgb\ll_univ_final_rgb.svg" alt="" style="width: 150px;">
-                    </a>
-                </h1>
+        <div class="header" id="header">
+            <div class="logo">
+                <a href="javascript:void(0);" onclick="toTop()"
+                ><img
+                    src="img/LIKELION US_white_logo.svg"
+                    alt="logo"
+                    width="180px;"
+                    height="auto"
+                />
+            </a>
             </div>
-            <ul class="navbarMenuLeft">
-                <li><a href="">Mission</a></li>
-                <li><a href="">Story</a></li>
-                <li><a href="">Global</a></li>
-                <li><a href="">From</a></li>
-            </ul>
-            <ul class="navbarMenuRight">
-                <li><a href="">apply</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </header>
+            <div class="menu">
+              <a href="javascript:void(0);" onclick="toAbout()"
+                ><li class="menu_about">Mission</li></a
+              >
+              <a href="javascript:void(0);" onclick="toUnivs()"
+                ><li class="menu_univs">Story</li></a
+              >
+              <a href="javascript:void(0);" onclick="toApply()"
+                ><li class="menu_apply">Global</li></a
+              >
+              <a href="javascript:void(0);" onclick="toFaq()"
+                ><li class="menu_faq">From</li></a
+              >
+            </div>
+            <div class="headerBtns">
+              <div class="btnContainer">
+                <div class="btn empty">Apply</div>
+                <div class="dropdown">
+                  <a href="">Executive</a>
+                  <a href="">Student</a>
+                </div>
+              </div>
+              <div class="btnContainer">
+                <div class="btn empty">Contact</div>
+                <div class="dropdown">
+                  <a href="">Instagram</a>
+                  <a href="">Homepage</a>
+                </div>
+              </div>
+            </div>
+          </div>
         <section class="main">
             &nbsp;
             <p class="title">
@@ -41,7 +64,7 @@
             <p class="mainDiscription">LikeLion is a student-run Tech Entrepreneurship Community 
                 that helps students solve real-world problems and
                 develop their ideas into competitive products using programming.</p>
-            <button class="mainbutton" onclick="https://likelion.net/">Learn More</button>
+            <button class="mainbutton" onclick="location.href='index.html'">Learn More</button>
         </section>
         <script src="main.js"></script>
 
@@ -55,7 +78,7 @@
             <p class="activityTitle">LIKE LION DID</p>
             <section class="activityImgContainer">
                 <div class="Ideathon acts">
-                    <img src="asset\_MG_4277.jpg" alt="" class="activityImg">
+                    <img src="img\_MG_4277.jpg" alt="" class="activityImg">
                     <div class="IdeathonContents Contents">
                         <h1>IDEATHON</h1>
                         <p>아이디어를 구체화하고 피칭해보는 시간을 가져볼 수 있습니다🧐</p>
@@ -63,7 +86,7 @@
                 </div>
 
                 <div class="Hackathon acts">
-                    <img src="asset\_MG_4473.jpg" alt=""  class="activityImg">
+                    <img src="img\_MG_4473.jpg" alt=""  class="activityImg">
                     <div class="HackathonContents Contents">
                         <h1>Hackathon</h1>
                         <p>내 아이디어를 내 손으로 실현한다!👨‍💻
@@ -71,14 +94,14 @@
                     </div>
                 </div>
                 <div class="Mentoring acts">
-                    <img src="asset\IMG_00232.jpg" alt=""  class="activityImg">
+                    <img src="img\IMG_00232.jpg" alt=""  class="activityImg">
                     <div class="MentoringContents Contents">
                         <h1>Mentoring</h1>
                         <p>다양한 분야의 연사님들의 멋진 스피치를 들을 수 있습니다😉</p>
                     </div>
                 </div>
                 <div class="Meeting acts">
-                    <img src="asset\did_4.JPG" alt=""  class="activityImg">
+                    <img src="img\did_4.JPG" alt=""  class="activityImg">
                     <div class="MeetingContents Contents">
                         <h1>Meeting</h1>
                         <p>다양한 학교의 멋사분들과 네트워킹 시간을 가질 수 있습니다🦁</p>
@@ -92,14 +115,14 @@
             <p class="historyTitle">Starting with 30 students,</p>
             <div class="historyList">
                 <div class="historyListContent">
-                    <img src="asset\time.png" alt="" width="60px" height="60px">
+                    <img src="img\time.png" alt="" width="60px" height="60px">
                     <div class="count">
                         <p class="count-num" data-count="10">0</p>
                         <p class="unit">여년 동안</p>
                     </div>
                 </div>
                 <div class="historyListContent">
-                    <img src="asset\school.png" alt="" width="60px" height="60px">
+                    <img src="img\school.png" alt="" width="60px" height="60px">
                     <div class="count">
                         <p class="count-num" data-count="130">0</p>
                         <p class="unit">여개의</p>
@@ -107,7 +130,7 @@
                     <p class="test">대학교에서</p>
                 </div>
                 <div class="historyListContent historyListContent2">
-                    <img src="asset\students.png" alt="" width="60px" height="60px">
+                    <img src="img\students.png" alt="" width="60px" height="60px">
                     <div class="count">
                         <p class="count-num" data-count="8400">0</p>
                         <p class="unit">여명의</p>
@@ -115,7 +138,7 @@
                     <p class="test">학생들과 함께</p>
                 </div>
                 <div class="historyListContent">
-                    <img src="asset\services.png" alt="" width="60px" height="60px">
+                    <img src="img\services.png" alt="" width="60px" height="60px">
                     <div class="count">
                         <p class="count-num" data-count="1000">0</p>
                         <p class="unit">개 이상의</p>
@@ -156,8 +179,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="asset\IMG_7687.jpg" alt="미국" class="coverimg">
-                            <img src="asset\uslogo.png" alt="" class="flag">
+                            <img src="img\IMG_7687.jpg" alt="미국" class="coverimg">
+                            <img src="img\uslogo.png" alt="" class="flag">
                             <p>US</p>
                         </div>
                         <div class="flip-card-back">
@@ -172,8 +195,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="asset\_MG_4517.jpg" alt="한국" class="coverimg">
-                            <img src="asset\skorealogo.png" alt="" class="flag">
+                            <img src="img\_MG_4517.jpg" alt="한국" class="coverimg">
+                            <img src="img\skorealogo.png" alt="" class="flag">
                             <p>S.Korea</p>
                         </div>
                         <div class="flip-card-back">
@@ -187,8 +210,8 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="asset\vetnam.jpg" alt="베트남" class="coverimg">
-                            <img src="asset\vietnamlogo.png" alt="" class="flag">
+                            <img src="img\vetnam.jpg" alt="베트남" class="coverimg">
+                            <img src="img\vietnamlogo.png" alt="" class="flag">
                             <p>Vietnam</p>
                         </div>
                         <div class="flip-card-back">
@@ -207,55 +230,55 @@
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
-                <img src="asset\1.png" alt="" />
+                <img src="img\1.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\2.png" alt="" />
+                <img src="img\2.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\1.png" alt="" />
+                <img src="img\1.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\2.png" alt="" />
+                <img src="img\2.png" alt="" />
             </div>
         </div>
     </div>
     <div class="slider">
         <div class="slide-track2">
             <div class="slide">
-                <img src="asset\3.png" alt="" />
+                <img src="img\3.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\4.png" alt="" />
+                <img src="img\4.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\3.png" alt="" />
+                <img src="img\3.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\4.png" alt="" />
+                <img src="img\4.png" alt="" />
             </div>
         </div>
     </div>
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
-                <img src="asset\5.png" alt="" />
+                <img src="img\5.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\6.png" alt="" />
+                <img src="img\6.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\5.png" alt="" />
+                <img src="img\5.png" alt="" />
             </div>
             <div class="slide">
-                <img src="asset\6.png" alt="" />
+                <img src="img\6.png" alt="" />
             </div>
         </div>
     </div>
 </section>
 <footer>
     <div class="footerlist">
-        <img src="asset\LIKELION US_white_logo.svg" alt="" width="140px">
+        <img src="img\LIKELION US_white_logo.svg" alt="" width="140px">
         <ul>
             <li>
                 <span>(주)멋쟁이사자처럼</span>
