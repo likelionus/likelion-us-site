@@ -16,7 +16,9 @@ const observer = new IntersectionObserver((entries) => {
 
 const elementList = document.querySelectorAll(".element");
 const sbContainerList = document.querySelectorAll(".sbContainer");
+const applyTitle = document.querySelectorAll(".apply_title");
 
 // 반복문을 돌려 모든 DOM에 적용
 elementList.forEach((el) => observer.observe(el));
 sbContainerList.forEach((el) => observer.observe(el));
+applyTitle.forEach((el) => observer.observe(el));

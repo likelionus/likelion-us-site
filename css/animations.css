@@ -31,26 +31,11 @@
   }
 }
 
-/* @keyframes slideInLeft {
-  from {
-    opacity: 0%;
-    transform: translateX(-100%);
+@keyframes gradient {
+  0% {
+    background-position: 100%;
   }
-
-  to {
-    opacity: 100%;
-    transform: translateX(0%);
+  100% {
+    background-position: 0;
   }
 }
-
-@keyframes slideInRight {
-  from {
-    opacity: 0%;
-    transform: translateX(100%);
-  }
-
-  to {
-    opacity: 100%;
-    transform: translateX(0%);
-  }
-} */
