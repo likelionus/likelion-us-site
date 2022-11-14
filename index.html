@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Apply Page</title>
   </head>
   <body>
@@ -12,25 +13,42 @@
       <div class="logo">
         <a href="javascript:void(0);" onclick="toTop()"
           ><img
-            src="img/logo-long.png"
+            src="img/LIKELION US_white_logo.svg"
             alt="logo"
-            width="150px;"
+            width="180px;"
             height="auto"
           />
-          <span style="color: #ff7710">US</span>
         </a>
       </div>
       <div class="menu">
-        <ul>
-          <a href="javascript:void(0);" onclick="toAbout()"><li>About</li></a>
-          <a href="javascript:void(0);" onclick="toUnivs()"><li>Univs</li></a>
-          <a href="javascript:void(0);" onclick="toApply()"><li>Apply</li></a>
-          <a href="javascript:void(0);" onclick="toFqa()"><li>FAQ</li></a>
-        </ul>
+        <a href="javascript:void(0);" onclick="toAbout()"
+          ><li class="menu_about">About</li></a
+        >
+        <a href="javascript:void(0);" onclick="toUnivs()"
+          ><li class="menu_univs">Univs</li></a
+        >
+        <a href="javascript:void(0);" onclick="toApply()"
+          ><li class="menu_apply">Apply</li></a
+        >
+        <a href="javascript:void(0);" onclick="toFaq()"
+          ><li class="menu_faq">FAQ</li></a
+        >
       </div>
       <div class="headerBtns">
-        <div class="btn fill">Apply</div>
-        <div class="btn empty">Contact</div>
+        <div class="btnContainer">
+          <div class="btn empty">Apply</div>
+          <div class="dropdown">
+            <a href="">Executive</a>
+            <a href="">Student</a>
+          </div>
+        </div>
+        <div class="btnContainer">
+          <div class="btn empty">Contact</div>
+          <div class="dropdown">
+            <a href="">Instagram</a>
+            <a href="">Homepage</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="intro bg">
@@ -40,15 +58,15 @@
       <p class="introP2">Start a LIKELION Club at Your School Now.</p>
     </div>
     <div class="elements" id="about">
-      <p class="elements_title">3 Core Elements</p>
+      <p class="title">3 Core Elements</p>
       <div class="elements_container">
         <div class="element">
           <p class="element_icon">💻</p>
           <div class="element_p">
             <p>Practical Knowledge</p>
             <p>
-              LikeLion provides an easy-to-follow, industry-tested curriculum
-              that culminates in a serviceable product.
+              We provides an easy-to-follow, industry-tested curriculum that
+              culminates in a serviceable product.
             </p>
           </div>
         </div>
@@ -57,11 +75,9 @@
           <div class="element_p">
             <p>Hands-on project experience</p>
             <p>
-              While the curriculum encompasses frontend, backend, and UI/ UX
-              development, we emphasize the application more than the theory,
-              and the ability to think like a programmer, more than the
-              nitty-gritty of programming language—reducing the distance from
-              beginning to delivering a tangible product.
+              We emphasize the application more than the theory, and the ability
+              to think like a programmer, more than the nitty-gritty of
+              programming language.
             </p>
           </div>
         </div>
@@ -70,102 +86,112 @@
           <div class="element_p">
             <p>Community</p>
             <p>
-              We also encourage students to team up and connect with others with
+              We encourage students to team up and connect with others with
               different backgrounds to foster a culture of collaboration to
-              maximize each person's unique strength and efficiency. And most
-              importantly, we invest most in nurturing LikeLion clubs into a
-              community, where each member becomes a mentor and a cheerleader
-              for each other to spark inspiration and motivation.
+              maximize each person's unique strength and efficiency. Each member
+              becomes a mentor and a cheerleader for each other to spark
+              inspiration and motivation.
             </p>
           </div>
         </div>
       </div>
-      <p class="elements_title">We Learn</p>
-      <div class="stacks_container">
-        <div class="stacks_cols">
-          <div class="stack">
-            <img src="../likelion-us-site/img/html.png" alt="" />
-            <span>Html</span>
-          </div>
-          <div class="stack">
-            <img src="../likelion-us-site/img/css.png" alt="" />
-            <span>Css</span>
-          </div>
-          <div class="stack">
-            <img src="../likelion-us-site/img/js.png" alt="" />
-            <span>Javascript</span>
-          </div>
-        </div>
-        <div class="stacks_cols">
-          <div class="stack">
-            <img src="../likelion-us-site/img/react.png" alt="" />
-            <span>React</span>
-          </div>
-          <div class="stack">
-            <img src="../likelion-us-site/img/vuejs.png" alt="" />
-            <span>Vue</span>
-          </div>
-        </div>
-        <div class="stacks_cols">
-          <div class="stack">
-            <img src="../likelion-us-site/img/github.png" alt="" />
-            <span>Git</span>
-          </div>
-          <div class="stack">
-            <img src="../likelion-us-site/img/jenkins.png" alt="" />
-            <span>Jenkins</span>
-          </div>
-        </div>
-      </div>
+      <p class="title pT">We Learn</p>
     </div>
     <div class="univs" id="univs">
       <div class="univs_container">
-        <p>LIKE LION<br />US<br />UNIVs</p>
+        <p class="title">With LikeLion</p>
         <div class="univs_icons">
+          <a href="https://www.instagram.com/likelion_usc/"
+            ><div class="aCon">
+              <img src="img/univs_logo/USC.png" alt="" />
+              <div class="pCon"><p>University of Southern California</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucla/">
+            <div class="aCon">
+              <img src="img/univs_logo/UCLA.png" alt="" />
+              <div class="pCon">
+                <p>University of California, Los Angeles</p>
+              </div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_uci/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCI.png" alt="" />
+              <div class="pCon"><p>University of California, Irvine</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucsb/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCSB.png" alt="" />
+              <div class="pCon">
+                <p>University College Sedaya International</p>
+              </div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucsd/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCSD.png" alt="" />
+              <div class="pCon"><p>University of California, San Diego</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_ucd/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCD.png" alt="" />
+              <div class="pCon"><p>University of California, Davis</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_berkeley/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCB.png" alt="" />
+              <div class="pCon"><p>University of California, Berkeley</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_smc/"
+            ><div class="aCon">
+              <img src="img/univs_logo/SMC.png" alt="" />
+              <div class="pCon"><p>Santa Monica College</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_sjsu/"
+            ><div class="aCon">
+              <img src="img/univs_logo/SJSU.png" alt="" />
+              <div class="pCon"><p>San Jose State University</p></div>
+            </div></a
+          >
           <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
-          <a href=""
-            ><img src="../likelion-us-site/img/california.svg" alt=""
-          /></a>
+            ><div class="aCon">
+              <img src="img/univs_logo/Stanford.png" alt="" />
+              <div class="pCon"><p>222</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/riverside_likelion/"
+            ><div class="aCon">
+              <img src="img/univs_logo/UCR.png" alt="" />
+              <div class="pCon"><p>University of California, Riverside</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_dvc/"
+            ><div class="aCon">
+              <img src="img/univs_logo/DVC.png" alt="" />
+              <div class="pCon"><p>Diablo Valley College</p></div>
+            </div></a
+          >
+          <a href="https://www.instagram.com/likelion_csusb/"
+            ><div class="aCon">
+              <img src="img/univs_logo/CSUSB.png" alt="" />
+              <div class="pCon">
+                <p>California State University, San Bernardino</p>
+              </div>
+            </div></a
+          >
         </div>
       </div>
     </div>
-    <div class="apply" id="apply">
+    <div class="apply pT" id="apply">
       <div class="apply_title">
-        <div class="pointLine line1"></div>
-        <p>HACK YOUR LIFE,<br />CHANGE YOUR LIFE WITH PROGRAMMING</p>
-        <div class="pointLine line2"></div>
+        <p class="t_apply">HACK YOUR LIFE,</p>
+        <p class="t_apply">CHANGE YOUR LIFE WITH PROGRAMMING</p>
       </div>
       <div class="apply_section">
         <div class="apply_button executive">
@@ -182,36 +208,55 @@
     </div>
     <div class="FAQ" id="faq">
       <p class="FAQ_title">FAQ</p>
-      <div class="sbContainer">
+      <div class="sbContainer first sbQ">
         <img src="img/mimo-q.png" alt="" />
         <div class="speechBubble question">
           I don't have any experience of coding!
         </div>
       </div>
-      <div class="sbContainer">
-        <div class="speechBubble answer">
-          Don’t worry! <br />
+      <div class="a sbContainer sbA">
+        <div class="speechBubble answer aF">Don’t worry!</div>
+        <img src="img/mimo-a.png" alt="" />
+      </div>
+      <div class="a sbContainer">
+        <div class="speechBubble answer aN">
           90% of applicants who get accepted to LikeLion have no-prior coding
-          experience. <br />
+          experience.
+        </div>
+        <div class="hidden"></div>
+      </div>
+      <div class="a sbContainer last">
+        <div class="speechBubble answer aL">
           More than 85% of members on average complete the curriculum and create
           their very own web product!
         </div>
-        <img src="img/mimo-a.png" alt="" />
+        <div class="hidden"></div>
       </div>
-      <div class="sbContainer">
+      <div class="a sbContainer first sbQ">
         <img src="img/mimo-q.png" alt="" />
         <div class="speechBubble question">
           How is LikeLion different from taking a class, enrolling in an online
           course, or signing up for a Bootcamp?
         </div>
       </div>
-      <div class="sbContainer">
-        <div class="speechBubble answer">
+      <div class="a sbContainer sbA">
+        <div class="speechBubble answer aF">
           To overcome these shortcomings, LIKE LION program emphasizes three
-          core elements <br />
-          - practical knowledge, hands-on project experience, and community.
+          core elements.
         </div>
         <img src="img/mimo-a.png" alt="" />
+      </div>
+      <div class="a sbContainer sbA">
+        <div class="speechBubble answer aN">
+          - practical knowledge, hands-on project experience, and community!
+        </div>
+        <div class="hidden"></div>
+      </div>
+      <div class="a sbContainer sbA">
+        <div class="speechBubble answer aL">
+          Scroll down to see more questions answered 😊
+        </div>
+        <div class="hidden"></div>
       </div>
     </div>
     <div class="more">
@@ -234,5 +279,6 @@
     </div>
     <div class="footer">footer</div>
   </body>
-  <script src="js/index.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/scroll.js"></script>
 </html>
