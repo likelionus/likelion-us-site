@@ -1,11 +1,13 @@
 var headerHeight = document.querySelector("#header").offsetHeight;
 
+// 정원
 var header = document.querySelector("#header").offsetTop;
 var about = document.querySelector("#about").offsetTop - headerHeight;
 var univs = document.querySelector("#univs").offsetTop - headerHeight;
 var apply = document.querySelector("#apply").offsetTop - headerHeight;
 var faq = document.querySelector("#faq").offsetTop - headerHeight;
 
+//정원
 var menuAbout = document.querySelector(".menu_about");
 var menuUnivs = document.querySelector(".menu_univs");
 var menuApply = document.querySelector(".menu_apply");
@@ -34,10 +36,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-function toTop() {
-  window.scrollTo({ top: 0 });
-}
-
+// 정원
 function toAbout() {
   window.scrollTo({ top: about });
 }
