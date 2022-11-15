@@ -52,14 +52,88 @@
   }
 }
 
-@-webkit-keyframes tossing {
+@keyframes floating {
   0% {
-    -webkit-transform: rotate(-4deg);
+    transform: translateY(0%);
   }
   50% {
-    -webkit-transform: rotate(4deg);
+    transform: translateY(5%);
   }
   100% {
-    -webkit-transform: rotate(-4deg);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710,
+      0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #ff7710, 2px 2px #ff7710, 3px 3px #ff7710,
+      4px 4px #ff7710, 5px 5px #ff7710, 6px 6px #ff7710, 7px 7px #ff7710,
+      8px 8px #ff7710;
+    transform: translateX(-10px) translateY(-10px);
+  }
+}
+
+@keyframes shadow-pop-bl {
+  0% {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white,
+      0 0 white, 0 0 white;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white,
+      -5px 5px white, -6px 6px white, -7px 7px white, -8px 8px white;
+    transform: translateX(10px) translateY(-10px);
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  65% {
+    transform: translateY(2%);
+  }
+  80% {
+    transform: translateY(-2%);
+  }
+  95% {
+    transform: translateY(1%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }

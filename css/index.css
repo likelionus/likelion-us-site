@@ -259,8 +259,12 @@ body {
   animation: gradient 10s linear infinite;
 }
 
+.apply_title.visible {
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
 .apply_im {
-  padding: 200px;
+  padding: 250px 0 100px 0;
   font-size: 30px;
   font-weight: 700;
 }
@@ -280,13 +284,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: tossing 3s infinite;
+  animation: floating 3s infinite;
+}
+
+.executive:hover,
+.student:hover {
+  animation: tossing 1s infinite;
+}
+
+.executive:hover .apply_icon,
+.student:hover .apply_icon {
+  visibility: visible;
 }
 
 .apply_icon {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   visibility: hidden;
   z-index: 1;
 }
@@ -297,25 +311,8 @@ body {
   font-style: italic;
 }
 
-.apply_button:hover .apply_icon {
-  visibility: visible;
-}
-
-.apply_button:hover .after {
-  visibility: visible;
-}
-
 .after {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 400px;
-  height: 350px;
-  border-radius: 50px;
-  background-color: black;
-  visibility: hidden;
+  display: none;
 }
 
 .executive {
@@ -323,8 +320,8 @@ body {
 }
 
 .executive .apply_icon {
-  top: -250px;
-  left: -150px;
+  top: -200px;
+  left: -100px;
 }
 
 .student {
@@ -333,19 +330,23 @@ body {
 }
 
 .student .apply_icon {
-  width: 350px;
-  height: 350px;
-  top: -300px;
-  right: -200px;
+  width: 300px;
+  height: 300px;
+  top: -250px;
+  right: -150px;
+}
+
+.after a {
+  color: black;
 }
 
 .p1 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 .p2 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -357,7 +358,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 200px;
+  padding: 100px 0 200px 0;
 }
 
 .FAQ_title {
@@ -392,8 +393,7 @@ body {
 }
 
 .sbContainer.visible {
-  animation: fadeInUp 1s;
-  animation-fill-mode: forwards;
+  animation: slideUp 1s forwards;
 }
 
 .a.visible {
