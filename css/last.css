@@ -14,6 +14,7 @@ body {
     height: 100%;
     background-color: var(--black-color);
     line-height: 1.5;
+    overflow-x:auto; overflow-y:scroll;
 }
 
 a{
@@ -70,12 +71,13 @@ header{
     font-weight: 800;
     font-size: 6em;
     color: white;
-    margin: 90px 0;
+    margin: 90px 0 95px 0;
     position: absolute;
     top: 1%;
     left: 170px;
     animation: titleslide 2s ease-out;
     background-color: transparent;
+    line-height: 1.2;
 }
 .line{
     font-weight: 200;
@@ -114,6 +116,7 @@ header{
     padding: 10px 0 0 10px;
     color: white;
     animation: titleslide 2s ease-out;
+    line-height: 1.2;
 }
 .mainbutton{
     background-color: #ff7710;
@@ -122,7 +125,7 @@ header{
     width: 300px;
     height: 80px;
     position: relative;
-    top: 59%;
+    top: 61%;
     /* left: 163px; */
     left: 170px;
     border-radius: 10px;
@@ -142,7 +145,7 @@ header{
         background-image: linear-gradient(
             rgba(0,0,0,0.6),
             rgba(0,0,0,0.6)
-        ), url(asset/_MG_4482.jpg);
+        ), url(../img/_MG_4482.jpg);
         background-position: center;
         background-size: cover;
         position:relative;
@@ -245,13 +248,13 @@ header{
 
 /* 활동 */
 .activity{
-    padding: 130px 0px 90px;
+    padding: 120px 0px 90px;
     background-color: #1C1B1A;
 }
 .activityTitle{
     /* background-color: orange; */
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
     font-weight: 700;
     margin: 0;
@@ -302,6 +305,7 @@ header{
 .Contents p{
     text-align: center;
     font-size: 17px;
+    padding: 10px 0 0 0;
 }
 .acts:hover .activityImg{
     opacity:0.2;
@@ -389,7 +393,7 @@ header{
     text-align: center;
     font-weight: 700;
     margin: 0;
-    font-size: 25px;
+    font-size: 30px;
 }
 .historyList {
     display: flex;
@@ -534,7 +538,7 @@ header{
     font-weight: 700;
     margin: 0;
     padding: 100px 0px;
-    font-size: 25px;    
+    font-size: 30px;   
 }
 .coverimg{
     width: 300px;
@@ -591,7 +595,7 @@ header{
 }
 .flip-card-front p{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     }
@@ -601,6 +605,12 @@ header{
     color: white;
     transform: rotateY(180deg);
 }
+.flip-card-back h1{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
 .flip-card-back a{
     background-color: #262626;
     padding: 4px;
