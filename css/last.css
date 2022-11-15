@@ -2,11 +2,10 @@
 @import "styles.css";
 @import "reset.css";
 
-
 /* 최상위에 있는 박스부터 레이아웃을 먼저 배치한 다음 그 안의 내용들을 세부적으로 꾸며주는게 중요 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,44 +16,41 @@ body {
     overflow-x:auto; overflow-y:scroll;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-
 
 /* 상단 메뉴 */
-header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1C1B1A;
-    padding: 8px 200px;
-    height: 40px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1b1a;
+  padding: 8px 200px;
+  height: 40px;
 }
 
-.navbarMenuLeft{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+.navbarMenuLeft {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
-.navbarMenuLeft li{
-    padding: 8px 12px;
+.navbarMenuLeft li {
+  padding: 8px 12px;
 }
 
-.navbarMenuRight{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+.navbarMenuRight {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.navbarMenuRight li{
-    padding: 8px 12px;
+.navbarMenuRight li {
+  padding: 8px 12px;
 }
-
-
 
 /* 메인 */
 .main{
@@ -83,15 +79,14 @@ header{
     font-weight: 200;
 }
 @keyframes titleslide {
-    from{
-        left: -100px;
-        opacity: 0;
-    }
-    to{
-        left: 170px;
-        opacity: 1;
-    }
-    
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 170px;
+    opacity: 1;
+  }
 }
 /* @keyframes disappear {
     from{
@@ -104,6 +99,61 @@ header{
     }
     
 } */
+.mainDiscription {
+  position: relative;
+  width: 580px;
+  top: 60%;
+  /* left: 163px; */
+  left: 170px;
+  /* text-align: center; */
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 0 0 10px;
+  color: white;
+  animation: titleslide 2s ease-out;
+}
+.mainbutton {
+  background-color: #ff7710;
+  border: 0px solid #ff7710;
+  color: white;
+  width: 300px;
+  height: 80px;
+  position: relative;
+  top: 59%;
+  /* left: 163px; */
+  left: 170px;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  animation: titleslide 2s ease-out;
+  font-size: 20px;
+  font-weight: 500;
+}
+.mainbutton:hover {
+  box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+@media screen and (max-width: 975px) {
+  .main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(asset/_MG_4482.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 3em;
+    color: white;
+    background-color: transparent;
+    /* opacity: 0; */
+    animation: fadeInText 2s ease-out;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+  }
+
 .mainDiscription{
     position: relative;
     width: 580px;
@@ -207,44 +257,38 @@ header{
 }
 
 
-
-
-
 /* 미션 */
-.mission{
-    /* width: 184px; */
-    padding: 200px 0px;
+.mission {
+  /* width: 184px; */
+  padding: 200px 0px;
+  background-color: #ff7710;
+}
+.missionTitle {
+  /* text-transform: uppercase; */
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.missionText {
+  color: white;
+  max-width: 1000px;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .mission {
+    padding: 80px 0px;
     background-color: #ff7710;
-}
-.missionTitle{
-    /* text-transform: uppercase; */
-    color: white;
+  }
+  .missionText {
+    font-size: 22px;
+    margin: 0 40px;
     text-align: center;
-    font-weight: 700;
-    margin: 0 0 16px;
+  }
 }
-.missionText{
-    color: white;
-    max-width: 1000px;
-    font-size: 35px;
-    font-weight: 600;
-    margin: 0 auto;
-    text-align: center;
-}
-@media screen and (max-width: 1023px){
-    .mission{
-        padding: 80px 0px;
-        background-color: #ff7710;
-    }
-    .missionText{
-        font-size: 22px;
-        margin: 0 40px;
-        text-align: center;
-
-    }
-}
-
-
 
 /* 활동 */
 .activity{
@@ -295,94 +339,6 @@ header{
 }
 
 
-
-
-.activityImgContainer h1{
-    text-align: center;
-    font-size: xx-large;
-    background-color: #ff7710;
-}
-.Contents p{
-    text-align: center;
-    font-size: 17px;
-    padding: 10px 0 0 0;
-}
-.acts:hover .activityImg{
-    opacity:0.2;
-    /* transition: all 0.5s; */
-}
-.IdeathonContents:not(:hover), .HackathonContents:not(:hover),  .MentoringContents:not(:hover),  .MeetingContents:not(:hover) {
-    transition: 0.5s ease-out;
-}
-
-
-
-
-.IdeathonContents, .HackathonContents, .MentoringContents, .MeetingContents{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0;
-}
-.Ideathon:hover .IdeathonContents, .Hackathon:hover .HackathonContents, .Mentoring:hover .MentoringContents,  .Meeting:hover .MeetingContents{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 1;
-    transition: all 0.5s ease-in;
-}
-@media screen and (max-width: 1023px){
-    .activity{
-        padding: 100px 0px 80px;
-    }
-    .activityImgContainer{
-        padding: 40px;
-    }
-}
-@media screen and (max-width: 766px){
-    .activity{
-        padding: 100px 0px;
-    }
-    .activityImgContainer{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: 200px;
-        grid-gap: 1rem;
-        padding: 2rem;
-        grid-template-areas: 
-        'a a a a'
-        'b b b b'
-        'c c c c'
-        'd d d d'
-    }
-    .Ideathon{
-        grid-area: a;
-        position: relative;
-    }
-    .Hackathon{
-        grid-area: b;
-        position: relative;
-    }
-    .Mentoring{
-        grid-area: c;
-        position: relative;
-    }
-    
-    .Meeting{
-        grid-area: d;
-        position: relative;
-    }
-}
-
-
-
-/* 역사 */
 .history{
     padding: 120px 100px 50px 100px;
     background: rgb(255,119,16);
@@ -395,66 +351,67 @@ header{
     margin: 0;
     font-size: 30px;
 }
+
 .historyList {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+  width: 80%;
+  /* background-color: grey; */
+  /* align-items:center; */
+  color: white;
+}
+.historyListContent {
+  width: 160px;
+}
+.count {
+  padding: 5px 10% 0 10%;
+  width: 100%;
+}
+.unit {
+  margin: 0px;
+  display: inline;
+}
+.test {
+  text-align: center;
+  margin: 0;
+}
+.historyListContent img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: auto;
+  /* width: 100%; */
+}
+.count-num {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  display: inline;
+}
+@media screen and (max-width: 1000px) {
+  .historyList {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 100px auto;
-    width: 80%;
-    /* background-color: grey; */
+    width: 476px;
     /* align-items:center; */
     color: white;
-}
-.historyListContent{
+    padding: 0px;
+  }
+  .historyListContent {
     width: 160px;
-}
-.count{
-    padding: 5px 10% 0 10%;
-    width: 100%;
-}
-.unit{
-    margin: 0px;
-    display: inline;
-}
-.test{
-    text-align: center;
-    margin: 0;
-}
-.historyListContent img{
+    padding: 20px;
+  }
+  .historyListContent img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 130px;
+    width: 80px;
     height: auto;
-    /* width: 100%; */
-}
-.count-num {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    display: inline;
-}
-@media screen and (max-width: 1000px){
-    .historyList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 100px auto;
-        width: 476px;
-        /* align-items:center; */
-        color: white;
-        padding: 0px;
-    }
-    .historyListContent{
-        width: 160px;
-        padding: 20px;
-    }
-    .historyListContent img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80px;
-        height: auto;
-    }
+  }
 }
 @media screen and (max-width: 658px){
     .history{
@@ -464,59 +421,60 @@ header{
     padding: 32px;
     font-size: 25px;
     }
-    .historyList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 10px auto;
-        width: 476px;
-        color: white;
-        padding: 0px;
-    }
-    .historyListContent{
-        width: 160px;
-    }
-    .historyListContent img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60px;
-        height: auto;
-    }
-    .count-num {
-        text-align: center;
-        font-size: 35px;
-        font-weight: 700;
-        display: inline;
-    }
+
+  .historyList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 476px;
+    color: white;
+    padding: 0px;
+  }
+  .historyListContent {
+    width: 160px;
+  }
+  .historyListContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: auto;
+  }
+  .count-num {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    display: inline;
+  }
 }
-@media screen and (max-width: 462px){
-    .history{
-        padding: 60px 0;
-    }
-    .historyTitle{
+@media screen and (max-width: 462px) {
+  .history {
+    padding: 60px 0;
+  }
+  .historyTitle {
     padding: 32px;
     font-size: 25px;
-    }
-    .historyList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 10px auto;
-        width: 300px;
-        color: white;
-        padding: 0px;
-    }
-    .historyListContent{
-        width: 160px;
-    }
-    .historyListContent img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60px;
-        height: auto;
-    }
+  }
+  .historyList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 300px;
+    color: white;
+    padding: 0px;
+  }
+  .historyListContent {
+    width: 160px;
+  }
+  .historyListContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: auto;
+  }
     .count-num {
         text-align: center;
         font-size: 35px;
@@ -524,68 +482,68 @@ header{
         display: inline;
     }
 }
-
 
 
 /* 나라 */
-.worldwide{
-    padding: 20px 100px 120px;
-    background-color: #1C1B1A;
+.worldwide {
+  padding: 20px 100px 120px;
+  background-color: #1c1b1a;
 }
-.worldwideTitle{
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    margin: 0;
-    padding: 100px 0px;
-    font-size: 30px;   
+.worldwideTitle {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  padding: 100px 0px;
+  font-size: 25px;
 }
-.coverimg{
-    width: 300px;
-    height: 500px;
-    object-fit: cover;
-    filter: brightness(0.4);  /* 40% */
+.coverimg {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.4); /* 40% */
 }
-.flag{
-    width: 95px;
-    height: 58px;
-    position: absolute;
-    top: 200px;
-    left: 110px;
+.flag {
+  width: 95px;
+  height: 58px;
+  position: absolute;
+  top: 200px;
+  left: 110px;
 }
-.row{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 500px;
-    perspective: 1000px;
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
 }
 
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  transform: rotateY(180deg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .flip-card-front {
@@ -625,125 +583,132 @@ header{
         background-color: #1C1B1A;
     }
 }
-@media screen and (max-width: 990px){
-    .worldwide{
-        padding: 20px 10px 120px;
-        background-color: #1C1B1A;
-    }
-    .row{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        }
+
+@media screen and (max-width: 990px) {
+  .worldwide {
+    padding: 20px 10px 120px;
+    background-color: #1c1b1a;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /*기업*/
-.enterprise{
-    padding: 200px 0px;
-    background-color: white;
+.enterprise {
+  padding: 200px 0px;
+  background-color: white;
 }
-.companyTitle{
-    color: black;
-    margin: 0;
-    padding: 0 0 160px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 25px;    
+.companyTitle {
+  color: black;
+  margin: 0;
+  padding: 0 0 160px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
 }
-
 
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-1500px * 2))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1500px * 2));
+  }
 }
 @keyframes scroll2 {
-    100% { transform: translateX(0); }
-    0% { transform: translateX(calc(-1500px * 2))}
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(calc(-1500px * 2));
+  }
 }
 
 .slider {
-    background: white;
-    width: 100%;
-    height: 250px;
-    margin: auto;
-    overflow:hidden;
-    position: relative;
+  background: white;
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 .slider::before,
 .slider::after {
-    content: "";
-    height: 300px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
-    
+
 .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .slider::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
-    
+
 .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(1500px * 4);
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(1500px * 4);
 }
 .slide-track2 {
-    animation: scroll2 40s linear infinite;
-    display: flex;
-    width: calc(1500px * 4);
+  animation: scroll2 40s linear infinite;
+  display: flex;
+  width: calc(1500px * 4);
 }
-    
+
 .slide {
-    width: 1500px;
-    height: 250px;
+  width: 1500px;
+  height: 250px;
 }
-.slide img{
-    width: 100%;
-    height: 100%;
-}
-
-footer{
-    background-color: #1C1B1A;
-    color: white;
-    margin: 0;
+.slide img {
+  width: 100%;
+  height: 100%;
 }
 
+footer {
+  background-color: #1c1b1a;
+  color: white;
+  margin: 0;
+}
 
 /*푸터*/
-footer{
-    /* width: 100vw; */
-    padding: 50px 50px 20px;
-    display: relative;
+footer {
+  /* width: 100vw; */
+  padding: 50px 50px 20px;
+  display: relative;
 }
-.footerlist{
-    display: flex;
-    flex-direction: column;
+.footerlist {
+  display: flex;
+  flex-direction: column;
 }
-footer ul{
-    list-style: none;
-    padding: 0;
-    margin-top: 50px;
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
 }
-footer li{
-    padding: 3px;
-    font-size: 14px;
+footer li {
+  padding: 3px;
+  font-size: 14px;
 }
-.last{
-    display: flex;
-    justify-content: space-between;
+.last {
+  display: flex;
+  justify-content: space-between;
 }
-.icons{
-    display: inline;
-    left:90%;
+.icons {
+  display: inline;
+  left: 90%;
 }
-.icons a{
-    margin: 5px;
+.icons a {
+  margin: 5px;
 }

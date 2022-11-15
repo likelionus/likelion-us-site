@@ -1,0 +1,36 @@
+footer {
+  background-color: #1c1b1a;
+  color: white;
+  margin: 0;
+}
+
+/*푸터*/
+footer {
+  /* width: 100vw; */
+  padding: 50px 50px 20px;
+  display: relative;
+}
+.footerlist {
+  display: flex;
+  flex-direction: column;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+footer li {
+  padding: 3px;
+  font-size: 14px;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  display: inline;
+  left: 90%;
+}
+.icons a {
+  margin: 5px;
+}
