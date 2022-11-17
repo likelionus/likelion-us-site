@@ -97,7 +97,8 @@ body {
   align-items: center;
   background-color: white;
   color: var(--black-color);
-  padding: 150px 0;
+  padding-top: 150px;
+  overflow-x: hidden;
 }
 
 .title {
@@ -158,6 +159,76 @@ body {
 
 .element_p p:last-child {
   font-size: large;
+}
+
+/* stacks */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1000px * 2));
+  }
+}
+
+.stacks_container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-top: 100px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  width: calc(1000px * 2);
+  height: 200px;
+  animation: scroll 40s linear infinite;
+  filter: url("#gooey");
+}
+
+.circleCon {
+  display: flex;
+  align-items: flex-start;
+  width: 1000px;
+  height: 200px;
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+.circle:hover {
+  transform: translateY(-30px);
+}
+
+.circle:hover.circle p {
+  animation: fadeIn 1s forwards;
+}
+
+.circle p {
+  color: var(--main-color);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 /* univs */
@@ -285,6 +356,15 @@ body {
   align-items: center;
   justify-content: center;
   animation: floating 3s infinite;
+  box-sizing: border-box;
+}
+
+.apply_button {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .executive:hover,
@@ -420,6 +500,9 @@ body {
   border-radius: 40px;
   line-height: normal;
   color: var(--black-color);
+  box-shadow: rgba(50, 50, 93, 0.3) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.4) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.7) 0px -2px 6px 0px inset;
 }
 
 .question {

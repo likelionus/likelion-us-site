@@ -8,7 +8,7 @@ executive.onmouseover = function () {
   before[0].style.display = "none";
   after[0].style.display = "block";
 
-  executive.style.border = "solid 2px white";
+  executive.style.border = "none";
   executive.style.backgroundColor = "white";
   executive.style.color = "black";
 };
@@ -26,6 +26,7 @@ student.onmouseover = function () {
   before[1].style.display = "none";
   after[1].style.display = "block";
 
+  student.style.border = "none";
   student.style.backgroundColor = "#ff7710";
   student.style.color = "black";
 };
@@ -34,6 +35,7 @@ student.onmouseout = function () {
   before[1].style.display = "block";
   after[1].style.display = "none";
 
+  student.style.border = "solid 2px #ff7710";
   student.style.backgroundColor = "black";
   student.style.color = "#ff7710";
 };
