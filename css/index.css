@@ -29,14 +29,14 @@ body {
 
 @media all and (max-width: 768px) {
   html:not(.header) {
-    font-size: 50%;
+    font-size: 60%;
   }
   /* 문서 내 모든 rem 단위가 영향을 받습니다. */
 }
 
 @media all and (max-width: 600px) {
   html:not(.header) {
-    font-size: 30%;
+    font-size: 40%;
   }
 }
 
