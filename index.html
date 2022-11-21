@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Apply Page</title>
   </head>
   <body>
@@ -21,18 +20,10 @@
         </a>
       </div>
       <div class="menu">
-        <a href="javascript:void(0);" onclick="toAbout()"
-          ><li class="menu_about">About</li></a
-        >
-        <a href="javascript:void(0);" onclick="toUnivs()"
-          ><li class="menu_univs">Univs</li></a
-        >
-        <a href="javascript:void(0);" onclick="toApply()"
-          ><li class="menu_apply">Apply</li></a
-        >
-        <a href="javascript:void(0);" onclick="toFaq()"
-          ><li class="menu_faq">FAQ</li></a
-        >
+        <a href="javascript:void(0);" onclick="toAbout()"><li>About</li></a>
+        <a href="javascript:void(0);" onclick="toUnivs()"><li>Univs</li></a>
+        <a href="javascript:void(0);" onclick="toApply()"><li>Apply</li></a>
+        <a href="javascript:void(0);" onclick="toFaq()"><li>FAQ</li></a>
       </div>
       <div class="headerBtns">
         <div class="btnContainer">
@@ -99,14 +90,43 @@
       </div>
       <p class="title pT">We Learn</p>
       <div class="stacks_container">
+        <div class="container con2">
+          <div class="wrap wrap2">
+            <div class="circleCon">
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+            </div>
+            <div class="circleCon">
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+            </div>
+            <div class="circleCon">
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+            </div>
+            <div class="circleCon">
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+              <div class="circle2"></div>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="wrap">
             <div class="circleCon">
-              <div class="circle">
-                <p>Javascript</p>
-              </div>
-              <div class="circle"><p>Html</p></div>
-              <div class="circle"><p>Css</p></div>
+              <div class="circle"><p>HTML</p></div>
+              <div class="circle"><p>CSS</p></div>
               <div class="circle"><p>Javascript</p></div>
               <div class="circle"><p>React</p></div>
             </div>
@@ -135,6 +155,7 @@
             </div>
           </div>
         </div>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -144,7 +165,7 @@
           <filter id="gooey">
             <feGaussianBlur
               in="SourceGraphic"
-              stdDeviation="40"
+              stdDeviation="30"
               result="blur"
             />
             <feColorMatrix
@@ -346,20 +367,54 @@
     </div>
     <div class="more">
       <p class="more_title">More</p>
-      <ul>
-        <li>
-          Q) 교육기간동안 어떤 것을 배우나요?
-          <p>dddddddddd</p>
-        </li>
-        <li>
-          Q) 교육기간동안 어떤 것을 배우나요?
-          <p>dddddddddd</p>
-        </li>
-        <li>
-          Q) 교육기간동안 어떤 것을 배우나요?
-          <p>dddddddddd</p>
-        </li>
-      </ul>
+      <div class="more_container">
+        <div class="more_set">
+          <label for="toggle" class="moreQ"
+            >Q. I've never learned coding, can I apply to the executive
+            team?</label
+          >
+          <input id="toggle" type="checkbox" />
+          <p class="moreA">
+            You can apply regardless of your major. We provide direct online
+            education and know-how to fully learn regardless of major.
+          </p>
+        </div>
+        <div class="more_set">
+          <label for="toggle1" class="moreQ"
+            >Q. What do you learn during the management training period?</label
+          >
+          <input id="toggle1" type="checkbox" />
+          <p class="moreA">
+            Learn all the web service development stacks (HTML, CSS, JS, Python,
+            Web Framework, DB, Hosting), including the planning, design, and
+            design tools required to create web services.
+          </p>
+        </div>
+        <div class="more_set">
+          <label for="toggle2" class="moreQ"
+            >Q. What kind of activities do We do?</label
+          >
+          <input id="toggle2" type="checkbox" />
+          <p class="moreA">
+            Based on LikeLion's basic curriculum, online lectures can be
+            provided free of charge to students and mentored by the management
+            team.
+          </p>
+        </div>
+        <div class="more_set">
+          <label for="toggle3" class="moreQ"
+            >Q. I'd like to know the detailed recruitment method and
+            schedule.</label
+          >
+          <input id="toggle3" type="checkbox" />
+          <p class="moreA">
+            It varies from school to school, but usually after the first
+            document screening, the final recruitment is made through the second
+            interview. The recruitment period and schedule vary from school to
+            school, so please check the notice later.
+          </p>
+        </div>
+      </div>
       <div class="more_contact">Contact us</div>
     </div>
     <footer>

@@ -22,6 +22,11 @@ a {
   color: white;
 }
 
+/*정원 상단바*/
+.header {
+  font-size: 1rem;
+}
+
 /* 상단 메뉴 */
 header {
   display: flex;

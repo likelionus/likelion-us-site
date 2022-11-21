@@ -1,12 +1,15 @@
 .header {
+  width: 80%;
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: black;
   z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 .logo {
@@ -33,10 +36,8 @@
   list-style: none;
 }
 
-.focus {
-  box-sizing: border-box;
+.menu li:hover {
   color: var(--main-color);
-  transition: 0.5s;
 }
 
 .headerBtns {
@@ -110,4 +111,31 @@
 
 .dropdown a:hover {
   background-color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+  .menu li {
+    margin: 0 10px;
+  }
+  .btn {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .empty {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .headerBtns {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
 }
