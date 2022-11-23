@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Apply Page</title>
   </head>
   <body>
@@ -43,6 +52,7 @@
           </div>
         </div>
       </div>
+      <i class="fas fa-bars fa-lg toggle"></i>
     </div>
     <div class="intro bg">
       <p class="introP1">
@@ -90,101 +100,33 @@
       </div>
       <p class="title pT">We Learn</p>
       <div class="stacks_container">
-        <div class="container con2">
-          <div class="wrap wrap2">
-            <div class="circleCon">
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/html.png" alt="" />
             </div>
-            <div class="circleCon">
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
+            <div class="swiper-slide">
+              <img src="img/css.png" alt="" />
             </div>
-            <div class="circleCon">
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
+            <div class="swiper-slide">
+              <img src="img/js.png" alt="" />
             </div>
-            <div class="circleCon">
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
-              <div class="circle2"></div>
+            <div class="swiper-slide">
+              <img src="img/react.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/vuejs.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/jenkins.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="wrap">
-            <div class="circleCon">
-              <div class="circle"><p>HTML</p></div>
-              <div class="circle"><p>CSS</p></div>
-              <div class="circle"><p>Javascript</p></div>
-              <div class="circle"><p>React</p></div>
-            </div>
-            <div class="circleCon">
-              <div class="circle"><p>Vus.js</p></div>
-              <div class="circle"><p>Git</p></div>
-              <div class="circle"><p>Jenkins</p></div>
-              <div class="circle"><p>Python</p></div>
-              <div class="circle"><p>node.js</p></div>
-            </div>
-            <div class="circleCon">
-              <div class="circle">
-                <p>Javascript</p>
-              </div>
-              <div class="circle"><p>Html</p></div>
-              <div class="circle"><p>Css</p></div>
-              <div class="circle"><p>Javascript</p></div>
-              <div class="circle"><p>React</p></div>
-            </div>
-            <div class="circleCon">
-              <div class="circle"><p>Vus.js</p></div>
-              <div class="circle"><p>Git</p></div>
-              <div class="circle"><p>Jenkins</p></div>
-              <div class="circle"><p>Python</p></div>
-              <div class="circle"><p>node.js</p></div>
-            </div>
-          </div>
-        </div>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="0"
-          height="0"
-        >
-          <filter id="gooey">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="30"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              type="matrix"
-              values="1 0 0 0 0
-                                                             0 1 0 0 0
-                                                             0 0 1 0 0
-                                                             0 0 0 18 -7"
-              result="contrast"
-            />
-            <feBlend in="SourceGraphic" in2="contrast" />
-          </filter>
-        </svg>
       </div>
     </div>
     <div class="univs" id="univs">
       <div class="univs_container">
-        <p class="title">With LikeLion</p>
+        <p class="title">With LIKELION</p>
         <div class="univs_icons">
           <a href="https://www.instagram.com/likelion_usc/"
             ><div class="aCon">
@@ -278,7 +220,6 @@
         <p class="t_apply">HACK YOUR LIFE,</p>
         <p class="t_apply">CHANGE YOUR LIFE WITH PROGRAMMING</p>
       </div>
-      <p class="apply_im">I am . . .</p>
       <div class="apply_section">
         <div class="apply_button executive">
           <img class="apply_icon" src="img/mimo1-4.png" alt="" />
@@ -477,4 +418,6 @@
   <script src="js/scroll.js"></script>
   <script src="js/bg.js"></script>
   <script src="js/apply.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/header.js"></script>
 </html>

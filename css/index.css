@@ -19,25 +19,19 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
+  height: 100%;
   width: 100vw;
   background-color: var(--black-color);
   color: white;
   line-height: 1.5;
   font-family: Pretendard;
-}
-
-@media all and (max-width: 768px) {
-  html:not(.header) {
-    font-size: 60%;
-  }
-  /* 문서 내 모든 rem 단위가 영향을 받습니다. */
-}
-
-@media all and (max-width: 600px) {
-  html:not(.header) {
-    font-size: 40%;
-  }
 }
 
 .intro {
@@ -241,132 +235,31 @@ body {
 /* stacks */
 
 .stacks_container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.container {
-  width: 100%;
-  height: 300px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  width: 70%;
   overflow: hidden;
+  padding: 50px 0 150px 0;
 }
 
-.wrap {
+.swiper-container {
+  width: 250px;
+  height: 250px;
+}
+
+.swiper-slide {
   display: flex;
-  width: 100%;
-  height: 200px;
-  animation: scroll 80s linear infinite;
-  filter: url("#gooey");
+  justify-content: center;
+  align-items: center;
 }
 
-.circleCon {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  height: 200px;
-}
-
-.circle {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: var(--main-color);
-  transition: 0.5s;
-}
-
-.circle:hover {
-  transform: translateY(-30px);
-}
-
-.circle:hover.circle p {
-  opacity: 1;
-}
-
-.circle p {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  color: var(--main-color);
-  transform: translate(-50%, 0);
-  font-size: 2rem;
-  font-weight: 500;
+.swiper-slide:not(.swiper-slide-active, .swiper-slide-visible) {
   opacity: 0.4;
 }
 
-.con2 {
-  position: absolute;
-  top: -20px;
-}
-
-.wrap2 {
-  animation: scroll2 120s linear infinite;
-}
-
-.circle2 {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #ffdbbf;
-  transition: 0.5s;
-}
-
-@media screen and (max-width: 600px) {
-  .title,
-  .pT {
-    padding: 50px;
-  }
-
-  .stacks_container {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-  }
-
-  .container {
-    position: absolute;
-    top: 0;
-    height: 150px;
-    overflow: scroll;
-  }
-
-  .wrap {
-    height: 80px;
-    filter: none;
-    animation: none;
-  }
-
-  .circleCon {
-    width: 100%;
-    height: 80px;
-  }
-
-  .circleCon:nth-child(n + 3) {
-    display: none;
-  }
-
-  .circle {
-    width: 80px;
-    height: 80px;
-  }
-
-  .circle:hover {
-    transform: translateY(-20px);
-  }
-
-  .circle p {
-    top: -40px;
-  }
-
-  .con2 {
-    display: none;
-  }
+.swiper-slide img {
+  width: 250px;
+  height: 250px;
 }
 
 /* univs */
@@ -498,22 +391,16 @@ body {
   animation: gradient 10s linear infinite;
 }
 
-.apply_im {
-  padding: 200px 0 150px 0;
-  font-size: 3rem;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .apply_section {
   display: flex;
   justify-content: space-between;
+  padding-top: 200px;
 }
 
 .apply_button {
   position: relative;
   width: 35rem;
-  height: 30rem;
+  height: 35rem;
   margin: 0 20px;
   border-radius: 50px;
   display: flex;
@@ -552,7 +439,7 @@ body {
 
 .before {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 900;
   font-style: italic;
 }
 
@@ -606,19 +493,15 @@ body {
     line-height: 4rem;
   }
 
-  .apply_im {
-    font-size: 3rem;
-    padding: 50px 0;
-  }
-
   .apply_section {
     width: 90%;
     justify-content: center;
+    padding-top: 100px;
   }
 
   .apply_button {
     width: 25rem;
-    height: 20rem;
+    height: 25rem;
     margin: 0 10px;
     border-radius: 30px;
   }
@@ -890,7 +773,7 @@ body {
 
 .moreQ {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .moreQ:hover {
@@ -951,4 +834,7 @@ body {
     border-radius: 10px;
     margin: 20px 0 30px 0;
   }
+}
+
+@media screen and (max-width: 768px) {
 }
