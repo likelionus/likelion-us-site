@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
@@ -18,25 +19,18 @@
   </head>
   <body>
     <div class="header" id="header">
-      <div class="logo">
-        <a href="last.html"
-          ><img
-            src="img/LIKELION US_white_logo.svg"
-            alt="logo"
-            width="180px;"
-            height="auto"
-          />
-        </a>
-      </div>
-      <div class="menu">
-        <a href="javascript:void(0);" onclick="toAbout()"><li>About</li></a>
-        <a href="javascript:void(0);" onclick="toUnivs()"><li>Univs</li></a>
-        <a href="javascript:void(0);" onclick="toApply()"><li>Apply</li></a>
-        <a href="javascript:void(0);" onclick="toFaq()"><li>FAQ</li></a>
-      </div>
+      <a href="last.html" class="logo"
+        ><img src="img/LIKELION US_white_logo.svg" alt="logo" />
+      </a>
+      <ul class="menu">
+        <li><a href="javascript:void(0);" onclick="toAbout()">About</a></li>
+        <li><a href="javascript:void(0);" onclick="toUnivs()">Univs</a></li>
+        <li><a href="javascript:void(0);" onclick="toApply()">Apply</a></li>
+        <li><a href="javascript:void(0);" onclick="toFaq()">FAQ</a></li>
+      </ul>
       <div class="headerBtns">
         <div class="btnContainer">
-          <div class="btn empty">Apply</div>
+          <div class="btn">Apply</div>
           <div class="dropdown">
             <div class="dropdownBridge"></div>
             <a href="">Executive</a>
@@ -44,15 +38,16 @@
           </div>
         </div>
         <div class="btnContainer">
-          <div class="btn empty">Contact</div>
+          <div class="btn">Contact</div>
           <div class="dropdown">
             <div class="dropdownBridge"></div>
-            <a href="">Email</a>
-            <a href="">Instagram</a>
+            <a href="">Email<i class="far fa-envelope"></i></a>
+            <a href="">Instagram<i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <i class="fas fa-bars fa-lg toggle"></i>
+      <i class="fas fa-bars fa-lg mobileBtn"></i>
+      <i class="fas fa-times fa-lg mobileBtn"></i>
     </div>
     <div class="intro bg">
       <p class="introP1">

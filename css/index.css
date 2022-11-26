@@ -10,7 +10,6 @@
 
 * {
   scroll-behavior: smooth;
-  font-weight: 400;
 }
 
 html,
@@ -19,7 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   html {
     font-size: 50%;
   }
@@ -62,11 +61,11 @@ body {
 .introP2 {
   visibility: hidden;
   font-size: 4.5rem;
-  font-weight: 800;
+  font-weight: 700;
   animation-delay: 1s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .intro {
     height: 450px;
     box-sizing: border-box;
@@ -181,7 +180,7 @@ body {
   flex-shrink: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .element_icon {
     font-size: 5rem;
   }
@@ -203,7 +202,7 @@ body {
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .elements_container {
     width: 80%;
   }
@@ -319,7 +318,7 @@ body {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .univs_icons {
     width: 80%;
   }
@@ -334,7 +333,7 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .univs_icons {
     width: 90%;
   }
@@ -439,7 +438,7 @@ body {
 
 .before {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -482,7 +481,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .apply {
     padding: 50px 0;
   }
@@ -607,7 +606,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  font-weight: 500;
   width: fit-content;
   height: 40px;
   padding: 35px;
@@ -661,7 +659,6 @@ body {
 
   .speechBubble {
     font-size: 1.8rem;
-    font-weight: 500;
     padding: 30px;
     border-radius: 40px;
   }
@@ -718,7 +715,6 @@ body {
 
   .speechBubble {
     font-size: 1.5rem;
-    font-weight: 500;
     padding: 20px;
     border-radius: 30px;
   }
@@ -773,7 +769,6 @@ body {
 
 .moreQ {
   font-size: 2rem;
-  font-weight: 500;
 }
 
 .moreQ:hover {
@@ -799,7 +794,6 @@ body {
 .moreA {
   background-color: var(--gray-color);
   font-size: 2rem;
-  font-weight: 400;
   padding: 20px 30px;
   border-radius: 20px;
   margin: 20px 0 30px 0;
@@ -822,7 +816,7 @@ body {
   color: var(--black-color);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .more_title {
     padding: 50px 0;
   }
@@ -834,7 +828,4 @@ body {
     border-radius: 10px;
     margin: 20px 0 30px 0;
   }
-}
-
-@media screen and (max-width: 768px) {
 }
