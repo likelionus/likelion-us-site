@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   coverflowEffect: {
     rotate: 0,
-    depth: 300,
+    depth: 200,
     slideShadows: false,
     stretch: 0,
   },

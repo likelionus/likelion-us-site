@@ -31,15 +31,6 @@
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 0;
-  }
-}
-
 @keyframes tossing {
   0% {
     transform: rotate(-2deg);
@@ -113,19 +104,22 @@
   }
 }
 
-.pullDown {
-  animation-name: pullDown;
-  -webkit-animation-name: pullDown;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1000px * 2));
+  }
+}
 
-  animation-duration: 1.1s;
-  -webkit-animation-duration: 1.1s;
-
-  animation-timing-function: ease-out;
-  -webkit-animation-timing-function: ease-out;
-
-  transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  -webkit-transform-origin: 50% 0%;
+@keyframes scroll2 {
+  0% {
+    transform: translateX(calc(-1000px * 2));
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes pullDown {
@@ -149,23 +143,5 @@
   }
   100% {
     transform: scaleY(1);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-1000px * 2));
-  }
-}
-
-@keyframes scroll2 {
-  0% {
-    transform: translateX(calc(-1000px * 2));
-  }
-  100% {
-    transform: translateX(0);
   }
 }
