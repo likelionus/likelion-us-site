@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css\last.css" />
     <title>Document</title>
     <script
@@ -14,56 +15,47 @@
   <body>
     <div>
       <div class="header" id="header">
-        <div class="logo">
-          <a href="javascript:void(0);" onclick="toTop()"
-            ><img
-              src="img/LIKELION US_white_logo.svg"
-              alt="logo"
-              width="180px;"
-              height="auto"
-            />
-          </a>
-        </div>
-        <div class="menu">
-          <a href="#mission" onclick="toAbout()"
-            ><li class="menu_about">Mission</li></a
-          >
-          <a href="#story" onclick="toUnivs()"
-            ><li class="menu_univs">Story</li></a
-          >
-          <a href="#global" onclick="toApply()"
-            ><li class="menu_apply">Global</li></a
-          >
-          <a href="#from" onclick="toFaq()"
-            ><li class="menu_faq">Companies</li></a
-          >
-        </div>
+        <a href="last.html" class="logo"
+          ><img src="img/LIKELION US_white_logo.svg" alt="logo" />
+        </a>
+        <ul class="menu">
+          <li>
+            <a href="javascript:void(0);" onclick="toMission()">Mission</a>
+          </li>
+          <li><a href="javascript:void(0);" onclick="toStory()">Story</a></li>
+          <li><a href="javascript:void(0);" onclick="toGlobal()">Global</a></li>
+          <li>
+            <a href="javascript:void(0);" onclick="toFrom()">Companies</a>
+          </li>
+        </ul>
         <div class="headerBtns">
           <div class="btnContainer">
             <a href="index.html">
-              <div class="btn empty">Join</div>
+              <div class="btn">Join</div>
             </a>
           </div>
           <div class="btnContainer">
-            <div class="btn empty">Contact</div>
+            <div class="btn">Contact</div>
             <div class="dropdown">
               <div class="dropdownBridge"></div>
-              <a href="">Homepage</a>
-              <a href="">Instagram</a>
+              <a href="">Email<i class="far fa-envelope"></i></a>
+              <a href="">Instagram<i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
+        <i class="fas fa-bars fa-lg mobileBtn"></i>
+        <i class="fas fa-times fa-lg mobileBtn"></i>
       </div>
 
       <section class="main">
         <div class="titleandpic">
-        <p class="title">
-          <font color="#ff7710">POSSIBIL</font>ITY<br />
-          TO&nbsp;<font color="#ff7710" class="line">――――</font><br />
-          <!-- <div>-</div> -->
-          <font color="#ff7710">REAL</font>ITY
-        </p>
-      </div>
+          <p class="title">
+            <font color="#ff7710">POSSIBIL</font>ITY<br />
+            TO&nbsp;<font color="#ff7710" class="line">――――</font><br />
+            <!-- <div>-</div> -->
+            <font color="#ff7710">REAL</font>ITY
+          </p>
+        </div>
         <p class="mainDiscription">
           LikeLion is a student-run Tech Entrepreneurship Community that helps
           students solve real-world problems and develop their ideas into
@@ -88,11 +80,12 @@
         <p class="activityTitle">WE DO</p>
         <section class="activityImgContainer">
           <div class="Ideathon acts">
-            <img src="img\_MG_4277.jpg" alt="" class="activityImg"/>
+            <img src="img\_MG_4277.jpg" alt="" class="activityImg" />
             <div class="IdeathonContents Contents">
               <h1>Ideathon</h1>
               <p>
-                Bring your innovative, original ideas to the world and share them with us.
+                Bring your innovative, original ideas to the world and share
+                them with us.
               </p>
             </div>
           </div>
@@ -102,7 +95,8 @@
             <div class="HackathonContents Contents">
               <h1>Hackathon</h1>
               <p>
-              Build your idea with a team by engaging and collaborating with them over 36 hours. 
+                Build your idea with a team by engaging and collaborating with
+                them over 36 hours. 
               </p>
             </div>
           </div>
@@ -110,7 +104,10 @@
             <img src="img\mentoring2.jpg" alt="" class="activityImg" />
             <div class="MentoringContents Contents">
               <h1>Mentoring</h1>
-              <p>Meet LIKEION professional mentors who work in various fields and learn from their experience.</p>
+              <p>
+                Meet LIKEION professional mentors who work in various fields and
+                learn from their experience.
+              </p>
             </div>
           </div>
           <div class="Networking acts">
@@ -127,62 +124,34 @@
         <p class="historyTitle">Starting with 30 students,</p>
         <div class="historyList">
           <div class="historyListContent">
-            <img src="img\time.png" alt=""/>
+            <img src="img\time.png" alt="" />
             <div class="count">
               <p class="count-num unitbefore1" data-count="10">0</p>
               <p class="unit">Years</p>
             </div>
           </div>
           <div class="historyListContent">
-            <img src="img\school.png" alt=""/>
+            <img src="img\school.png" alt="" />
             <div class="count">
-              <p class="count-num unitbefore2" data-count="130">   0</p>
+              <p class="count-num unitbefore2" data-count="130">0</p>
               <p class="unit">Universities</p>
             </div>
           </div>
           <div class="historyListContent historyListContent2">
-            <img src="img\students.png" alt=""/>
+            <img src="img\students.png" alt="" />
             <div class="count">
               <p class="count-num unitbefore3" data-count="8400">0</p>
               <p class="unit">Students</p>
             </div>
           </div>
           <div class="historyListContent">
-            <img src="img\services.png" alt=""/>
+            <img src="img\services.png" alt="" />
             <div class="count">
               <p class="count-num unitbefore4" data-count="1000">0</p>
               <p class="unit">Services</p>
             </div>
           </div>
         </div>
-        <script>
-          var history = document.querySelectorAll('.history');
-          var classes = history.classList;
-          var numAnimation = document.querySelectorAll(".count-num");
-          console.log(numAnimation);
-
-          function changeNum(idx) {
-            var num = 0;
-            var intervalTime = 50;
-            var targetNum = numAnimation[idx].getAttribute("data-count");
-            if (targetNum >= 1000) {
-              intervalTime = 0.0000000001;
-            }
-            var timer = setInterval(function () {
-              ++num;
-              numAnimation[idx].innerText = num;
-              if (num == targetNum) {
-                clearInterval(timer);
-              }
-            }, intervalTime);
-          }
-          for (var i = 0; i < numAnimation.length; i++) {
-            if (classes.contains('visible')) {
-              console.log("hello");
-              changeNum(i);
-            }
-          }
-        </script>
       </section>
 
       <section class="worldwide" id="global">
@@ -210,7 +179,7 @@
                   the first cohort with students at UC Berkeley last December
                   2021.
                 </p>
-                <br /><br>
+                <br /><br />
                 <a
                   href="https://us.likelion.net/2db1bcf0-d1ab-4bb5-90a6-f546db01da72"
                   >More Details ➨</a
@@ -230,7 +199,7 @@
                 <br />
                 <p>Korea is LikeLion’s birthplace.</p>
                 <br />
-                <p >
+                <p>
                   Empowered by the entrepreneurial success of early LikeLion
                   college program alumni, we reached 67 college campuses by 2019
                   to support more than 7000 students to start careers in
@@ -241,11 +210,9 @@
                   In 2018, LikeLion launched B2C, B2B, and B2G services to
                   assist individuals and organizations—both private and
                   public—tap into the power of technology.
-                </p><br /><br>
-                <a
-                href="https://likelion.net/"
-                >More Details➨</a
-              >
+                </p>
+                <br /><br />
+                <a href="https://likelion.net/">More Details➨</a>
               </div>
             </div>
           </div>
@@ -389,5 +356,8 @@
       </footer>
     </div>
     <script src="js/scroll.js"></script>
+    <script src="js/menu1.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
