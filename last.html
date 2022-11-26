@@ -25,17 +25,17 @@
           </a>
         </div>
         <div class="menu">
-          <a href="javascript:void(0);" onclick="toAbout()"
+          <a href="#mission" onclick="toAbout()"
             ><li class="menu_about">Mission</li></a
           >
-          <a href="javascript:void(0);" onclick="toUnivs()"
+          <a href="#story" onclick="toUnivs()"
             ><li class="menu_univs">Story</li></a
           >
-          <a href="javascript:void(0);" onclick="toApply()"
+          <a href="#global" onclick="toApply()"
             ><li class="menu_apply">Global</li></a
           >
-          <a href="javascript:void(0);" onclick="toFaq()"
-            ><li class="menu_faq">From</li></a
+          <a href="#from" onclick="toFaq()"
+            ><li class="menu_faq">Companies</li></a
           >
         </div>
         <div class="headerBtns">
@@ -54,14 +54,16 @@
           </div>
         </div>
       </div>
+
       <section class="main">
-        &nbsp;
+        <div class="titleandpic">
         <p class="title">
           <font color="#ff7710">POSSIBIL</font>ITY<br />
           TO&nbsp;<font color="#ff7710" class="line">――――</font><br />
           <!-- <div>-</div> -->
           <font color="#ff7710">REAL</font>ITY
         </p>
+      </div>
         <p class="mainDiscription">
           LikeLion is a student-run Tech Entrepreneurship Community that helps
           students solve real-world problems and develop their ideas into
@@ -73,8 +75,8 @@
       </section>
       <script src="main.js"></script>
 
-      <section class="mission">
-        <p class="missionTitle">OUR MISSION</p>
+      <section class="mission" id="mission">
+        <!-- <p class="missionTitle">OUR MISSION</p> -->
         <h2 class="missionText">
           Our mission is to help people with no background in coding to build a
           successful software engineering career and to find their own startup
@@ -83,81 +85,79 @@
       </section>
 
       <section class="activity">
-        <p class="activityTitle">LIKE LION DID</p>
+        <p class="activityTitle">WE DO</p>
         <section class="activityImgContainer">
           <div class="Ideathon acts">
-            <img src="img\_MG_4277.jpg" alt="" class="activityImg" />
+            <img src="img\_MG_4277.jpg" alt="" class="activityImg"/>
             <div class="IdeathonContents Contents">
               <h1>Ideathon</h1>
               <p>
-                아이디어를 구체화하고 피칭해보는 시간을 가져볼 수 있습니다🧐
+                Bring your innovative, original ideas to the world and share them with us.
               </p>
             </div>
           </div>
 
           <div class="Hackathon acts">
-            <img src="img\_MG_4473.jpg" alt="" class="activityImg" />
+            <img src="img\did_hak2.png" alt="" class="activityImg" />
             <div class="HackathonContents Contents">
               <h1>Hackathon</h1>
               <p>
-                내 아이디어를 내 손으로 실현한다!👨‍💻<br />
-                팀별로 1박 2일동안 서비스를 개발하는 경험을 직접 할 수 있습니다
+              Build your idea with a team by engaging and collaborating with them over 36 hours. 
               </p>
             </div>
           </div>
           <div class="Mentoring acts">
-            <img src="img\IMG_00232.jpg" alt="" class="activityImg" />
+            <img src="img\mentoring2.jpg" alt="" class="activityImg" />
             <div class="MentoringContents Contents">
               <h1>Mentoring</h1>
-              <p>다양한 분야의 연사님들의 멋진 스피치를 들을 수 있습니다😉</p>
+              <p>Meet LIKEION professional mentors who work in various fields and learn from their experience.</p>
             </div>
           </div>
-          <div class="Meeting acts">
-            <img src="img\did_4.JPG" alt="" class="activityImg" />
-            <div class="MeetingContents Contents">
-              <h1>Meeting</h1>
-              <p>다양한 학교의 멋사분들과 네트워킹 시간을 가질 수 있습니다🦁</p>
+          <div class="Networking acts">
+            <img src="img\IMG_00232.jpg" alt="" class="activityImg" />
+            <div class="NetworkingContents Contents">
+              <h1>Networking</h1>
+              <p>Connect with millions of LIKEION alums around the world.</p>
             </div>
           </div>
         </section>
       </section>
 
-      <section class="history">
+      <section class="history" id="story">
         <p class="historyTitle">Starting with 30 students,</p>
         <div class="historyList">
           <div class="historyListContent">
-            <img src="img\time.png" alt="" width="60px" height="60px" />
+            <img src="img\time.png" alt=""/>
             <div class="count">
-              <p class="count-num" data-count="10">0</p>
-              <p class="unit">여년 동안</p>
+              <p class="count-num unitbefore1" data-count="10">0</p>
+              <p class="unit">Years</p>
             </div>
           </div>
           <div class="historyListContent">
-            <img src="img\school.png" alt="" width="60px" height="60px" />
+            <img src="img\school.png" alt=""/>
             <div class="count">
-              <p class="count-num" data-count="130">0</p>
-              <p class="unit">여개의</p>
+              <p class="count-num unitbefore2" data-count="130">   0</p>
+              <p class="unit">Universities</p>
             </div>
-            <p class="test">대학교에서</p>
           </div>
           <div class="historyListContent historyListContent2">
-            <img src="img\students.png" alt="" width="60px" height="60px" />
+            <img src="img\students.png" alt=""/>
             <div class="count">
-              <p class="count-num" data-count="8400">0</p>
-              <p class="unit">여명의</p>
+              <p class="count-num unitbefore3" data-count="8400">0</p>
+              <p class="unit">Students</p>
             </div>
-            <p class="test">학생들과 함께</p>
           </div>
           <div class="historyListContent">
-            <img src="img\services.png" alt="" width="60px" height="60px" />
+            <img src="img\services.png" alt=""/>
             <div class="count">
-              <p class="count-num" data-count="1000">0</p>
-              <p class="unit">개 이상의</p>
+              <p class="count-num unitbefore4" data-count="1000">0</p>
+              <p class="unit">Services</p>
             </div>
-            <p class="test">서비스 제작</p>
           </div>
         </div>
         <script>
+          var history = document.querySelectorAll('.history');
+          var classes = history.classList;
           var numAnimation = document.querySelectorAll(".count-num");
           console.log(numAnimation);
 
@@ -165,7 +165,7 @@
             var num = 0;
             var intervalTime = 50;
             var targetNum = numAnimation[idx].getAttribute("data-count");
-            if (targetNum >= 8000) {
+            if (targetNum >= 1000) {
               intervalTime = 0.0000000001;
             }
             var timer = setInterval(function () {
@@ -177,12 +177,15 @@
             }, intervalTime);
           }
           for (var i = 0; i < numAnimation.length; i++) {
-            changeNum(i);
+            if (classes.contains('visible')) {
+              console.log("hello");
+              changeNum(i);
+            }
           }
         </script>
       </section>
 
-      <section class="worldwide">
+      <section class="worldwide" id="global">
         <p class="worldwideTitle">WorldWide LIKELION</p>
         <div class="row">
           <div class="flip-card">
@@ -207,10 +210,10 @@
                   the first cohort with students at UC Berkeley last December
                   2021.
                 </p>
-                <br />
+                <br /><br>
                 <a
                   href="https://us.likelion.net/2db1bcf0-d1ab-4bb5-90a6-f546db01da72"
-                  >More Details</a
+                  >More Details ➨</a
                 >
               </div>
             </div>
@@ -227,18 +230,22 @@
                 <br />
                 <p>Korea is LikeLion’s birthplace.</p>
                 <br />
-                <p>
+                <p >
                   Empowered by the entrepreneurial success of early LikeLion
                   college program alumni, we reached 67 college campuses by 2019
                   to support more than 7000 students to start careers in
                   technology.
                 </p>
                 <br />
-                <p>
+                <p class="korContent">
                   In 2018, LikeLion launched B2C, B2B, and B2G services to
                   assist individuals and organizations—both private and
                   public—tap into the power of technology.
-                </p>
+                </p><br /><br>
+                <a
+                href="https://likelion.net/"
+                >More Details➨</a
+              >
               </div>
             </div>
           </div>
@@ -274,53 +281,53 @@
         </div>
       </section>
 
-      <section class="enterprise">
-        <p class="companyTitle">Companies started from LikeLion</p>
+      <section class="enterprise" id="from">
+        <p class="companyTitle">Companies started from LIKELION</p>
         <div class="slider">
           <div class="slide-track">
             <div class="slide">
-              <img src="img\1.png" alt="" />
+              <img src="img\1_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\2.png" alt="" />
+              <img src="img\1_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\1.png" alt="" />
+              <img src="img\1_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\2.png" alt="" />
+              <img src="img\1_250.png" alt="" />
             </div>
           </div>
         </div>
         <div class="slider">
           <div class="slide-track2">
             <div class="slide">
-              <img src="img\3.png" alt="" />
+              <img src="img\2_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\4.png" alt="" />
+              <img src="img\2_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\3.png" alt="" />
+              <img src="img\2_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\4.png" alt="" />
+              <img src="img\2_250.png" alt="" />
             </div>
           </div>
         </div>
         <div class="slider">
           <div class="slide-track">
             <div class="slide">
-              <img src="img\5.png" alt="" />
+              <img src="img\3_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\6.png" alt="" />
+              <img src="img\3_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\5.png" alt="" />
+              <img src="img\3_250.png" alt="" />
             </div>
             <div class="slide">
-              <img src="img\6.png" alt="" />
+              <img src="img\3_250.png" alt="" />
             </div>
           </div>
         </div>
@@ -334,13 +341,13 @@
               |
               <span>대표이사 이두희</span>
             </li>
-            <li><span>서울특별시 종로구 종로3길 17 D타워, 16-17층</span></li>
+            <li><span> 400 Concar Dr, San Mateo, CA 94402</span></li>
             <br /><br />
             <li class="last">
               <span>simba@likelion.net</span>
               <div class="icons">
                 <a href="https://www.instagram.com/likelion.us/" target="_blank"
-                  ><?xml version="1.0" ?><svg
+                  ><svg
                     height="24"
                     viewBox="0 0 24 24"
                     width="24"
@@ -353,7 +360,7 @@
                     /></svg
                 ></a>
                 <a href="https://www.facebook.com/likelion.us" target="_blank"
-                  ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                  ><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
                   <svg
                     height="100%"
                     style="
@@ -381,5 +388,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
