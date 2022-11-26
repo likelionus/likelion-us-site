@@ -4,6 +4,7 @@
 
 /* 최상위에 있는 박스부터 레이아웃을 먼저 배치한 다음 그 안의 내용들을 세부적으로 꾸며주는게 중요 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,42 +21,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-}
-
-/*정원 상단바*/
-.header {
-  font-size: 1rem;
-}
-
-/* 상단 메뉴 */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1c1b1a;
-  padding: 8px 200px;
-  height: 40px;
-}
-
-.navbarMenuLeft {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-
-.navbarMenuLeft li {
-  padding: 8px 12px;
-}
-
-.navbarMenuRight {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.navbarMenuRight li {
-  padding: 8px 12px;
 }
 
 /* 메인 */
@@ -121,9 +86,8 @@ header {
   }
 }
 
-
 @media screen and (max-width: 975px) {
-  .main{
+  .main {
     padding: 15% 0 15% 5%;
   }
   .title {
@@ -141,14 +105,13 @@ header {
     font-size: 28px;
   }
 }
-@media screen and (max-width:599px) {
-  .main{
+@media screen and (max-width: 599px) {
+  .main {
     padding: 15% 0 15% 5%;
   }
   .title {
     font-weight: 800;
     font-size: 4em;
-
   }
   .mainDiscription {
     width: 60%;
@@ -161,8 +124,8 @@ header {
     font-size: 26px;
   }
 }
-  @media screen and (max-width:422px) {
-  .main{
+@media screen and (max-width: 422px) {
+  .main {
     padding: 15% 0 15% 5%;
   }
   .title {
@@ -211,8 +174,6 @@ header {
     text-align: center;
   }
 }
-
-
 
 /* 활동 */
 .activity {
@@ -263,7 +224,6 @@ header {
   position: relative;
 }
 
-
 .activityImgContainer h1 {
   text-align: center;
   font-size: xx-large;
@@ -301,7 +261,7 @@ header {
 .Ideathon:hover .IdeathonContents,
 .Hackathon:hover .HackathonContents,
 .Mentoring:hover .MentoringContents,
-.Networking:hover .NetworkingContents{
+.Networking:hover .NetworkingContents {
   /* display: block; */
   position: absolute;
   top: 50%;
@@ -311,7 +271,6 @@ header {
   opacity: 1;
   transition: all 0.5s ease-in;
 }
-
 
 @media screen and (max-width: 1200px) {
   .activity {
@@ -328,7 +287,6 @@ header {
     font-size: 20px;
     padding: 10px 0;
   }
-
 }
 @media screen and (max-width: 901px) {
   .activityImgContainer h1 {
@@ -427,8 +385,8 @@ header {
   width: 200px;
 }
 .count {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   text-align: center;
 }
@@ -437,8 +395,8 @@ header {
   display: inline;
 }
 
-.unitbefore4::after{
-  content: '+';
+.unitbefore4::after {
+  content: "+";
   font-size: 20px;
 }
 .unit {
@@ -691,7 +649,6 @@ header {
     font-weight: 600;
     padding: 15px 0;
   }
-
 }
 @media screen and (max-width: 935px) {
   .flip-card-back h1 {
@@ -699,7 +656,7 @@ header {
     font-weight: 600;
     padding: 15px 0;
   }
-  .flip-card-back p{
+  .flip-card-back p {
     font-size: 15px;
     line-height: 20px;
   }
@@ -709,15 +666,15 @@ header {
     color: #ff7710;
     padding: 4px;
   }
-
 }
-@media screen and (max-width: 726px) { /*추가*/
+@media screen and (max-width: 726px) {
+  /*추가*/
   .flip-card-back h1 {
     font-size: 25px;
     font-weight: 600;
     padding: 15px 0;
   }
-  .flip-card-back p{
+  .flip-card-back p {
     font-size: 15px;
     line-height: 20px;
   }
@@ -749,7 +706,7 @@ header {
     object-fit: cover;
     filter: brightness(0.4); /* 40% */
   }
-  .flip-card-back{
+  .flip-card-back {
     font-size: 16px;
   }
 }
