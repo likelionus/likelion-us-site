@@ -65,59 +65,34 @@ header {
     url("../img/_MG_4482.jpg");
   background-repeat: no-repeat;
   background-position: right center;
-  height: 110vh;
-  background-size: 73% 100%;
-  position: relative;
+  background-size: 90% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 8% 0 8% 5%;
+  /* width: auto; */
+  /* height: 100vh; */
 }
 .title {
   font-weight: 800;
   font-size: 6em;
   color: white;
-  margin: 90px 0 95px 0;
-  position: absolute;
-  top: 1%;
-  left: 170px;
-  animation: titleslide 2s ease-out;
+  animation: titleslide 1s ease-in;
   background-color: transparent;
   line-height: 1.2;
 }
 .line {
   font-weight: 200;
 }
-@keyframes titleslide {
-  from {
-    left: -100px;
-    opacity: 0;
-  }
-  to {
-    left: 170px;
-    opacity: 1;
-  }
-}
-/* @keyframes disappear {
-    from{
-        left: 170px;
-        opacity: 1;
-    }
-    to{
-        left: -100px;
-        opacity: 0;
-    }
-    
-} */
+
 .mainDiscription {
-  position: relative;
-  width: 580px;
-  top: 60%;
-  /* left: 163px; */
-  left: 170px;
-  /* text-align: center; */
-  font-size: 15px;
-  font-weight: 300;
-  padding: 10px 0 0 10px;
+  width: 50%;
+  font-size: 25px;
+  font-weight: 200;
   color: white;
-  animation: titleslide 2s ease-out;
   line-height: 1.2;
+  animation: titleslide 1s ease-in;
+  padding: 7% 0 5% 0;
 }
 .mainbutton {
   background-color: #ff7710;
@@ -125,98 +100,98 @@ header {
   color: white;
   width: 300px;
   height: 80px;
-  position: relative;
-  top: 61%;
-  /* left: 163px; */
-  left: 170px;
-  border-radius: 10px;
   transition: 0.2s ease-in-out;
-  animation: titleslide 2s ease-out;
-  font-size: 20px;
-  font-weight: 500;
+  animation: titleslide 1s ease-in;
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: 100px;
 }
 .mainbutton:hover {
   box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.5) inset;
 }
 
+@keyframes titleslide {
+  from {
+    margin: 0 0 0 -20%;
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+
+
 @media screen and (max-width: 975px) {
-  .main {
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/_MG_4482.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  .main{
+    padding: 15% 0 15% 5%;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 5em;
+  }
+  .mainDiscription {
+    width: 60%;
+    font-size: 23px;
+    font-weight: 200;
+  }
+  .mainbutton {
+    width: 280px;
+    height: 78px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width:599px) {
+  .main{
+    padding: 15% 0 15% 5%;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 4em;
+
+  }
+  .mainDiscription {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .mainbutton {
+    width: 260px;
+    height: 58px;
+    font-size: 26px;
+  }
+}
+  @media screen and (max-width:422px) {
+  .main{
+    padding: 15% 0 15% 5%;
   }
   .title {
     font-weight: 800;
     font-size: 3em;
-    color: white;
-    background-color: transparent;
-    /* opacity: 0; */
-    animation: fadeInText 2s ease-out;
-    position: absolute;
-    top: 5%;
-    left: 4%;
   }
-
   .mainDiscription {
-    width: 300px;
-    font-size: 13px;
-    font-weight: 300;
-    padding: 0;
-    margin: 0;
-    color: white;
-    /* opacity: 0; */
-    animation: fadeInText 2s ease-out;
-    position: absolute;
-    top: 55%;
-    left: 4%;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 200;
   }
   .mainbutton {
-    background-color: #ff7710;
-    border: 0px solid #ff7710;
-    color: white;
-    width: 300px;
-    height: 70px;
-    border-radius: 10px;
-    /* opacity: 0; */
-    animation: fadeInText 2s ease-out;
-    font-size: 20px;
-    font-weight: 500;
-    position: absolute;
-    top: 70%;
-    left: 4%;
-  }
-  .mainbutton:hover {
-    box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.5) inset;
-  }
-  @keyframes fadeInText {
-    from {
-      left: -100px;
-      opacity: 0;
-    }
-    to {
-      left: 4%;
-      opacity: 1;
-    }
+    width: 200px;
+    height: 48px;
+    font-size: 24px;
   }
 }
 
 /* 미션 */
 .mission {
-  /* width: 184px; */
-  padding: 200px 0px;
+  padding: 200px 40px;
   background-color: #ff7710;
 }
-.missionTitle {
-  /* text-transform: uppercase; */
+/* .missionTitle {
   color: white;
   text-align: center;
   font-weight: 700;
   margin: 0 0 16px;
-}
+} */
 .missionText {
   color: white;
   max-width: 1000px;
@@ -237,9 +212,12 @@ header {
   }
 }
 
+
+
 /* 활동 */
 .activity {
-  padding: 120px 0px 90px;
+  /* padding: 120px 120px 0px 120px; */
+  padding: 120px 12% 0 12%;
   background-color: #1c1b1a;
 }
 .activityTitle {
@@ -248,13 +226,13 @@ header {
   font-size: 30px;
   text-align: center;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 .activityImgContainer {
   /* background-color: rgba(255, 255, 0, 0.332); */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 250px;
+  grid-auto-rows: 300px;
   grid-gap: 1rem;
   padding: 5rem;
   grid-template-areas:
@@ -265,7 +243,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2%;
+  border-radius: 40px;
 }
 .Ideathon {
   grid-area: a;
@@ -280,19 +258,21 @@ header {
   position: relative;
 }
 
-.Meeting {
+.Networking {
   grid-area: d;
   position: relative;
 }
+
 
 .activityImgContainer h1 {
   text-align: center;
   font-size: xx-large;
   background-color: #ff7710;
+  border-radius: 100px;
 }
-.Contents p {
+.activityImgContainer p {
   text-align: center;
-  font-size: 17px;
+  font-size: 22px;
   padding: 10px 0 0 0;
 }
 .acts:hover .activityImg {
@@ -302,14 +282,14 @@ header {
 .IdeathonContents:not(:hover),
 .HackathonContents:not(:hover),
 .MentoringContents:not(:hover),
-.MeetingContents:not(:hover) {
+.NetworkingContents:not(:hover) {
   transition: 0.5s ease-out;
 }
 
 .IdeathonContents,
 .HackathonContents,
 .MentoringContents,
-.MeetingContents {
+.NetworkingContents {
   display: block;
   position: absolute;
   top: 50%;
@@ -321,8 +301,8 @@ header {
 .Ideathon:hover .IdeathonContents,
 .Hackathon:hover .HackathonContents,
 .Mentoring:hover .MentoringContents,
-.Meeting:hover .MeetingContents {
-  display: block;
+.Networking:hover .NetworkingContents{
+  /* display: block; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -331,17 +311,38 @@ header {
   opacity: 1;
   transition: all 0.5s ease-in;
 }
-@media screen and (max-width: 1023px) {
+
+
+@media screen and (max-width: 1200px) {
   .activity {
     padding: 100px 0px 80px;
   }
   .activityImgContainer {
     padding: 40px;
   }
+  .activityImgContainer h1 {
+    font-size: 29px;
+  }
+  .activityImgContainer p {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 901px) {
+  .activityImgContainer h1 {
+    font-size: 23px;
+  }
+  .Contents p {
+    font-size: 20px;
+    padding: 5px 0 0 0;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 601px) {
   .activity {
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
   }
   .activityImgContainer {
     display: grid;
@@ -368,16 +369,34 @@ header {
     position: relative;
   }
 
-  .Meeting {
+  .Networking {
     grid-area: d;
     position: relative;
+  }
+
+  .activityImgContainer h1 {
+    font-size: 23px;
+  }
+  .Contents p {
+    font-size: 17px;
+    padding: 5px 0 0 0;
+  }
+}
+@media screen and (max-width: 381px) {
+  .activityImgContainer h1 {
+    font-size: 23px;
+  }
+  .Contents p {
+    font-size: 15px;
+    padding: 5px 0 0 0;
   }
 }
 
 /* 역사 */
 .history {
-  padding: 120px 100px 50px 100px;
-  background: rgb(255, 119, 16);
+  /* padding: 170px 100px 50px 100px; */
+  padding: 170px 12% 50px 12%;
+  /* background: rgb(255, 119, 16);
   background: linear-gradient(
     160deg,
     rgba(255, 119, 16, 1) 0%,
@@ -386,74 +405,75 @@ header {
     rgba(96, 60, 32, 0.9424720571822479) 15%,
     #1c1b1a 28%,
     #1c1b1a 69%
-  );
+  ); */
+  background-color: #1c1b1a;
 }
 .historyTitle {
   color: white;
   text-align: center;
   font-weight: 700;
   margin: 0;
+  padding: 0 0 10px 0;
   font-size: 30px;
 }
 .historyList {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* space around*/
   margin: 100px auto;
   width: 80%;
-  /* background-color: grey; */
-  /* align-items:center; */
   color: white;
 }
 .historyListContent {
-  width: 160px;
+  width: 200px;
 }
 .count {
-  padding: 5px 10% 0 10%;
+  margin:0;
+  padding:0;
   width: 100%;
+  text-align: center;
 }
-.unit {
+.unitafter {
   margin: 0px;
   display: inline;
 }
-.test {
+
+.unitbefore4::after{
+  content: '+';
+  font-size: 20px;
+}
+.unit {
   text-align: center;
-  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 0.5;
 }
 .historyListContent img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 130px;
+  width: 180px;
   height: auto;
-  /* width: 100%; */
 }
 .count-num {
-  text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 700;
   display: inline;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .historyList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 100px auto;
+    justify-content: space-between;
+    margin: 40px auto;
     width: 476px;
-    /* align-items:center; */
-    color: white;
     padding: 0px;
   }
   .historyListContent {
-    width: 160px;
-    padding: 20px;
+    width: 195px;
+    margin: 20px 0 50px 0;
   }
   .historyListContent img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80px;
-    height: auto;
+    width: 100px;
   }
 }
 @media screen and (max-width: 658px) {
@@ -462,7 +482,7 @@ header {
   }
   .historyTitle {
     padding: 32px;
-    font-size: 25px;
+    font-size: 30px;
   }
   .historyList {
     display: flex;
@@ -470,7 +490,6 @@ header {
     justify-content: space-around;
     margin: 10px auto;
     width: 476px;
-    color: white;
     padding: 0px;
   }
   .historyListContent {
@@ -478,9 +497,7 @@ header {
   }
   .historyListContent img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60px;
+    width: 80px;
     height: auto;
   }
   .count-num {
@@ -495,8 +512,8 @@ header {
     padding: 60px 0;
   }
   .historyTitle {
-    padding: 32px;
-    font-size: 25px;
+    padding: 0 32px 10px 32px;
+    font-size: 30px;
   }
   .historyList {
     display: flex;
@@ -504,7 +521,6 @@ header {
     justify-content: space-around;
     margin: 10px auto;
     width: 300px;
-    color: white;
     padding: 0px;
   }
   .historyListContent {
@@ -512,14 +528,12 @@ header {
   }
   .historyListContent img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 60px;
     height: auto;
   }
   .count-num {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
     display: inline;
   }
@@ -527,7 +541,8 @@ header {
 
 /* 나라 */
 .worldwide {
-  padding: 20px 100px 120px;
+  /* padding: 20px 100px 120px; */
+  padding: 20px 12% 120px 12%;
   background-color: #1c1b1a;
 }
 .worldwideTitle {
@@ -535,7 +550,7 @@ header {
   text-align: center;
   font-weight: 700;
   margin: 0;
-  padding: 100px 0px;
+  padding: 80px 0px;
   font-size: 30px;
 }
 .coverimg {
@@ -548,8 +563,12 @@ header {
   width: 95px;
   height: 58px;
   position: absolute;
-  top: 200px;
-  left: 110px;
+  /* top: 200px;
+  left: 110px; */
+  top: 50%;
+  left: 50%;
+  margin-left: -47.5px;
+  margin-top: -50px;
 }
 .row {
   display: flex;
@@ -611,11 +630,13 @@ header {
 }
 
 .flip-card-back a {
-  background-color: #262626;
+  position: absolute;
+  background-color: white;
+  color: #ff7710;
   padding: 4px;
 }
 .flip-card-back a:hover {
-  background-color: #ff7710;
+  background-color: #1c1b1a;
 }
 
 @media screen and (max-width: 1165px) {
@@ -624,7 +645,91 @@ header {
     background-color: #1c1b1a;
   }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 975px) {
+  .worldwide {
+    padding: 20px 10px 120px;
+    background-color: #1c1b1a;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+  }
+  .worldwideTitle {
+    padding: 40px 0px 60px;
+  }
+  .coverimg {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.4); /* 40% */
+  }
+
+  .flag {
+    width: 95px;
+    height: 58px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -47.5px; /* width의 50% */
+    margin-top: -29px; /* height의 50% */
+  }
+  .flip-card-front {
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .flip-card-front p {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+  }
+  .flip-card-back h1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+
+}
+@media screen and (max-width: 935px) {
+  .flip-card-back h1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+  .flip-card-back p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .flip-card-back a {
+    position: absolute;
+    background-color: white;
+    color: #ff7710;
+    padding: 4px;
+  }
+
+}
+@media screen and (max-width: 726px) { /*추가*/
+  .flip-card-back h1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+  .flip-card-back p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .flip-card-back a {
+    position: absolute;
+    background-color: white;
+    color: #ff7710;
+    padding: 2px;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 601px) {
   .worldwide {
     padding: 20px 10px 120px;
     background-color: #1c1b1a;
@@ -635,11 +740,23 @@ header {
     justify-content: space-around;
     align-items: center;
   }
+  .worldwideTitle {
+    padding: 40px 0px 60px;
+  }
+  .coverimg {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.4); /* 40% */
+  }
+  .flip-card-back{
+    font-size: 16px;
+  }
 }
 
 /*기업*/
 .enterprise {
-  padding: 200px 0px;
+  padding: 160px 0px;
   background-color: white;
 }
 .companyTitle {
@@ -648,7 +765,7 @@ header {
   padding: 0 0 160px;
   text-align: center;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 @keyframes scroll {
