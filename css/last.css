@@ -2,8 +2,9 @@
 @import "styles.css";
 @import "reset.css";
 
-/* 최상위에 있는 박스부터 레이아웃을 먼저 배치한 다음 그 안의 내용들을 세부적으로 꾸며주는게 중요 */
+
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,36 +28,6 @@ a {
   font-size: 1rem;
 }
 
-/* 상단 메뉴 */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1c1b1a;
-  padding: 8px 200px;
-  height: 40px;
-}
-
-.navbarMenuLeft {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-}
-
-.navbarMenuLeft li {
-  padding: 8px 12px;
-}
-
-.navbarMenuRight {
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.navbarMenuRight li {
-  padding: 8px 12px;
-}
 
 /* 메인 */
 .main {
@@ -73,6 +44,7 @@ header {
   /* width: auto; */
   /* height: 100vh; */
 }
+
 .title {
   font-weight: 800;
   font-size: 6em;
@@ -81,6 +53,7 @@ header {
   background-color: transparent;
   line-height: 1.2;
 }
+
 .line {
   font-weight: 200;
 }
@@ -94,6 +67,7 @@ header {
   animation: titleslide 1s ease-in;
   padding: 7% 0 5% 0;
 }
+
 .mainbutton {
   background-color: #ff7710;
   border: 0px solid #ff7710;
@@ -106,6 +80,7 @@ header {
   font-weight: 400;
   border-radius: 100px;
 }
+
 .mainbutton:hover {
   box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.5) inset;
 }
@@ -115,6 +90,7 @@ header {
     margin: 0 0 0 -20%;
     opacity: 0;
   }
+
   to {
     margin: 0 0 0 0;
     opacity: 1;
@@ -123,57 +99,68 @@ header {
 
 
 @media screen and (max-width: 975px) {
-  .main{
+  .main {
     padding: 15% 0 15% 5%;
   }
+
   .title {
     font-weight: 800;
     font-size: 5em;
   }
+
   .mainDiscription {
     width: 60%;
     font-size: 23px;
     font-weight: 200;
   }
+
   .mainbutton {
     width: 280px;
     height: 78px;
     font-size: 28px;
   }
 }
+
 @media screen and (max-width:599px) {
-  .main{
+  .main {
     padding: 15% 0 15% 5%;
   }
+
   .title {
     font-weight: 800;
     font-size: 4em;
 
   }
+
   .mainDiscription {
     width: 60%;
     font-size: 20px;
     font-weight: 200;
   }
+
   .mainbutton {
     width: 260px;
     height: 58px;
     font-size: 26px;
   }
 }
-  @media screen and (max-width:422px) {
-  .main{
+
+@media screen and (max-width:422px) {
+  .main {
     padding: 15% 0 15% 5%;
   }
+
   .title {
     font-weight: 800;
     font-size: 3em;
   }
+
   .mainDiscription {
     width: 60%;
     font-size: 16px;
     font-weight: 200;
   }
+
   .mainbutton {
     width: 200px;
     height: 48px;
@@ -186,6 +173,7 @@ header {
   padding: 200px 40px;
   background-color: #ff7710;
 }
+
 /* .missionTitle {
   color: white;
   text-align: center;
@@ -200,11 +188,13 @@ header {
   margin: 0 auto;
   text-align: center;
 }
+
 @media screen and (max-width: 1023px) {
   .mission {
     padding: 80px 0px;
     background-color: #ff7710;
   }
+
   .missionText {
     font-size: 22px;
     margin: 0 40px;
@@ -220,6 +210,7 @@ header {
   padding: 120px 12% 0 12%;
   background-color: #1c1b1a;
 }
+
 .activityTitle {
   /* background-color: orange; */
   color: white;
@@ -228,6 +219,7 @@ header {
   font-weight: 700;
   margin: 0 0 30px 0;
 }
+
 .activityImgContainer {
   /* background-color: rgba(255, 255, 0, 0.332); */
   display: grid;
@@ -239,20 +231,24 @@ header {
     "a b b"
     "a c d";
 }
+
 .activityImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 40px;
 }
+
 .Ideathon {
   grid-area: a;
   position: relative;
 }
+
 .Hackathon {
   grid-area: b;
   position: relative;
 }
+
 .Mentoring {
   grid-area: c;
   position: relative;
@@ -270,15 +266,18 @@ header {
   background-color: #ff7710;
   border-radius: 100px;
 }
+
 .activityImgContainer p {
   text-align: center;
   font-size: 22px;
   padding: 10px 0 0 0;
 }
+
 .acts:hover .activityImg {
   opacity: 0.2;
   /* transition: all 0.5s; */
 }
+
 .IdeathonContents:not(:hover),
 .HackathonContents:not(:hover),
 .MentoringContents:not(:hover),
@@ -298,10 +297,11 @@ header {
   color: white;
   opacity: 0;
 }
+
 .Ideathon:hover .IdeathonContents,
 .Hackathon:hover .HackathonContents,
 .Mentoring:hover .MentoringContents,
-.Networking:hover .NetworkingContents{
+.Networking:hover .NetworkingContents {
   /* display: block; */
   position: absolute;
   top: 50%;
@@ -317,12 +317,15 @@ header {
   .activity {
     padding: 100px 0px 80px;
   }
+
   .activityImgContainer {
     padding: 40px;
   }
+
   .activityImgContainer h1 {
     font-size: 29px;
   }
+
   .activityImgContainer p {
     text-align: center;
     font-size: 20px;
@@ -330,20 +333,24 @@ header {
   }
 
 }
+
 @media screen and (max-width: 901px) {
   .activityImgContainer h1 {
     font-size: 23px;
   }
+
   .Contents p {
     font-size: 20px;
     padding: 5px 0 0 0;
     line-height: 1.3;
   }
 }
+
 @media screen and (max-width: 601px) {
   .activity {
     padding: 100px 0px 0px 0px;
   }
+
   .activityImgContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -356,14 +363,17 @@ header {
       "c c c c"
       "d d d d";
   }
+
   .Ideathon {
     grid-area: a;
     position: relative;
   }
+
   .Hackathon {
     grid-area: b;
     position: relative;
   }
+
   .Mentoring {
     grid-area: c;
     position: relative;
@@ -377,15 +387,18 @@ header {
   .activityImgContainer h1 {
     font-size: 23px;
   }
+
   .Contents p {
     font-size: 17px;
     padding: 5px 0 0 0;
   }
 }
+
 @media screen and (max-width: 381px) {
   .activityImgContainer h1 {
     font-size: 23px;
   }
+
   .Contents p {
     font-size: 15px;
     padding: 5px 0 0 0;
@@ -408,6 +421,7 @@ header {
   ); */
   background-color: #1c1b1a;
 }
+
 .historyTitle {
   color: white;
   text-align: center;
@@ -416,37 +430,44 @@ header {
   padding: 0 0 10px 0;
   font-size: 30px;
 }
+
 .historyList {
   display: flex;
-  justify-content: space-between; /* space around*/
+  justify-content: space-between;
+  /* space around*/
   margin: 100px auto;
   width: 80%;
   color: white;
 }
+
 .historyListContent {
   width: 200px;
 }
+
 .count {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   text-align: center;
 }
+
 .unitafter {
   margin: 0px;
   display: inline;
 }
 
-.unitbefore4::after{
+.unitbefore4::after {
   content: '+';
   font-size: 20px;
 }
+
 .unit {
   text-align: center;
   font-size: 25px;
   font-weight: 500;
   line-height: 0.5;
 }
+
 .historyListContent img {
   display: block;
   margin-left: auto;
@@ -454,11 +475,13 @@ header {
   width: 180px;
   height: auto;
 }
+
 .count-num {
   font-size: 55px;
   font-weight: 700;
   display: inline;
 }
+
 @media screen and (max-width: 1200px) {
   .historyList {
     display: flex;
@@ -468,22 +491,27 @@ header {
     width: 476px;
     padding: 0px;
   }
+
   .historyListContent {
     width: 195px;
     margin: 20px 0 50px 0;
   }
+
   .historyListContent img {
     width: 100px;
   }
 }
+
 @media screen and (max-width: 658px) {
   .history {
     padding: 60px 0;
   }
+
   .historyTitle {
     padding: 32px;
     font-size: 30px;
   }
+
   .historyList {
     display: flex;
     flex-wrap: wrap;
@@ -492,14 +520,17 @@ header {
     width: 476px;
     padding: 0px;
   }
+
   .historyListContent {
     width: 160px;
   }
+
   .historyListContent img {
     display: block;
     width: 80px;
     height: auto;
   }
+
   .count-num {
     text-align: center;
     font-size: 35px;
@@ -507,14 +538,17 @@ header {
     display: inline;
   }
 }
+
 @media screen and (max-width: 462px) {
   .history {
     padding: 60px 0;
   }
+
   .historyTitle {
     padding: 0 32px 10px 32px;
     font-size: 30px;
   }
+
   .historyList {
     display: flex;
     flex-wrap: wrap;
@@ -523,14 +557,17 @@ header {
     width: 300px;
     padding: 0px;
   }
+
   .historyListContent {
     width: 160px;
   }
+
   .historyListContent img {
     display: block;
     width: 60px;
     height: auto;
   }
+
   .count-num {
     text-align: center;
     font-size: 40px;
@@ -545,6 +582,7 @@ header {
   padding: 20px 12% 120px 12%;
   background-color: #1c1b1a;
 }
+
 .worldwideTitle {
   color: white;
   text-align: center;
@@ -553,12 +591,15 @@ header {
   padding: 80px 0px;
   font-size: 30px;
 }
+
 .coverimg {
   width: 300px;
   height: 500px;
   object-fit: cover;
-  filter: brightness(0.4); /* 40% */
+  filter: brightness(0.4);
+  /* 40% */
 }
+
 .flag {
   width: 95px;
   height: 58px;
@@ -570,11 +611,13 @@ header {
   margin-left: -47.5px;
   margin-top: -50px;
 }
+
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -597,6 +640,7 @@ header {
   width: 100%;
   height: 100%;
 }
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -611,6 +655,7 @@ header {
   font-size: 50px;
   font-weight: 500;
 }
+
 .flip-card-front p {
   position: absolute;
   top: 60%;
@@ -623,6 +668,7 @@ header {
   color: white;
   transform: rotateY(180deg);
 }
+
 .flip-card-back h1 {
   font-size: 25px;
   font-weight: 600;
@@ -635,6 +681,7 @@ header {
   color: #ff7710;
   padding: 4px;
 }
+
 .flip-card-back a:hover {
   background-color: #1c1b1a;
 }
@@ -645,11 +692,13 @@ header {
     background-color: #1c1b1a;
   }
 }
+
 @media screen and (max-width: 975px) {
   .worldwide {
     padding: 20px 10px 120px;
     background-color: #1c1b1a;
   }
+
   .row {
     display: flex;
     flex-direction: row;
@@ -657,14 +706,17 @@ header {
     align-items: center;
     flex-shrink: 1;
   }
+
   .worldwideTitle {
     padding: 40px 0px 60px;
   }
+
   .coverimg {
     width: 90%;
     height: 500px;
     object-fit: cover;
-    filter: brightness(0.4); /* 40% */
+    filter: brightness(0.4);
+    /* 40% */
   }
 
   .flag {
@@ -673,19 +725,24 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -47.5px; /* width의 50% */
-    margin-top: -29px; /* height의 50% */
+    margin-left: -47.5px;
+    /* width의 50% */
+    margin-top: -29px;
+    /* height의 50% */
   }
+
   .flip-card-front {
     color: white;
     font-size: 45px;
     font-weight: 500;
   }
+
   .flip-card-front p {
     position: absolute;
     top: 63%;
     left: 50%;
   }
+
   .flip-card-back h1 {
     font-size: 25px;
     font-weight: 600;
@@ -693,16 +750,19 @@ header {
   }
 
 }
+
 @media screen and (max-width: 935px) {
   .flip-card-back h1 {
     font-size: 25px;
     font-weight: 600;
     padding: 15px 0;
   }
-  .flip-card-back p{
+
+  .flip-card-back p {
     font-size: 15px;
     line-height: 20px;
   }
+
   .flip-card-back a {
     position: absolute;
     background-color: white;
@@ -711,16 +771,21 @@ header {
   }
 
 }
-@media screen and (max-width: 726px) { /*추가*/
+
+@media screen and (max-width: 726px) {
+
+  /*추가*/
   .flip-card-back h1 {
     font-size: 25px;
     font-weight: 600;
     padding: 15px 0;
   }
-  .flip-card-back p{
+
+  .flip-card-back p {
     font-size: 15px;
     line-height: 20px;
   }
+
   .flip-card-back a {
     position: absolute;
     background-color: white;
@@ -729,27 +794,33 @@ header {
     left: 40%;
   }
 }
+
 @media screen and (max-width: 601px) {
   .worldwide {
     padding: 20px 10px 120px;
     background-color: #1c1b1a;
   }
+
   .row {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
+
   .worldwideTitle {
     padding: 40px 0px 60px;
   }
+
   .coverimg {
     width: 300px;
     height: 500px;
     object-fit: cover;
-    filter: brightness(0.4); /* 40% */
+    filter: brightness(0.4);
+    /* 40% */
   }
-  .flip-card-back{
+
+  .flip-card-back {
     font-size: 16px;
   }
 }
@@ -759,6 +830,7 @@ header {
   padding: 160px 0px;
   background-color: white;
 }
+
 .companyTitle {
   color: black;
   margin: 0;
@@ -772,14 +844,17 @@ header {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-1500px * 2));
   }
 }
+
 @keyframes scroll2 {
   100% {
     transform: translateX(0);
   }
+
   0% {
     transform: translateX(calc(-1500px * 2));
   }
@@ -793,6 +868,7 @@ header {
   overflow: hidden;
   position: relative;
 }
+
 .slider::before,
 .slider::after {
   content: "";
@@ -818,6 +894,7 @@ header {
   display: flex;
   width: calc(1500px * 4);
 }
+
 .slide-track2 {
   animation: scroll2 40s linear infinite;
   display: flex;
@@ -828,6 +905,7 @@ header {
   width: 1500px;
   height: 250px;
 }
+
 .slide img {
   width: 100%;
   height: 100%;
@@ -845,27 +923,33 @@ footer {
   padding: 50px 50px 20px;
   display: relative;
 }
+
 .footerlist {
   display: flex;
   flex-direction: column;
 }
+
 footer ul {
   list-style: none;
   padding: 0;
   margin-top: 50px;
 }
+
 footer li {
   padding: 3px;
   font-size: 14px;
 }
+
 .last {
   display: flex;
   justify-content: space-between;
 }
+
 .icons {
   display: inline;
   left: 90%;
 }
+
 .icons a {
   margin: 5px;
 }
