@@ -42,7 +42,9 @@
           <div class="dropdown">
             <div class="dropdownBridge"></div>
             <a href="">Email<i class="far fa-envelope"></i></a>
-            <a href="">Instagram<i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/likelion.us/"
+              >Instagram<i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -111,6 +113,15 @@
             </div>
             <div class="swiper-slide">
               <img src="img/vuejs.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/python.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/django.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/flask.png" alt="" />
             </div>
             <div class="swiper-slide">
               <img src="img/jenkins.png" alt="" />
@@ -300,45 +311,55 @@
         <div class="hidden"></div>
       </div>
     </div>
-    <div class="more">
+    <div class="more" id="more">
       <input id="toggle" type="checkbox" />
       <label for="toggle" class="toggle"
         ><i class="fas fa-angle-double-down"></i
       ></label>
       <div class="more_container">
         <div class="qnas">
-          <p class="moreQ">
-            Q. I've never learned coding, can I apply to the executive team?
-          </p>
-          <p class="moreA">
-            You can apply regardless of your major. We provide direct online
-            education and know-how to fully learn regardless of major.
-          </p>
-          <p class="moreQ">
-            Q. What do you learn during the management training period?
-          </p>
-          <p class="moreA">
-            Learn all the web service development stacks (HTML, CSS, JS, Python,
-            Web Framework, DB, Hosting), including the planning, design, and
-            design tools required to create web services.
-          </p>
-          <p class="moreQ">Q. What kind of activities do We do?</p>
-          <p class="moreA">
-            Based on LikeLion's basic curriculum, online lectures can be
-            provided free of charge to students and mentored by the management
-            team.
-          </p>
-          <p class="moreQ">
-            Q. I'd like to know the detailed recruitment method and schedule.
-          </p>
-          <p class="moreA">
-            It varies from school to school, but usually after the first
-            document screening, the final recruitment is made through the second
-            interview. The recruitment period and schedule vary from school to
-            school, so please check the notice later.
-          </p>
+          <div class="qna_set">
+            <p class="moreQ">
+              Q. I've never learned coding, can I apply to the executive team?
+            </p>
+            <p class="moreA">
+              You can apply regardless of your major. We provide direct online
+              education and know-how to fully learn regardless of major.
+            </p>
+          </div>
+          <div class="qna_set">
+            <p class="moreQ">
+              Q. What do you learn during the management training period?
+            </p>
+            <p class="moreA">
+              Learn all the web service development stacks (HTML, CSS, JS,
+              Python, Web Framework, DB, Hosting), including the planning,
+              design, and design tools required to create web services.
+            </p>
+          </div>
+          <div class="qna_set">
+            <p class="moreQ">Q. What kind of activities do We do?</p>
+            <p class="moreA">
+              Based on LikeLion's basic curriculum, online lectures can be
+              provided free of charge to students and mentored by the management
+              team.
+            </p>
+          </div>
+          <div class="qna_set">
+            <p class="moreQ">
+              Q. I'd like to know the detailed recruitment method and schedule.
+            </p>
+            <p class="moreA">
+              It varies from school to school, but usually after the first
+              document screening, the final recruitment is made through the
+              second interview. The recruitment period and schedule vary from
+              school to school, so please check the notice later.
+            </p>
+          </div>
         </div>
-        <a href="http://www.naver.com" class="more_contact"> Join us </a>
+        <a href="http://www.naver.com" class="more_contact" id="more_contact">
+          Join us
+        </a>
       </div>
     </div>
     <footer>
@@ -403,4 +424,5 @@
   <script src="js/apply.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/more.js"></script>
 </html>

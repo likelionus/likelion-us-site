@@ -58,22 +58,6 @@ body {
   animation-delay: 1s;
 }
 
-@media screen and (max-width: 800px) {
-  .intro {
-    height: 500px;
-    box-sizing: border-box;
-    padding: 100px 10px;
-  }
-
-  .introP1 {
-    font-size: 1rem;
-  }
-
-  .introP2 {
-    font-size: 1.5rem;
-  }
-}
-
 .bg {
   background-position: center;
   background-size: cover;
@@ -115,6 +99,26 @@ body {
       rgba(0, 0, 0, 0.9)
     ),
     url("../img/slide_4.jpg");
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    height: 500px;
+    box-sizing: border-box;
+    padding: 100px 10px;
+  }
+
+  .introP1 {
+    font-size: 1rem;
+  }
+
+  .introP2 {
+    font-size: 1.5rem;
+  }
+
+  .bg {
+    background-attachment: scroll;
+  }
 }
 
 /* elements */
@@ -233,8 +237,6 @@ body {
 .stacks_container {
   display: flex;
   justify-content: center;
-  width: 70%;
-  overflow: hidden;
   padding: 50px 0 150px 0;
 }
 
@@ -250,7 +252,7 @@ body {
 }
 
 .swiper-slide:not(.swiper-slide-active, .swiper-slide-visible) {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .swiper-slide img {
@@ -262,16 +264,6 @@ body {
   .swiper-container {
     width: 150px;
     height: 150px;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide:not(.swiper-slide-active, .swiper-slide-visible) {
-    opacity: 0.4;
   }
 
   .swiper-slide img {
@@ -478,7 +470,7 @@ body {
   .apply_section {
     width: 90%;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .apply_button {
@@ -725,8 +717,18 @@ body {
   color: var(--black-color);
 }
 
+.qna_set {
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px white;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
 .moreQ {
   font-size: 1.3rem;
+  font-weight: 500;
 }
 
 #toggle {
@@ -735,17 +737,14 @@ body {
 
 #toggle:checked ~ .more_container {
   display: block;
-  animation: pullDown 1s ease-out forwards;
+  animation: pullDown 0.5s ease-out forwards;
   transform-origin: 50% 0;
 }
 
 .moreA {
-  background-color: var(--gray-color);
   font-size: 1.2rem;
-  padding: 20px;
   margin-top: 20px;
-  margin-bottom: 50px;
-  color: black;
+  padding-left: 20px;
 }
 
 .more_contact {
@@ -753,7 +752,7 @@ body {
   display: block;
   width: 100%;
   padding: 25px;
-  margin: 80px 0;
+  margin: 100px 0;
   background-color: var(--main-color);
   color: white;
   font-size: 2rem;
@@ -769,7 +768,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .more_container {
-    padding: 50px 15%;
+    padding: 50px 10%;
     padding-bottom: 0;
   }
 
@@ -779,13 +778,25 @@ body {
 
   .moreA {
     font-size: 0.9rem;
+    margin-top: 10px;
+    padding-left: 10px;
   }
 
   .more_contact {
     font-size: 1.5rem;
+    margin: 50px 0;
   }
 
   .toggle {
     font-size: 2rem;
+  }
+
+  .qna_set {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .more_contact:hover {
+    box-shadow: 800px 0 0 0 rgba(0, 0, 0, 0.5) inset;
   }
 }
