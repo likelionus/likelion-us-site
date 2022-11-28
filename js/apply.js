@@ -4,6 +4,12 @@ var student = document.querySelector(".student");
 var before = document.querySelectorAll(".before");
 var after = document.querySelectorAll(".after");
 
+function applyAlert() {
+  window.alert(
+    "It is not a recruitment period!\nPlease 'Join Us' below for pre-registration."
+  );
+}
+
 executive.onmouseover = function () {
   before[0].style.display = "none";
   after[0].style.display = "block";
