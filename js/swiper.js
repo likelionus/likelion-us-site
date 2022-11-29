@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper-container", {
-  spaceBetween: 50,
+  spaceBetween: 70,
   loop: true,
   speed: 2000,
   loopAdditionalSlides: 1,
@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   coverflowEffect: {
     rotate: 0,
-    depth: 100,
+    depth: 150,
     slideShadows: false,
     stretch: 0,
   },

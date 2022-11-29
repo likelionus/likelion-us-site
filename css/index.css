@@ -275,94 +275,107 @@ body {
 /* univs */
 
 .univs {
-  display: flex;
-  justify-content: center;
-  background-color: var(--main-color);
-  padding-bottom: 100px;
+  background-color: white;
 }
 
-.univs_container {
-  width: 100%;
+.black {
+  color: black;
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.univList {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: normal;
-}
-
-.univs_icons {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
+  padding: 0 30px;
+  background-color: var(--main-color);
+  flex: 1;
 }
 
-.univs_icons a {
-  font-size: 1rem;
-  color: var(--black-color);
-  margin: 0 20px 30px 0;
+.univList p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: black;
 }
 
-.aCon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.univList ul {
+  column-count: 3;
 }
 
-.univs_icons img {
-  width: 120px;
-  height: 120px;
+.univList li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 0;
+  width: fit-content;
 }
 
-.pCon {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  text-align: center;
-  width: 120px;
-  height: 120px;
-  padding: 10px;
-  border-radius: 50%;
-  opacity: 0;
+.univList a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+  /* padding: 10px 20px; */
+  border-radius: 30px;
   transition: 0.3s;
 }
 
-@media screen and (max-width: 800px) {
-  .univs_icons {
-    width: 80%;
-  }
-
-  .univs_icons a {
-    margin: 0 2rem 2rem 0;
-  }
-
-  .univs_icons img {
-    width: 12rem;
-    height: 12rem;
-  }
+.univList a:hover {
+  background-color: white;
 }
 
-@media screen and (max-width: 800px) {
-  .univs_icons {
-    width: 90%;
-  }
-
-  .univs_icons a {
-    margin: 0 1rem 1rem 0;
-  }
-
-  .univs_icons img {
-    width: 8rem;
-    height: 8rem;
-  }
+#map {
+  flex: 3;
+  height: 600px;
 }
 
-.pCon:hover {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.8);
+.gmnoprint,
+.gm-control-active.gm-fullscreen-control {
+  display: none;
+}
+
+.marker {
+  width: 100px;
   color: var(--main-color);
+}
+
+.marker_p {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .black {
+    padding-top: 0;
+  }
+
+  .mapContainer {
+    display: block;
+  }
+
+  .univList {
+    padding: 40px;
+  }
+
+  .univList ul {
+    column-count: 4;
+  }
+
+  .univList li {
+    padding: 10px 0;
+  }
+
+  .univList a {
+    padding: 0;
+  }
+
+  #map {
+    height: 500px;
+  }
 }
 
 /* apply */
@@ -381,7 +394,7 @@ body {
 }
 
 .t_apply {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 70px;
   font-style: italic;
@@ -394,9 +407,9 @@ body {
 
 .apply_button {
   position: relative;
-  width: 25rem;
-  height: 25rem;
-  margin: 0 20px;
+  width: 20rem;
+  height: 20rem;
+  margin: 0 30px;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -420,9 +433,13 @@ body {
 }
 
 .before {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   font-style: italic;
+}
+
+.before p {
+  padding: 5px;
 }
 
 .after {
@@ -443,12 +460,12 @@ body {
 }
 
 .p1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
 .p2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -503,6 +520,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.pB {
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 .sbContainer {
@@ -642,8 +664,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .sbContainer {
-    width: 100%;
-    height: 90px;
+    width: 80%;
+    height: 80px;
   }
 
   .first {
@@ -665,9 +687,9 @@ body {
   }
 
   .speechBubble {
-    width: 280px;
-    font-size: 1rem;
-    padding: 20px;
+    /* width: 280px; */
+    font-size: 0.8rem;
+    padding: 15px;
     border-radius: 30px;
   }
 
@@ -785,6 +807,7 @@ body {
   .more_contact {
     font-size: 1.5rem;
     margin: 50px 0;
+    padding: 15px;
   }
 
   .toggle {
