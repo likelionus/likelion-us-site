@@ -2,7 +2,7 @@
 @import "styles.css";
 @import "reset.css";
 
-/* 최상위에 있는 박스부터 레이아웃을 먼저 배치한 다음 그 안의 내용들을 세부적으로 꾸며주는게 중요 */
+
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
 html {
@@ -26,23 +26,21 @@ a {
 /* 메인 */
 .main {
   background: #1c1b1a;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #1c1b1a),
-    url("../img/_MG_4482.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #1c1b1a 70%),
+    url("../img/_MG_36362.jpg");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 90% auto;
+  background-position: right;
+  background-size: auto 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 8% 0 8% 5%;
-  /* width: auto; */
-  /* height: 100vh; */
+  padding: 150px 0 10% 5%;
 }
 .title {
   font-weight: 800;
   font-size: 6em;
   color: white;
-  animation: titleslide 1s ease-in;
+  animation: titleslide 0.8s ease-in;
   background-color: transparent;
   line-height: 1.2;
 }
@@ -56,7 +54,7 @@ a {
   font-weight: 200;
   color: white;
   line-height: 1.2;
-  animation: titleslide 1s ease-in;
+  animation: titleslide 0.8s ease-in;
   padding: 7% 0 5% 0;
 }
 .mainbutton {
@@ -66,7 +64,7 @@ a {
   width: 300px;
   height: 80px;
   transition: 0.2s ease-in-out;
-  animation: titleslide 1s ease-in;
+  animation: titleslide 0.8s ease-in;
   font-size: 30px;
   font-weight: 400;
   border-radius: 100px;
@@ -77,7 +75,17 @@ a {
 
 @keyframes titleslide {
   from {
-    margin: 0 0 0 -20%;
+    margin: 0 0 0 -300px;
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+@keyframes titleslide2 {
+  from {
+    margin: 0 0 0 -100px;
     opacity: 0;
   }
   to {
@@ -87,60 +95,69 @@ a {
 }
 
 @media screen and (max-width: 975px) {
-  .main {
-    padding: 15% 0 15% 5%;
-  }
   .title {
     font-weight: 800;
     font-size: 5em;
+    animation: titleslide 0.8s ease-in;
   }
   .mainDiscription {
     width: 60%;
     font-size: 23px;
     font-weight: 200;
+    animation: titleslide 0.8s ease-in;
   }
   .mainbutton {
     width: 280px;
     height: 78px;
     font-size: 28px;
+    animation: titleslide 0.8s ease-in;
   }
 }
+
+
 @media screen and (max-width: 599px) {
   .main {
-    padding: 15% 0 15% 5%;
+    /* padding: 15% 0 15% 5%; */
   }
   .title {
     font-weight: 800;
     font-size: 4em;
+    animation: titleslide 0.8s ease-in;
   }
   .mainDiscription {
     width: 60%;
     font-size: 20px;
     font-weight: 200;
+    animation: titleslide 0.8s ease-in;
   }
   .mainbutton {
     width: 260px;
     height: 58px;
     font-size: 26px;
+    animation: titleslide 0.8s ease-in;
   }
 }
 @media screen and (max-width: 422px) {
   .main {
-    padding: 15% 0 15% 5%;
+    padding: 100px 5% 15% 5%;
+    align-items:flex-start;
   }
   .title {
     font-weight: 800;
-    font-size: 3em;
+    font-size: 35px;
+    animation: titleslide2 0.5s ease-in;
   }
   .mainDiscription {
     width: 60%;
     font-size: 16px;
     font-weight: 200;
+    animation: titleslide2 0.5s ease-in;
   }
   .mainbutton {
-    width: 200px;
-    height: 48px;
-    font-size: 24px;
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    animation: titleslide2 0.5s ease-in;
   }
 }
 
@@ -164,6 +181,17 @@ a {
   text-align: center;
 }
 @media screen and (max-width: 1023px) {
+  .mission {
+    padding: 80px 30px;
+    background-color: #ff7710;
+  }
+  .missionText {
+    font-size: 28px;
+    margin: 0 40px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
   .mission {
     padding: 80px 0px;
     background-color: #ff7710;
@@ -204,7 +232,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .Ideathon {
   grid-area: a;
@@ -229,11 +257,14 @@ a {
   font-size: xx-large;
   background-color: #ff7710;
   border-radius: 100px;
+  font-weight: 600;
 }
 .activityImgContainer p {
   text-align: center;
   font-size: 22px;
   padding: 10px 0 0 0;
+  /* width: auto; */
+  line-height: 1.2;
 }
 .acts:hover .activityImg {
   opacity: 0.2;
@@ -243,7 +274,7 @@ a {
 .HackathonContents:not(:hover),
 .MentoringContents:not(:hover),
 .NetworkingContents:not(:hover) {
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-in;
 }
 
 .IdeathonContents,
@@ -257,6 +288,7 @@ a {
   transform: translate(-50%, -50%);
   color: white;
   opacity: 0;
+  visibility: hidden;
 }
 .Ideathon:hover .IdeathonContents,
 .Hackathon:hover .HackathonContents,
@@ -269,38 +301,35 @@ a {
   transform: translate(-50%, -50%);
   color: white;
   opacity: 1;
+  visibility: visible;
   transition: all 0.5s ease-in;
 }
 
+
+
 @media screen and (max-width: 1200px) {
   .activity {
-    padding: 100px 0px 80px;
+    padding: 100px 12% 80px 12%;
   }
   .activityImgContainer {
     padding: 40px;
   }
   .activityImgContainer h1 {
-    font-size: 29px;
+    font-size: 25px;
   }
   .activityImgContainer p {
     text-align: center;
     font-size: 20px;
     padding: 10px 0;
+    line-height: 25px;
   }
 }
+
+
+
 @media screen and (max-width: 901px) {
-  .activityImgContainer h1 {
-    font-size: 23px;
-  }
-  .Contents p {
-    font-size: 20px;
-    padding: 5px 0 0 0;
-    line-height: 1.3;
-  }
-}
-@media screen and (max-width: 601px) {
   .activity {
-    padding: 100px 0px 0px 0px;
+    padding: 100px 12% 0px 12%;
   }
   .activityImgContainer {
     display: grid;
@@ -340,7 +369,23 @@ a {
     padding: 5px 0 0 0;
   }
 }
+@media screen and (max-width: 560px) {
+  .activity {
+    padding: 100px 9% 0px 9%;
+  }
+}
+@media screen and (max-width: 492px) {
+  .activity {
+    padding: 100px 7% 0px 7%;
+  }
+  .activityImgContainer p {
+    line-height: 22px;
+  }
+}
 @media screen and (max-width: 381px) {
+  .activity {
+    padding: 100px 4% 0px 4%;
+  }
   .activityImgContainer h1 {
     font-size: 23px;
   }
@@ -348,22 +393,15 @@ a {
     font-size: 15px;
     padding: 5px 0 0 0;
   }
+  .Contents{
+    width: 80%;
+  }
 }
 
 /* 역사 */
 .history {
   /* padding: 170px 100px 50px 100px; */
-  padding: 170px 12% 50px 12%;
-  /* background: rgb(255, 119, 16);
-  background: linear-gradient(
-    160deg,
-    rgba(255, 119, 16, 1) 0%,
-    rgba(173, 89, 25, 1) 0%,
-    rgba(149, 80, 27, 1) 9%,
-    rgba(96, 60, 32, 0.9424720571822479) 15%,
-    #1c1b1a 28%,
-    #1c1b1a 69%
-  ); */
+  padding: 10% 12% 10% 12%;
   background-color: #1c1b1a;
 }
 .historyTitle {
@@ -376,13 +414,14 @@ a {
 }
 .historyList {
   display: flex;
-  justify-content: space-between; /* space around*/
-  margin: 100px auto;
-  width: 80%;
+  justify-content: space-around; /* space around*/
+  margin: 10% 5%;
+  /* width: 80%; */
   color: white;
 }
 .historyListContent {
   width: 200px;
+  /* margin: 0 10px; */
 }
 .count {
   margin: 0;
@@ -421,7 +460,7 @@ a {
   .historyList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 40px auto;
     width: 476px;
     padding: 0px;
@@ -431,7 +470,7 @@ a {
     margin: 20px 0 50px 0;
   }
   .historyListContent img {
-    width: 100px;
+    width: 150px;
   }
 }
 @media screen and (max-width: 658px) {
@@ -445,7 +484,7 @@ a {
   .historyList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px auto;
     width: 476px;
     padding: 0px;
@@ -455,7 +494,7 @@ a {
   }
   .historyListContent img {
     display: block;
-    width: 80px;
+    width: 120px;
     height: auto;
   }
   .count-num {
@@ -470,30 +509,64 @@ a {
     padding: 60px 0;
   }
   .historyTitle {
-    padding: 0 32px 10px 32px;
+    padding: 32px;
     font-size: 30px;
   }
   .historyList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px auto;
-    width: 300px;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
     padding: 0px;
   }
   .historyListContent {
-    width: 160px;
+    width: 180px;
   }
   .historyListContent img {
     display: block;
-    width: 60px;
+    width: 90px;
     height: auto;
   }
   .count-num {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     display: inline;
+  }
+}
+@media screen and (max-width: 375px) {
+  .history {
+    padding: 60px 0;
+  }
+  .historyTitle {
+    padding: 32px;
+    font-size: 30px;
+  }
+  .historyList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    padding: 0px;
+  }
+  .historyListContent {
+    width: 130px;
+  }
+  .historyListContent img {
+    display: block;
+    width: 90px;
+    height: auto;
+  }
+  .count-num {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    display: inline;
+  }
+  .unit {
+    font-size: 20px;
   }
 }
 
@@ -508,7 +581,7 @@ a {
   text-align: center;
   font-weight: 700;
   margin: 0;
-  padding: 80px 0px;
+  padding: 0 0 80px 0px;
   font-size: 30px;
 }
 .coverimg {
@@ -588,7 +661,7 @@ a {
 }
 
 .flip-card-back a {
-  position: absolute;
+  /* position: absolute; */
   background-color: white;
   color: #ff7710;
   padding: 4px;
@@ -597,119 +670,166 @@ a {
   background-color: #1c1b1a;
 }
 
-@media screen and (max-width: 1165px) {
+@media screen and (max-width: 1241px) {
   .worldwide {
-    padding: 20px 10px 120px;
+    padding: 20px 10% 120px 10%;
     background-color: #1c1b1a;
   }
 }
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1200px) {
   .worldwide {
-    padding: 20px 10px 120px;
+    padding: 20px 12% 120px 12%;
     background-color: #1c1b1a;
   }
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 1;
-  }
-  .worldwideTitle {
-    padding: 40px 0px 60px;
-  }
   .coverimg {
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: brightness(0.4); /* 40% */
   }
-
   .flag {
     width: 95px;
     height: 58px;
     position: absolute;
+    /* top: 200px;
+    left: 110px; */
     top: 50%;
     left: 50%;
-    margin-left: -47.5px; /* width의 50% */
-    margin-top: -29px; /* height의 50% */
-  }
-  .flip-card-front {
-    color: white;
-    font-size: 45px;
-    font-weight: 500;
-  }
-  .flip-card-front p {
-    position: absolute;
-    top: 63%;
-    left: 50%;
-  }
-  .flip-card-back h1 {
-    font-size: 25px;
-    font-weight: 600;
-    padding: 15px 0;
-  }
-}
-@media screen and (max-width: 935px) {
-  .flip-card-back h1 {
-    font-size: 25px;
-    font-weight: 600;
-    padding: 15px 0;
-  }
-  .flip-card-back p {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .flip-card-back a {
-    position: absolute;
-    background-color: white;
-    color: #ff7710;
-    padding: 4px;
-  }
-}
-@media screen and (max-width: 726px) {
-  /*추가*/
-  .flip-card-back h1 {
-    font-size: 25px;
-    font-weight: 600;
-    padding: 15px 0;
-  }
-  .flip-card-back p {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .flip-card-back a {
-    position: absolute;
-    background-color: white;
-    color: #ff7710;
-    padding: 2px;
-    left: 40%;
-  }
-}
-@media screen and (max-width: 601px) {
-  .worldwide {
-    padding: 20px 10px 120px;
-    background-color: #1c1b1a;
+    margin-left: -47.5px;
+    margin-top: -50px;
   }
   .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
   }
-  .worldwideTitle {
-    padding: 40px 0px 60px;
-  }
-  .coverimg {
-    width: 300px;
-    height: 500px;
-    object-fit: cover;
-    filter: brightness(0.4); /* 40% */
+  .flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 460px;
+    perspective: 1000px;
   }
   .flip-card-back {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 1101px) {
+  .flip-card-back{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 1033px) {
+  .flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 450px;
+    perspective: 1000px;
+    font-size: 14px;
+    
+  }
+
+}
+@media screen and (max-width: 1023px) {
+  .flip-card-back {
+    font-size: 14px;
+    word-break:break-all;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 415px;
+    perspective: 1000px;
+  }
+
+}
+
+@media screen and (max-width: 989px) {
+  .row{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 58%;
+    height: 415px;
+    perspective: 1000px;
+    margin: 0 0 15px 0;
+  }
+  .flip-card-back p{
+    margin: 0 18%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 933px) {
+  .row{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 58%;
+    height: 415px;
+    perspective: 1000px;
+    margin: 0 0 15px 0;
+  }
+  .flip-card-back p{
+    margin: 0 15%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 863px) {
+  .row{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 58%;
+    height: 415px;
+    perspective: 1000px;
+    margin: 0 0 15px 0;
+  }
+  .flip-card-back p{
+    margin: 0 10%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 748px) {
+  .flip-card-back p{
+    margin: 0 2px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flip-card {
+    background-color: transparent;
+    width: 90%;
+    height: 415px;
+    perspective: 1000px;
+    margin: 0 0 15px 0;
+  }
+
+  .flip-card-front {
+    font-size: 40px;
+  }
+
+  .flip-card-back p{
+    margin: 0 2px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 387px) {
+  .flip-card-back p{
+    margin: 0 2px;
+    font-size: 13px;
+  }
+}
+
 
 /*기업*/
 .enterprise {
@@ -745,7 +865,7 @@ a {
 .slider {
   background: white;
   width: 100%;
-  height: 250px;
+  height: 200px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -753,7 +873,7 @@ a {
 .slider::before,
 .slider::after {
   content: "";
-  height: 300px;
+  height: 200px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -783,11 +903,11 @@ a {
 
 .slide {
   width: 1500px;
-  height: 250px;
+  height: 200px;
 }
 .slide img {
-  width: 100%;
-  height: 100%;
+  width: 1500px;
+  height: 200px;
 }
 
 footer {
