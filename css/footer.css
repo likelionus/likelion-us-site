@@ -1,5 +1,7 @@
+@import "styles.css";
+
 footer {
-  background-color: #1c1b1a;
+  background-color: var(--black-color);
   color: white;
   margin: 0;
 }

@@ -1,26 +1,35 @@
+* a {
+  cursor: pointer;
+}
+
 .header {
+  position: relative;
+  width: 90%;
+  height: 55.5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10%;
-  position: sticky;
+  padding: 0 5%;
+  position: fixed;
   top: 0;
   background-color: black;
   z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 .logo {
-  font-size: 25px;
+  width: 193px;
+  height: 22px;
+}
+
+.logo img {
+  width: inherit;
+  height: inherit;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  font-weight: 500;
-}
-
-.menu {
-  display: flex;
 }
 
 .menu a {
@@ -33,12 +42,6 @@
   list-style: none;
 }
 
-.focus {
-  box-sizing: border-box;
-  color: var(--main-color);
-  transition: 0.5s;
-}
-
 .headerBtns {
   display: flex;
   align-items: center;
@@ -48,19 +51,10 @@
   position: relative;
   text-align: center;
   padding: 5px 15px;
-  font-weight: 500;
   border-radius: 10px;
   transition: 0.2s ease-in-out;
-}
-
-.empty {
   box-shadow: 0 0 0 1px white inset;
   color: white;
-}
-
-.empty:hover {
-  box-shadow: 0 0 0 1px var(--main-color) inset;
-  color: var(--main-color);
 }
 
 .btnContainer {
@@ -90,7 +84,7 @@
   background-color: white;
   text-align: left;
   border-radius: 10px;
-  padding: 8px 15px;
+  padding: 8px 12px;
   color: var(--black-color);
 }
 
@@ -110,4 +104,121 @@
 
 .dropdown a:hover {
   background-color: var(--main-color);
+}
+
+.header i {
+  color: white;
+  display: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 80%;
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 1rem;
+  }
+
+  .menu {
+    width: 100%;
+    position: absolute;
+    top: 55.5px;
+    left: 0;
+    padding-left: 2rem;
+    background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu li {
+    margin: 0;
+    margin: 1rem 0;
+  }
+
+  .headerBtns {
+    width: 100%;
+    position: absolute;
+    top: 230px;
+    left: 0;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .headerBtns.active {
+    display: block;
+  }
+
+  .btnContainer:first-child {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: block;
+    box-shadow: none;
+  }
+
+  .dropdown a {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    color: white;
+    margin: 1rem 0;
+  }
+
+  .dropdown a i {
+    margin-left: 15px;
+  }
+
+  .dropdownBridge {
+    display: none;
+  }
+
+  .dropdown a:nth-child(2) {
+    border-radius: 0;
+  }
+
+  .dropdown a:last-child {
+    border-radius: 0;
+  }
+
+  .dropdown a:hover {
+    background-color: black;
+  }
+
+  .header i {
+    display: block;
+  }
+
+  .mobileBtn:last-child {
+    display: none;
+  }
+
+  .mobileBtn.btnOff {
+    display: none;
+  }
+
+  .mobileBtn.btnOn {
+    display: block;
+  }
 }

@@ -4,54 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Apply Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>LIKELION US</title>
   </head>
   <body>
     <div class="header" id="header">
-      <div class="logo">
-        <a href="last.html"
-          ><img
-            src="img/LIKELION US_white_logo.svg"
-            alt="logo"
-            width="180px;"
-            height="auto"
-          />
-        </a>
-      </div>
-      <div class="menu">
-        <a href="javascript:void(0);" onclick="toAbout()"
-          ><li class="menu_about">About</li></a
-        >
-        <a href="javascript:void(0);" onclick="toUnivs()"
-          ><li class="menu_univs">Univs</li></a
-        >
-        <a href="javascript:void(0);" onclick="toApply()"
-          ><li class="menu_apply">Apply</li></a
-        >
-        <a href="javascript:void(0);" onclick="toFaq()"
-          ><li class="menu_faq">FAQ</li></a
-        >
-      </div>
+      <a href="last.html" class="logo"
+        ><img src="img/LIKELION US_white_logo.svg" alt="logo" />
+      </a>
+      <ul class="menu">
+        <li><a onclick="toAbout()">About</a></li>
+        <li><a onclick="toUnivs()">Univs</a></li>
+        <li><a onclick="toApply()">Apply</a></li>
+        <li><a onclick="toFaq()">FAQ</a></li>
+      </ul>
       <div class="headerBtns">
         <div class="btnContainer">
-          <div class="btn empty">Apply</div>
+          <div class="btn">Apply</div>
           <div class="dropdown">
             <div class="dropdownBridge"></div>
-            <a href="">Executive</a>
-            <a href="">Student</a>
+            <a onclick="applyAlert()">Executive</a>
+            <a onclick="applyAlert()">Student</a>
           </div>
         </div>
         <div class="btnContainer">
-          <div class="btn empty">Contact</div>
+          <div class="btn">Contact</div>
           <div class="dropdown">
             <div class="dropdownBridge"></div>
-            <a href="">Homepage</a>
-            <a href="">Instagram</a>
+            <a href="mailto:simba@likelion.net"
+              >Email<i class="far fa-envelope"></i
+            ></a>
+            <a href="https://www.instagram.com/likelion.us/"
+              >Instagram<i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
+      <i class="fas fa-bars fa-lg mobileBtn"></i>
+      <i class="fas fa-times fa-lg mobileBtn"></i>
     </div>
     <div class="intro bg">
       <p class="introP1">
@@ -97,108 +97,271 @@
           </div>
         </div>
       </div>
-      <p class="title pT">We Learn</p>
-    </div>
-    <div class="univs" id="univs">
-      <div class="univs_container">
-        <p class="title">With LikeLion</p>
-        <div class="univs_icons">
-          <a href="https://www.instagram.com/likelion_usc/"
-            ><div class="aCon">
-              <img src="img/univs_logo/USC.png" alt="" />
-              <div class="pCon"><p>University of Southern California</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_ucla/">
-            <div class="aCon">
-              <img src="img/univs_logo/UCLA.png" alt="" />
-              <div class="pCon">
-                <p>University of California, Los Angeles</p>
-              </div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_uci/"
-            ><div class="aCon">
-              <img src="img/univs_logo/UCI.png" alt="" />
-              <div class="pCon"><p>University of California, Irvine</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_ucsb/"
-            ><div class="aCon">
-              <img src="img/univs_logo/UCSB.png" alt="" />
-              <div class="pCon">
-                <p>University College Sedaya International</p>
-              </div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_ucsd/"
-            ><div class="aCon">
-              <img src="img/univs_logo/UCSD.png" alt="" />
-              <div class="pCon"><p>University of California, San Diego</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_ucd/"
-            ><div class="aCon">
-              <img src="img/univs_logo/UCD.png" alt="" />
-              <div class="pCon"><p>University of California, Davis</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_berkeley/"
-            ><div class="aCon">
-              <img src="img/univs_logo/UCB.png" alt="" />
-              <div class="pCon"><p>University of California, Berkeley</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_smc/"
-            ><div class="aCon">
-              <img src="img/univs_logo/SMC.png" alt="" />
-              <div class="pCon"><p>Santa Monica College</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_sjsu/"
-            ><div class="aCon">
-              <img src="img/univs_logo/SJSU.png" alt="" />
-              <div class="pCon"><p>San Jose State University</p></div>
-            </div></a
-          >
-          <a href=""
-            ><div class="aCon">
-              <img src="img/univs_logo/Stanford.png" alt="" />
-              <div class="pCon"><p>222</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/riverside_likelion/"
-            ><div class="aCon">
-              <img src="img/univs_logo/UCR.png" alt="" />
-              <div class="pCon"><p>University of California, Riverside</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_dvc/"
-            ><div class="aCon">
-              <img src="img/univs_logo/DVC.png" alt="" />
-              <div class="pCon"><p>Diablo Valley College</p></div>
-            </div></a
-          >
-          <a href="https://www.instagram.com/likelion_csusb/"
-            ><div class="aCon">
-              <img src="img/univs_logo/CSUSB.png" alt="" />
-              <div class="pCon">
-                <p>California State University, San Bernardino</p>
-              </div>
-            </div></a
-          >
+      <p class="title">We Learn</p>
+      <div class="stacks_container">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/html.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/css.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/js.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/react.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/vuejs.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/python.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/django.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/flask.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/jenkins.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="apply pT" id="apply">
+    <div class="univs" id="univs">
+      <p class="title black">Univs</p>
+      <div class="mapContainer">
+        <div id="map">
+          <script>
+            function initMap() {
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6.5,
+                center: { lat: 36, lng: -117.0812988 },
+                styles: [
+                  {
+                    featureType: "administrative",
+                    elementType: "geometry",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "administrative.land_parcel",
+                    elementType: "labels",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "poi",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "poi",
+                    elementType: "labels.text",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "road",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "road",
+                    elementType: "labels.icon",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "road.local",
+                    elementType: "labels",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                  {
+                    featureType: "transit",
+                    stylers: [
+                      {
+                        visibility: "off",
+                      },
+                    ],
+                  },
+                ],
+              });
+
+              // var lionIcon = {
+              //   url: "img/mimo-a.png", // url
+              //   scaledSize: new google.maps.Size(50, 50), // scaled size
+              // };
+
+              var infowindow = new google.maps.InfoWindow();
+
+              var locations = [
+                [
+                  '<div class="marker"><h3 class="marker_p">California State University, San Bernardino</h3></div>',
+                  34.1813145,
+                  -117.3215307,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">Diablo Valley College</h3></div>',
+                  37.9683321,
+                  -122.0729116,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California, Riverside</h3></div>',
+                  33.9754243,
+                  -117.3315961,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">Stanford University</h3></div>',
+                  37.4285668,
+                  -122.1698043,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">Santa Monica College<h3></div>',
+                  34.0191025,
+                  -118.4705121,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California, Berkeley<h3></div>',
+                  37.8715226,
+                  -122.273042,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California, Davis</h3></div>',
+                  38.5339853,
+                  -121.7649259,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California San Diego</h3></div>',
+                  32.8795846,
+                  -117.2367065,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California, Santa Barbara</h3></div>',
+                  34.4135868,
+                  -119.8496976,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California Irvine</h3></div>',
+                  33.6471239,
+                  -117.8421325,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of California, Los Angeles</h3></div>',
+                  34.070264,
+                  -118.4440562,
+                ],
+                [
+                  '<div class="marker"><h3 class="marker_p">University of Southern California</h3></div>',
+                  34.0295114,
+                  -118.2848199,
+                ],
+              ];
+
+              //마커 생성
+              var marker, i;
+              for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                  //마커의 위치
+                  position: new google.maps.LatLng(
+                    locations[i][1],
+                    locations[i][2]
+                  ),
+                  //마커 아이콘
+                  // icon: lionIcon,
+                  //마커를 표시할 지도
+                  map: map,
+                });
+
+                google.maps.event.addListener(
+                  marker,
+                  "click",
+                  (function (marker, i) {
+                    return function () {
+                      //html로 표시될 인포 윈도우의 내용
+                      infowindow.setContent(locations[i][0]);
+                      //인포윈도우가 표시될 위치
+                      infowindow.open(map, marker);
+                    };
+                  })(marker, i)
+                );
+
+                if (marker) {
+                  marker.addListener("click", function () {
+                    //중심 위치를 클릭된 마커의 위치로 변경
+                    map.setCenter(this.getPosition());
+
+                    //마커 클릭 시의 줌 변화
+                    map.setZoom(8);
+                  });
+                }
+              }
+            }
+          </script>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL3fq9mp-8R_pf8hKKUfIA-1BNzsiDX_U&callback=initMap&v=weekly&language=en"
+            defer
+          ></script>
+        </div>
+        <div class="univList">
+          <p>With LIKELION</p>
+          <ul>
+            <li><a href="https://www.instagram.com/likelion_dvc/">DVC</a></li>
+            <li><a href="https://www.instagram.com/likelion_smc/">SMC</a></li>
+            <li>
+              <a href="https://www.instagram.com/likelion_berkeley/">UCB</a>
+            </li>
+            <li><a href="https://www.instagram.com/likelion_ucd/">UCD</a></li>
+            <li><a href="https://www.instagram.com/likelion_uci/">UCI</a></li>
+            <li>
+              <a href="https://www.instagram.com/riverside_likelion/">UCR</a>
+            </li>
+            <li><a href="https://www.instagram.com/likelion_usc/">USC</a></li>
+            <li><a href="https://www.instagram.com/likelion_ucla/">UCLA</a></li>
+            <li><a href="https://www.instagram.com/likelion_sjsu/">SJSU</a></li>
+            <li><a href="https://www.instagram.com/likelion_ucsd/">UCSD</a></li>
+            <li><a href="https://www.instagram.com/likelion_ucsb/">UCSB</a></li>
+            <li><a href="https://www.instagram.com/likelion_/">CSUCB</a></li>
+            <li>
+              <a href="https://www.instagram.com/likelion_csusb/">Stanford</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="apply" id="apply">
       <div class="apply_title">
         <p class="t_apply">HACK YOUR LIFE,</p>
         <p class="t_apply">CHANGE YOUR LIFE WITH PROGRAMMING</p>
       </div>
-      <p class="apply_im">I am ...</p>
       <div class="apply_section">
         <div class="apply_button executive">
-          <img class="apply_icon" src="img/mimo1-4.png" alt="" />
           <div class="before">
             <p>#Systematic</p>
             <p>#Meticulous</p>
@@ -206,12 +369,13 @@
             <p>#Reliable</p>
           </div>
           <div class="after">
-            <p class="p1">participate as</p>
-            <p class="p2">an executive</p>
+            <a onclick="applyAlert()">
+              <p class="p1">participate as</p>
+              <p class="p2">an executive</p>
+            </a>
           </div>
         </div>
         <div class="apply_button student">
-          <img class="apply_icon" src="img/mimo2-2.png" alt="" />
           <div class="before">
             <p>#Enthusiastic</p>
             <p>#Challenging</p>
@@ -219,14 +383,16 @@
             <p>#Creative</p>
           </div>
           <div class="after">
-            <p class="p1">participate as</p>
-            <p class="p2">a student</p>
+            <a onclick="applyAlert()">
+              <p class="p1">participate as</p>
+              <p class="p2">a student</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <div class="FAQ" id="faq">
-      <p class="FAQ_title">FAQ</p>
+      <p class="title pB">FAQ</p>
       <div class="sbContainer first sbQ">
         <img src="img/mimo-q.png" alt="" />
         <div class="speechBubble question">
@@ -273,28 +439,67 @@
       </div>
       <div class="a sbContainer sbA">
         <div class="speechBubble answer aL">
-          Scroll down to see more questions answered 😊
+          <p>
+            Click to see answers to more questions and to <b>pre-register😊</b>
+          </p>
         </div>
         <div class="hidden"></div>
       </div>
     </div>
-    <div class="more">
-      <p class="more_title">More</p>
-      <ul>
-        <li>
-          Q) 교육기간동안 어떤 것을 배우나요?
-          <p>dddddddddd</p>
-        </li>
-        <li>
-          Q) 교육기간동안 어떤 것을 배우나요?
-          <p>dddddddddd</p>
-        </li>
-        <li>
-          Q) 교육기간동안 어떤 것을 배우나요?
-          <p>dddddddddd</p>
-        </li>
-      </ul>
-      <div class="more_contact">Contact us</div>
+    <div class="more" id="more">
+      <input id="toggle" type="checkbox" />
+      <label for="toggle" class="toggle"
+        ><i class="fas fa-angle-double-down toggleIcon"></i
+      ></label>
+      <div class="more_container">
+        <div class="qnas">
+          <div class="qna_set">
+            <p class="moreQ">
+              Q. I've never learned coding, can I apply to the executive team?
+            </p>
+            <p class="moreA">
+              You can apply regardless of your major. We provide direct online
+              education and know-how to fully learn regardless of major.
+            </p>
+          </div>
+          <div class="qna_set">
+            <p class="moreQ">
+              Q. What do you learn during the management training period?
+            </p>
+            <p class="moreA">
+              Learn all the web service development stacks (HTML, CSS, JS,
+              Python, Web Framework, DB, Hosting), including the planning,
+              design, and design tools required to create web services.
+            </p>
+          </div>
+          <div class="qna_set">
+            <p class="moreQ">Q. What kind of activities do We do?</p>
+            <p class="moreA">
+              Based on LikeLion's basic curriculum, online lectures can be
+              provided free of charge to students and mentored by the management
+              team.
+            </p>
+          </div>
+          <div class="qna_set">
+            <p class="moreQ">
+              Q. I'd like to know the detailed recruitment method and schedule.
+            </p>
+            <p class="moreA">
+              It varies from school to school, but usually after the first
+              document screening, the final recruitment is made through the
+              second interview. The recruitment period and schedule vary from
+              school to school, so please check the notice later.
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://e6ak16x22ov.typeform.com/to/bDJ0NPWk"
+          class="more_contact"
+          id="more_contact"
+        >
+          Join us
+        </a>
+      </div>
     </div>
     <footer>
       <div class="footerlist">
@@ -305,7 +510,7 @@
             |
             <span>대표이사 이두희</span>
           </li>
-          <li><span>서울특별시 종로구 종로3길 17 D타워, 16-17층</span></li>
+          <li><span>400 Concar Dr, San Mateo, CA 94402</span></li>
           <br /><br />
           <li class="last">
             <span>simba@likelion.net</span>
@@ -326,7 +531,7 @@
               <a href="https://www.facebook.com/likelion.us" target="_blank"
                 ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
                 <svg
-                  height="100%"
+                  height="24"
                   style="
                     fill-rule: evenodd;
                     clip-rule: evenodd;
@@ -352,7 +557,11 @@
       </div>
     </footer>
   </body>
-  <script src="js/menu.js"></script>
+  <script src="js/menu2.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/bg.js"></script>
+  <script src="js/apply.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/more.js"></script>
 </html>
