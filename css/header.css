@@ -18,8 +18,13 @@
 }
 
 .logo {
-  width: 193px;
-  height: auto;
+  width: auto;
+  height: 18px;
+}
+
+.logo a {
+  width: auto;
+  height: 18px;
 }
 
 .logo img {
@@ -112,6 +117,10 @@
   text-align: center;
 }
 
+.joinHeader {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .header {
     width: 80%;
@@ -162,8 +171,8 @@
     display: block;
   }
 
-  .btnContainer:first-child {
-    display: none;
+  .headerBtns.active .joinHeader {
+    display: block;
   }
 
   .btn {
