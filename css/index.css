@@ -368,9 +368,17 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+.fa-instagram {
+  margin-left: 10px;
+  visibility: hidden;
+}
+
 .univList a:hover {
-  /* box-shadow: 400px 0 0 0 var(--main-color) inset; */
   color: var(--main-color);
+}
+
+.univList a:hover .fa-instagram {
+  visibility: visible;
 }
 
 @media screen and (max-width: 1200px) {
