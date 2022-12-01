@@ -5,7 +5,7 @@ const swiper = new Swiper(".swiper-container", {
   loopAdditionalSlides: 1,
   centeredSlides: true,
   slidesPerView: "auto",
-  slideToClickedSlide: true,
+  slideToClickedSlide: false,
   effect: "coverflow",
   coverflowEffect: {
     rotate: 0,
@@ -16,5 +16,9 @@ const swiper = new Swiper(".swiper-container", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // 다음 버튼 클래스명
+    prevEl: ".swiper-button-prev", // 이번 버튼 클래스명
   },
 });
