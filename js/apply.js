@@ -6,7 +6,7 @@ var after = document.querySelectorAll(".after");
 
 function applyAlert() {
   window.alert(
-    "It is not a recruitment period!\nPlease 'Join Us' below for pre-registration."
+    "It is not a recruitment period!\nPlease 'Join us' below for pre-registration."
   );
 }
 

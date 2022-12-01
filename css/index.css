@@ -247,8 +247,22 @@ body {
 
 .swiper-slide {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-slide a {
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: var(--black-color);
+}
+
+.swiper-slide p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .swiper-slide:not(.swiper-slide-active, .swiper-slide-visible) {
@@ -270,12 +284,20 @@ body {
     width: 150px;
     height: 150px;
   }
+
+  .swiper-slide p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 }
 
 /* univs */
 
 .univs {
-  background-color: white;
+  background-color: black;
+  padding: 0 150px;
+  padding-bottom: 50px;
 }
 
 .black {
@@ -283,54 +305,12 @@ body {
 }
 
 .mapContainer {
+  position: relative;
   display: flex;
-  justify-content: center;
-}
-
-.univList {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30px;
-  background-color: var(--main-color);
-  flex: 1;
-}
-
-.univList p {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: black;
-}
-
-.univList ul {
-  column-count: 3;
-}
-
-.univList li {
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 20px 0;
-  width: fit-content;
-}
-
-.univList a {
-  text-decoration: none;
-  outline: none;
-  color: black;
-  /* padding: 10px 20px; */
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-.univList a:hover {
-  background-color: white;
 }
 
 #map {
-  flex: 3;
+  flex: 4;
   height: 600px;
 }
 
@@ -348,33 +328,113 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-  .black {
-    padding-top: 0;
+.univList {
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.univList::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.univList ul {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.univList li {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.univList a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  padding: 3px;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.fa-instagram {
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+.univList a:hover {
+  color: var(--main-color);
+}
+
+.univList a:hover .fa-instagram {
+  visibility: visible;
+}
+
+@media screen and (max-width: 1200px) {
+  .univs {
+    padding: 0 100px;
+    padding-bottom: 150px;
   }
 
   .mapContainer {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #map {
+    flex: none;
+    height: 500px;
   }
 
   .univList {
-    padding: 40px;
+    background-color: var(--black-color);
+    position: relative;
+    justify-content: center;
+    height: auto;
+    flex: none;
   }
 
   .univList ul {
-    column-count: 4;
+    padding: 30px 0;
+    display: block;
+    column-count: 2;
+    column-gap: 10%;
   }
 
   .univList li {
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .univList a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .univs {
     padding: 0;
   }
 
   #map {
-    height: 500px;
+    height: 400px;
+  }
+
+  .univList li {
+    font-size: 0.8rem;
   }
 }
 
@@ -409,7 +469,7 @@ body {
   position: relative;
   width: 20rem;
   height: 20rem;
-  margin: 0 30px;
+  margin: 0 20px;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -469,6 +529,29 @@ body {
   font-weight: 700;
 }
 
+.toggleIcon {
+  padding: 100px 0;
+  animation: floating 1.5s infinite;
+}
+
+.joinUs {
+  box-sizing: border-box;
+  display: block;
+  width: 300px;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 100px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.joinUs:hover {
+  box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.5) inset;
+}
+
 @media screen and (max-width: 800px) {
   .apply {
     padding: 100px 0;
@@ -481,7 +564,7 @@ body {
   }
 
   .apply_title {
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 
   .apply_section {
@@ -509,6 +592,21 @@ body {
   .p2 {
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  .toggleIcon {
+    padding: 50px 0;
+    animation: floating 1.5s infinite;
+  }
+
+  .joinUs {
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 200px;
+  }
+
+  .joinUs:hover {
+    box-shadow: 200px 0 0 0 rgba(0, 0, 0, 0.5) inset;
   }
 }
 
@@ -723,16 +821,9 @@ body {
   background-color: black;
 }
 
-.toggle {
-  font-size: 3rem;
-  padding: 100px 0;
-  animation: floating 1.5s infinite;
-}
-
 .more_container {
   width: 100%;
   padding: 100px 20%;
-  padding-bottom: 0;
   box-sizing: border-box;
   display: none;
   background-color: white;
@@ -769,29 +860,9 @@ body {
   padding-left: 20px;
 }
 
-.more_contact {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  padding: 25px;
-  margin: 100px 0;
-  background-color: var(--main-color);
-  color: white;
-  font-size: 2rem;
-  font-weight: 700;
-  border-radius: 100px;
-  text-align: center;
-  transition: 0.6s ease-in-out;
-}
-
-.more_contact:hover {
-  box-shadow: 1000px 0 0 0 rgba(0, 0, 0, 0.5) inset;
-}
-
 @media screen and (max-width: 800px) {
   .more_container {
     padding: 50px 10%;
-    padding-bottom: 0;
   }
 
   .moreQ {
@@ -804,22 +875,8 @@ body {
     padding-left: 10px;
   }
 
-  .more_contact {
-    font-size: 1.5rem;
-    margin: 50px 0;
-    padding: 15px;
-  }
-
-  .toggle {
-    font-size: 2rem;
-  }
-
   .qna_set {
     padding: 30px;
     margin-bottom: 30px;
-  }
-
-  .more_contact:hover {
-    box-shadow: 800px 0 0 0 rgba(0, 0, 0, 0.5) inset;
   }
 }

@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:url"
+      content="https://jwc406.github.io/likelion-us-site/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LIKELION US" />
+    <meta
+      property="og:description"
+      content="Learn about and participate in LIKELION US"
+    />
+    <meta property="og:image" content="https://ifh.cc/g/kMQ6l4.png" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/index.css" />
     <link
@@ -20,12 +31,12 @@
   <body>
     <div class="header" id="header">
       <a href="last.html" class="logo"
-        ><img src="img/LIKELION US_white_logo.svg" alt="logo" />
+        ><img src="img/LIKELION_LOGO.png" alt="logo" />
       </a>
       <ul class="menu">
         <li><a onclick="toAbout()">About</a></li>
         <li><a onclick="toUnivs()">Univs</a></li>
-        <li><a onclick="toApply()">Apply</a></li>
+        <li><a onclick="toApply()">Members</a></li>
         <li><a onclick="toFaq()">FAQ</a></li>
       </ul>
       <div class="headerBtns">
@@ -97,50 +108,88 @@
           </div>
         </div>
       </div>
-      <p class="title">We Learn</p>
+      <p class="title stacksTitle">We Learn</p>
       <div class="stacks_container">
-        <div class="swiper-container mySwiper">
+        <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/html.png" alt="" />
+              <a
+                href="https://developer.mozilla.org/ko/docs/Web/HTML"
+                target="_blank"
+              >
+                <img src="img/html.png" alt="" />
+                <p>HTML</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/css.png" alt="" />
+              <a
+                href="https://developer.mozilla.org/ko/docs/Web/css"
+                target="_blank"
+                ><img src="img/css.png" alt="" />
+                <p>CSS</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/js.png" alt="" />
+              <a
+                href="https://developer.mozilla.org/ko/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <img src="img/js.png" alt="" />
+                <p>JavaScript</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/react.png" alt="" />
+              <a href="https://ko.reactjs.org/" target="_blank">
+                <img src="img/react.png" alt="" />
+                <p>React</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/vuejs.png" alt="" />
+              <a href="https://vuejs.org/" target="_blank">
+                <img src="img/vuejs.png" alt="" />
+                <p>Vue js</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/python.png" alt="" />
+              <a href="https://www.python.org/" target="_blank">
+                <img src="img/python.png" alt="" />
+                <p>Python</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/django.png" alt="" />
+              <a href="https://www.djangoproject.com/" target="_blank">
+                <img src="img/django.png" alt="" />
+                <p>Django</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/flask.png" alt="" />
+              <a
+                href="https://flask-docs-kr.readthedocs.io/ko/latest/#"
+                target="_blank"
+              >
+                <img src="img/flask.png" alt="" />
+                <p>Flask</p>
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="img/jenkins.png" alt="" />
+              <a href="https://www.jenkins.io/" target="_blank">
+                <img src="img/jenkins.png" alt="" />
+                <p>Jenkins</p>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="univs" id="univs">
-      <p class="title black">Univs</p>
+      <p class="title">Univs</p>
       <div class="mapContainer">
         <div id="map">
           <script>
             function initMap() {
               const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 6.5,
-                center: { lat: 36, lng: -117.0812988 },
+                zoom: 6,
+                center: { lat: 36.778261, lng: -119.4179324 },
                 styles: [
                   {
                     featureType: "administrative",
@@ -282,6 +331,11 @@
                   34.0295114,
                   -118.2848199,
                 ],
+                [
+                  '<div class="marker"><h3 class="marker_p">San José State University</h3></div>',
+                  37.333092,
+                  -121.882799,
+                ],
               ];
 
               //마커 생성
@@ -330,26 +384,85 @@
           ></script>
         </div>
         <div class="univList">
-          <p>With LIKELION</p>
           <ul>
-            <li><a href="https://www.instagram.com/likelion_dvc/">DVC</a></li>
-            <li><a href="https://www.instagram.com/likelion_smc/">SMC</a></li>
             <li>
-              <a href="https://www.instagram.com/likelion_berkeley/">UCB</a>
+              <a href="https://www.instagram.com/likelion_csusb/"
+                >Stanford University<i class="fab fa-instagram"></i
+              ></a>
             </li>
-            <li><a href="https://www.instagram.com/likelion_ucd/">UCD</a></li>
-            <li><a href="https://www.instagram.com/likelion_uci/">UCI</a></li>
             <li>
-              <a href="https://www.instagram.com/riverside_likelion/">UCR</a>
+              <a href="https://www.instagram.com/likelion_dvc/"
+                >Diablo Valley College<i class="fab fa-instagram"></i
+              ></a>
             </li>
-            <li><a href="https://www.instagram.com/likelion_usc/">USC</a></li>
-            <li><a href="https://www.instagram.com/likelion_ucla/">UCLA</a></li>
-            <li><a href="https://www.instagram.com/likelion_sjsu/">SJSU</a></li>
-            <li><a href="https://www.instagram.com/likelion_ucsd/">UCSD</a></li>
-            <li><a href="https://www.instagram.com/likelion_ucsb/">UCSB</a></li>
-            <li><a href="https://www.instagram.com/likelion_/">CSUCB</a></li>
             <li>
-              <a href="https://www.instagram.com/likelion_csusb/">Stanford</a>
+              <a href="https://www.instagram.com/likelion_smc/"
+                >Santa Monica College<i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_sjsu/"
+                >San José State University<i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_/"
+                >California State University, San Bernardino<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_berkeley/"
+                >University of California, Berkeley<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_ucd/"
+                >University of California, Davis<i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_uci/"
+                >University of California Irvine<i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/riverside_likelion/"
+                >University of California, Riverside<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_usc/"
+                >University of Southern California<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_ucsd/"
+                >University of California San Diego<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_ucsb/"
+                >University of California, Santa Barbara<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/likelion_ucla/"
+                >University of California, Los Angeles<i
+                  class="fab fa-instagram"
+                ></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -390,6 +503,15 @@
           </div>
         </div>
       </div>
+      <i class="fas fa-angle-double-down fa-2x toggleIcon"></i>
+      <a
+        class="joinUs"
+        id="more_contact"
+        href="https://e6ak16x22ov.typeform.com/to/bDJ0NPWk"
+        target="_blank"
+      >
+        Join us
+      </a>
     </div>
     <div class="FAQ" id="faq">
       <p class="title pB">FAQ</p>
@@ -439,18 +561,14 @@
       </div>
       <div class="a sbContainer sbA">
         <div class="speechBubble answer aL">
-          <p>
-            Click to see answers to more questions and to <b>pre-register😊</b>
-          </p>
+          <p>Click to see answers to more questions 😊</p>
         </div>
         <div class="hidden"></div>
       </div>
     </div>
     <div class="more" id="more">
       <input id="toggle" type="checkbox" />
-      <label for="toggle" class="toggle"
-        ><i class="fas fa-angle-double-down toggleIcon"></i
-      ></label>
+      <label for="toggle"><p class="title">More</p></label>
       <div class="more_container">
         <div class="qnas">
           <div class="qna_set">
@@ -492,13 +610,6 @@
             </p>
           </div>
         </div>
-        <a
-          href="https://e6ak16x22ov.typeform.com/to/bDJ0NPWk"
-          class="more_contact"
-          id="more_contact"
-        >
-          Join us
-        </a>
       </div>
     </div>
     <footer>
@@ -506,9 +617,7 @@
         <img src="img\LIKELION US_white_logo.svg" alt="" width="140px" />
         <ul>
           <li>
-            <span>(주)멋쟁이사자처럼</span>
-            |
-            <span>대표이사 이두희</span>
+            <span>LIKELION, INC | CEO Duhee Lee</span>
           </li>
           <li><span>400 Concar Dr, San Mateo, CA 94402</span></li>
           <br /><br />
@@ -563,5 +672,4 @@
   <script src="js/apply.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/header.js"></script>
-  <script src="js/more.js"></script>
 </html>
