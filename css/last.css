@@ -25,9 +25,9 @@ a {
 
 /* 메인 */
 .main {
-  background: #1c1b1a;
+  /* background: #1c1b1a; */
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #1c1b1a 70%),
-    url("img\_MG_36362.jpg");
+    url("..\img\_MG_36362.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 100%;
