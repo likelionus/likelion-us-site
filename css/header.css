@@ -107,6 +107,15 @@
   border-top-right-radius: 0;
 }
 
+.dropdown a:nth-last-child(2){
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+
 .dropdown a:hover {
   background-color: var(--main-color);
 }
