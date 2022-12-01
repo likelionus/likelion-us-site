@@ -5,19 +5,31 @@ console.log(numAnimation);
 
 function changeNum(idx,oneTime) {
   var num = 0;
-  var intervalTime = 50;
+  var intervalTime = 25;
   var targetNum = numAnimation[idx].getAttribute("data-count");
-  if (targetNum >= 1000) {
-    intervalTime = 1;
+  if (targetNum > 1000) {
+    intervalTime = 5;
+  }else if(targetNum > 130){
+    intervalTime = 2;
+  }
+  else if(targetNum > 10){
+    intervalTime = 30;
+  }else{
+    intervalTime = 350;
   }
   var timer = setInterval(function () {
-    ++num;
+    if(idx == 2){
+      num += 10;
+    }else{
+    ++num;}
     numAnimation[idx].innerText = num;
     if (num == targetNum) {
       clearInterval(timer);
     }
   }, intervalTime);
 }
+
+
 var oneTime = 1 // 이벤트를 한번만 실행시키기 위해 변수설정
 
 
