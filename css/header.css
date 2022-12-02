@@ -106,11 +106,13 @@
 }
 
 .dropdown a:nth-child(2),
-a.email {
+a.email,
+a.insta {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
+.dropdown a.insta,
 .dropdown a:last-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -201,7 +203,7 @@ a.email {
   }
 
   .dropdown a i {
-    margin-left: 15px;
+    margin-left: 10px;
   }
 
   .dropdownBridge {
