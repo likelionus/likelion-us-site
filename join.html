@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sns 공유를 위한 og태그 -->
     <meta
       property="og:url"
-      content="https://jwc406.github.io/likelion-us-site/"
+      content="https://likelionus.github.io/likelion-us-site/"
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="LIKELION US" />
@@ -15,12 +16,15 @@
       content="Learn about and participate in LIKELION US"
     />
     <meta property="og:image" content="https://ifh.cc/g/kMQ6l4.png" />
+    <!-- 파비콘 -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/join.css" />
+    <!-- 폰트어썸 아이콘 cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
+    <!-- 스택 swiper 라이브러리 cdn -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -29,21 +33,29 @@
     <title>LIKELION US</title>
   </head>
   <body>
+    <!-- 헤더 -->
     <header class="header" id="header">
       <a href="index.html" class="logo"
         ><img src="img/LIKELION_LOGO.png" alt="logo" />
       </a>
+      <!-- 중앙 nav -->
       <ul class="menu">
         <li><a onclick="toAbout()">About</a></li>
         <li><a onclick="toUnivs()">Univs</a></li>
         <li><a onclick="toApply()">Members</a></li>
         <li><a onclick="toFaq()">FAQ</a></li>
       </ul>
+      <!-- 우측 버튼 -->
       <div class="headerBtns">
+        <!-- 버튼 컨테이너 -->
         <div class="btnContainer">
+          <!-- 메인 버튼 -->
           <div class="btn">Apply</div>
+          <!-- hover 시 드롭다운 -->
           <div class="dropdown">
+            <!-- 드롭다운 hover 시 사라지는 것을 방지하기 위해 넣은 div입니다 높이 이외 아무 기능 없음 -->
             <div class="dropdownBridge"></div>
+            <!-- 드롭다운 메뉴들 -->
             <a onclick="applyAlert()">Executive</a>
             <a onclick="applyAlert()">Student</a>
           </div>
@@ -70,14 +82,17 @@
       <i class="fas fa-bars fa-lg mobileBtn"></i>
       <i class="fas fa-times fa-lg mobileBtn"></i>
     </header>
+    <!-- 인트로 섹션 -->
     <section class="intro bg">
       <p class="introP1">
         Create and lead a community that makes a differnence.
       </p>
       <p class="introP2">Start a LIKELION Club at Your School Now.</p>
     </section>
+    <!-- elements 섹션 => elements, stacks -->
     <section class="elements" id="about">
       <p class="title">3 Core Elements</p>
+      <!-- elements 아티클 -->
       <article class="elements_container">
         <div class="element">
           <p class="element_icon">💻</p>
@@ -115,7 +130,9 @@
         </div>
       </article>
       <p class="title stacksTitle">We Learn</p>
+      <!-- stacks 아티클 -->
       <article class="stacks_container">
+        <!-- swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -187,14 +204,18 @@
         </div>
       </article>
     </section>
+    <!-- univs 섹션 -->
     <section class="univs" id="univs">
       <p class="title">Univs</p>
+      <!-- map 컨테이너 => map, univList  -->
       <div class="mapContainer">
+        <!-- 구글맵 아티클 -->
         <article id="map">
+          <!-- 구글맵 스크립트 -->
           <script>
             function initMap() {
               const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 6, //시작 시 줌 배율
+                zoom: 6, //맵 시작 시 줌 배율
                 center: { lat: 36.778261, lng: -119.4179324 }, //시작 시 위치 - 캘리포니아
                 styles: [
                   //지도 스타일
@@ -379,11 +400,13 @@
               }
             }
           </script>
+          <!-- 구글맵 api -->
           <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL3fq9mp-8R_pf8hKKUfIA-1BNzsiDX_U&callback=initMap&v=weekly&language=en"
             defer
           ></script>
         </article>
+        <!-- 학교리스트 아티클 -->
         <article class="univList">
           <ul>
             <li>
@@ -483,12 +506,15 @@
         </article>
       </div>
     </section>
+    <!-- apply 섹션 => apply, join us -->
     <section class="apply" id="apply">
       <article class="apply_title">
         <p class="t_apply">HACK YOUR LIFE,</p>
         <p class="t_apply">CHANGE YOUR LIFE WITH PROGRAMMING</p>
       </article>
+      <!-- apply 아티클 -->
       <article class="apply_article">
+        <!-- 운영자 버튼 -->
         <div class="apply_button executive">
           <div class="before">
             <p>#Systematic</p>
@@ -496,6 +522,7 @@
             <p>#Communicative</p>
             <p>#Reliable</p>
           </div>
+          <!-- 운영자 마우스 오버 시 바뀌는 신청 버튼 -->
           <div class="after">
             <a onclick="applyAlert()">
               <p class="p1">participate as</p>
@@ -503,6 +530,7 @@
             </a>
           </div>
         </div>
+        <!-- 학생 버튼 -->
         <div class="apply_button student">
           <div class="before">
             <p>#Enthusiastic</p>
@@ -510,6 +538,7 @@
             <p>#Learner</p>
             <p>#Creative</p>
           </div>
+          <!-- 학생 마우스 오버 시 바뀌는 신청 버튼 -->
           <div class="after">
             <a onclick="applyAlert()">
               <p class="p1">participate as</p>
@@ -518,6 +547,7 @@
           </div>
         </div>
       </article>
+      <!-- join us 버튼 -->
       <i class="fas fa-angle-double-down fa-2x toggleIcon"></i>
       <a
         class="joinUs"
@@ -528,27 +558,38 @@
         Join us
       </a>
     </section>
+    <!-- FAQ 섹션 => sbContainer -->
     <section class="FAQ" id="faq">
       <p class="title pB">FAQ</p>
+      <!-- 말풍선 아티클 : SpeechBubble Container -->
       <article class="sbContainer first sbQ">
+        <!-- first 클래스 : 질문 아래 공간 주기, 
+          sbQ 클래스 : SpeechBubble Q -->
         <img src="img/mimo-q.png" alt="" />
         <div class="speechBubble question">
           I don't have any experience of coding!
         </div>
       </article>
       <article class="a sbContainer sbA">
+        <!-- sbA 클래스 : SpeechBubble A, 
+        a 클래스 : 스크롤 애니메이션 지연 -->
         <div class="speechBubble answer aF">Don’t worry!</div>
+        <!-- aF 클래스 : Answer First, 첫번째 답변 말풍선 radius -->
         <img src="img/mimo-a.png" alt="" />
       </article>
       <article class="a sbContainer sbA">
         <div class="speechBubble answer aN">
+          <!-- aN 클래스 : Answer N, 두번째 ~ N번째 말풍선 radius -->
           90% of applicants who get accepted to LikeLion have no-prior coding
           experience.
         </div>
+        <!-- hidden 클래스 : n번째 ~ 마지막까지 이미지 대신 공간차지 -->
         <div class="hidden"></div>
       </article>
       <article class="a sbContainer sbLast">
+        <!-- sbLast : SpeechBubble Last, 마지막 말풍선 아래 margin -->
         <div class="speechBubble answer aL">
+          <!-- aL 클래스 : Answer Last, 마지막 말풍선 radius -->
           More than 85% of members on average complete the curriculum and create
           their very own web product!
         </div>
@@ -581,7 +622,9 @@
         <div class="hidden"></div>
       </article>
     </section>
+    <!-- more 섹션 => toggle, more -->
     <section class="more" id="more">
+      <!-- input과 label id, for 일치시켜 함께 동작하도록 함 -->
       <input id="toggle" type="checkbox" />
       <label for="toggle"
         ><p class="title">
@@ -632,6 +675,7 @@
         </div>
       </article>
     </section>
+    <!-- footer -->
     <footer>
       <div class="footerlist">
         <img src="img\LIKELION US_white_logo.svg" alt="" width="140px" />
@@ -686,6 +730,7 @@
       </div>
     </footer>
   </body>
+  <!-- js 파일들 -->
   <script src="js/apply.js"></script>
   <script src="js/bg.js"></script>
   <script src="js/header.js"></script>

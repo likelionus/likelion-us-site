@@ -1,3 +1,4 @@
+/* html a에 href 없애서 pointer 추가 */
 * a {
   cursor: pointer;
 }
@@ -43,7 +44,6 @@
 
 .menu li {
   margin: 0 20px;
-  transition: 0.5s;
   list-style: none;
 }
 
@@ -57,7 +57,6 @@
   text-align: center;
   padding: 5px 15px;
   border-radius: 10px;
-  transition: 0.2s ease-in-out;
   box-shadow: 0 0 0 1px white inset;
   color: white;
 }
@@ -80,6 +79,7 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
+/* 버튼 hover 시 dropdown 보이도록 */
 .btnContainer:hover .dropdown {
   display: block;
 }
@@ -101,10 +101,7 @@
   height: 40px;
 }
 
-.dropdown a.joinHeader {
-  display: none;
-}
-
+/* dropdown a radius 조정 */
 .dropdown a:nth-child(2),
 a.email,
 a.insta {
@@ -122,6 +119,7 @@ a.insta {
   background-color: var(--main-color);
 }
 
+/* pc에서는 아이콘 안보이게 */
 .header i {
   color: white;
   display: none;
@@ -135,11 +133,14 @@ a.insta {
   }
 }
 
+/* 반응형 헤더 햄버거 버튼 구현 
+ header.js에서 확인 가능 */
 @media screen and (max-width: 800px) {
   .header {
     font-size: 1rem;
   }
 
+  /* 메뉴들 flex 세로정렬 후 display : none */
   .menu {
     width: 100%;
     position: absolute;
@@ -152,6 +153,7 @@ a.insta {
     display: none;
   }
 
+  /* 메뉴 토글버튼 active 시 none -> block 으로 */
   .menu.active {
     display: block;
   }
@@ -161,6 +163,7 @@ a.insta {
     margin: 1rem 0;
   }
 
+  /* 버튼들 flex 세로정렬 후 display : none */
   .headerBtns {
     width: 100%;
     position: absolute;
@@ -174,18 +177,17 @@ a.insta {
     display: none;
   }
 
+  /* 메뉴 토글버튼 active 시 none -> block 으로 */
   .headerBtns.active {
     display: block;
   }
 
-  .headerBtns.active .joinHeader {
-    display: block;
-  }
-
+  /* 모바일 시 안보이도록 */
   .btn {
     display: none;
   }
 
+  /* 모바일 시 안보이도록 */
   .dropdown {
     position: relative;
     display: block;
@@ -210,6 +212,7 @@ a.insta {
     display: none;
   }
 
+  /* 모바일 시 드롭다운 radius 삭제 */
   .dropdown a:nth-child(2) {
     border-radius: 0;
   }
@@ -222,6 +225,7 @@ a.insta {
     background-color: black;
   }
 
+  /* 모바일 시 아이콘 보이게 */
   .header i {
     display: block;
   }
