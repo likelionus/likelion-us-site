@@ -25,9 +25,8 @@ a {
 
 /* 메인 */
 .main {
-  /* background: #1c1b1a; */
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #1c1b1a 70%),
-    url("../img/mainImgae.jpg");
+    url("../img/mainImgae.jpg"); /* 메인화면 사진 */
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 100%;
@@ -101,21 +100,15 @@ a {
     padding: 100px 0 10% 10%;
   }
   .title {
-    font-weight: 800;
     font-size: 4em;
-    animation: titleslide 0.8s ease-in;
   }
   .mainDiscription {
-    width: 60%;
     font-size: 20px;
-    font-weight: 200;
-    animation: titleslide 0.8s ease-in;
   }
   .mainbutton {
     width: 260px;
     height: 58px;
     font-size: 26px;
-    animation: titleslide 0.8s ease-in;
   }
 }
 @media screen and (max-width: 490px) {
@@ -124,14 +117,11 @@ a {
     align-items: flex-start;
   }
   .title {
-    font-weight: 800;
     font-size: 35px;
     animation: titleslide2 0.5s ease-in;
   }
   .mainDiscription {
-    width: 60%;
     font-size: 16px;
-    font-weight: 200;
     animation: titleslide2 0.5s ease-in;
   }
   .mainbutton {
@@ -141,6 +131,7 @@ a {
     animation: titleslide2 0.5s ease-in;
   }
 }
+
 
 /* 미션 */
 .mission {
@@ -158,25 +149,21 @@ a {
 @media screen and (max-width: 1023px) {
   .mission {
     padding: 80px 30px;
-    background-color: #ff7710;
   }
   .missionText {
     font-size: 28px;
     margin: 0 40px;
-    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
   .mission {
     padding: 80px 0px;
-    background-color: #ff7710;
   }
   .missionText {
     font-size: 22px;
-    margin: 0 40px;
-    text-align: center;
   }
 }
+
 
 /* 활동 */
 .activity {
@@ -193,8 +180,8 @@ a {
 .activityImgContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 300px;
-  grid-gap: 1rem;
+  grid-auto-rows: 300px; /* 행열 크기 */
+  grid-gap: 1rem;  /* 행열 사이 간격 설정 */
   padding: 5rem;
   grid-template-areas:
     "a b b"
@@ -235,17 +222,12 @@ a {
   text-align: center;
   font-size: 22px;
   padding: 10px 0 0 0;
-  line-height: 1.2;
+  line-height: 1.2; /* 줄 간격 */
 }
-.acts:hover .activityImg {
+.acts:hover .activityImg { /* 사진에 마우스 올렸을 때 사진 어둡게 */
   opacity: 0.2;
 }
-.IdeathonContents:not(:hover),
-.HackathonContents:not(:hover),
-.MentoringContents:not(:hover),
-.NetworkingContents:not(:hover) {
-  transition: 0.3s ease-in;
-}
+
 
 .IdeathonContents,
 .HackathonContents,
@@ -260,11 +242,10 @@ a {
   opacity: 0;
   visibility: hidden;
 }
-.Ideathon:hover .IdeathonContents,
+.Ideathon:hover .IdeathonContents, 
 .Hackathon:hover .HackathonContents,
 .Mentoring:hover .MentoringContents,
-.Networking:hover .NetworkingContents {
-  /* display: block; */
+.Networking:hover .NetworkingContents { /* 마우스 올리면 내용 나타나게 */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -379,7 +360,7 @@ a {
 }
 .historyList {
   display: flex;
-  justify-content: space-around; /* space around*/
+  justify-content: space-around;
   margin: 10% 5%;
   color: white;
 }
@@ -401,7 +382,7 @@ a {
   content: "+";
   font-size: 20px;
 }
-.unit {
+.unit { 
   text-align: center;
   font-size: 25px;
   font-weight: 500;
@@ -491,12 +472,6 @@ a {
     width: 90px;
     height: auto;
   }
-  .count-num {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    display: inline;
-  }
 }
 @media screen and (max-width: 375px) {
   .history {
@@ -521,12 +496,6 @@ a {
     display: block;
     width: 90px;
     height: auto;
-  }
-  .count-num {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    display: inline;
   }
   .unit {
     font-size: 20px;
@@ -602,12 +571,7 @@ a {
   font-size: 50px;
   font-weight: 500;
 }
-.flip-card-front p {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 .flip-card-back {
   background-color: #ff7710;
@@ -621,7 +585,6 @@ a {
 }
 
 .flip-card-back a {
-  /* position: absolute; */
   background-color: white;
   color: #ff7710;
   padding: 4px;
@@ -648,24 +611,11 @@ a {
     filter: brightness(0.4); /* 40% */
   }
   .flag {
-    width: 95px;
-    height: 58px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -47.5px;
     margin-top: -50px;
   }
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
   .flip-card {
-    background-color: transparent;
     width: 30%;
     height: 460px;
-    perspective: 1000px;
   }
   .flip-card-back {
     font-size: 16px;
@@ -681,7 +631,6 @@ a {
     background-color: transparent;
     width: 30%;
     height: 452px;
-    perspective: 1000px;
     font-size: 14px;
   }
 }
@@ -691,10 +640,7 @@ a {
     word-break: break-all;
   }
   .flip-card {
-    background-color: transparent;
-    width: 30%;
     height: 415px;
-    perspective: 1000px;
   }
 }
 
@@ -718,18 +664,6 @@ a {
 }
 
 @media screen and (max-width: 933px) {
-  .row {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .flip-card {
-    background-color: transparent;
-    width: 58%;
-    height: 415px;
-    perspective: 1000px;
-    margin: 0 0 15px 0;
-  }
   .flip-card-back p {
     margin: 0 2%;
     font-size: 15px;
@@ -744,25 +678,13 @@ a {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 748px) {
-  .flip-card-back p {
-    margin: 0;
-    font-size: 15px;
-  }
-}
 @media screen and (max-width: 609px) {
   .flip-card {
-    background-color: transparent;
     width: 90%;
-    height: 415px;
-    perspective: 1000px;
-    margin: 0 0 15px 0;
   }
-
   .flip-card-front {
     font-size: 40px;
   }
-
   .flip-card-back p {
     margin: 0 2px;
     font-size: 15px;
@@ -797,35 +719,16 @@ a {
   overflow: hidden;
   position: relative;
 }
-.slider::before,
-.slider::after {
-  content: "";
-  height: 200px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
 
 .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(1500px * 4);
+  width: calc(1500px * 5);
 }
 .slide-track2 {
   animation: scroll2 40s linear infinite;
   display: flex;
-  width: calc(1500px * 4);
+  width: calc(1500px * 5);
 }
 
 .slide {
@@ -837,15 +740,14 @@ a {
   height: 200px;
 }
 
+
+
+
+/*푸터*/
 footer {
   background-color: #1c1b1a;
   color: white;
   margin: 0;
-}
-
-/*푸터*/
-footer {
-  /* width: 100vw; */
   padding: 50px 50px 20px;
   display: relative;
 }
