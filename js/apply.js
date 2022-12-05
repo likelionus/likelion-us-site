@@ -4,12 +4,14 @@ var student = document.querySelector(".student");
 var before = document.querySelectorAll(".before");
 var after = document.querySelectorAll(".after");
 
+// 클릭 시 alert 창 출력
 function applyAlert() {
   window.alert(
     "It is not a recruitment period!\nPlease 'Join us' below for pre-registration."
   );
 }
 
+// apply 운영진 버튼 onmouseover, onmouseout 이벤트
 executive.onmouseover = function () {
   before[0].style.display = "none";
   after[0].style.display = "block";
@@ -28,6 +30,7 @@ executive.onmouseout = function () {
   executive.style.color = "white";
 };
 
+// apply 학생 버튼 onmouseover, onmouseout 이벤트
 student.onmouseover = function () {
   before[1].style.display = "none";
   after[1].style.display = "block";

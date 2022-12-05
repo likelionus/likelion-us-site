@@ -1,3 +1,45 @@
+/* index 페이지 애니메이션*/
+@keyframes titleslide {
+  from {
+    margin: 0 0 0 -300px;
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes titleslide2 {
+  from {
+    margin: 0 0 0 -100px;
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1500px * 2));
+  }
+}
+
+@keyframes scroll2 {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(calc(-1500px * 2));
+  }
+}
+
+/* join 페이지 애니메이션*/
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -55,33 +97,6 @@
   }
 }
 
-@keyframes shadow-pop-br {
-  0% {
-    box-shadow: 0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710,
-      0 0 #ff7710, 0 0 #ff7710, 0 0 #ff7710;
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    box-shadow: 1px 1px #ff7710, 2px 2px #ff7710, 3px 3px #ff7710,
-      4px 4px #ff7710, 5px 5px #ff7710, 6px 6px #ff7710, 7px 7px #ff7710,
-      8px 8px #ff7710;
-    transform: translateX(-10px) translateY(-10px);
-  }
-}
-
-@keyframes shadow-pop-bl {
-  0% {
-    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white,
-      0 0 white, 0 0 white;
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    box-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white,
-      -5px 5px white, -6px 6px white, -7px 7px white, -8px 8px white;
-    transform: translateX(10px) translateY(-10px);
-  }
-}
-
 @keyframes slideUp {
   0% {
     transform: translateY(100%);
@@ -95,24 +110,6 @@
   100% {
     transform: translateY(0%);
     opacity: 1;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-1000px * 2));
-  }
-}
-
-@keyframes scroll2 {
-  0% {
-    transform: translateX(calc(-1000px * 2));
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
