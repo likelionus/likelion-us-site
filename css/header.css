@@ -84,9 +84,6 @@
   display: block;
 }
 
-.joinHeader {
-  display: none;
-}
 
 .dropdown a {
   display: block;
@@ -131,8 +128,15 @@ a.insta {
     width: 80%;
     padding: 0 10%;
   }
+
 }
 
+/* 화면이 800px 이상일때는 드롭다운에 Join이 없도록 구현 */
+@media screen and (min-width:800px) {
+  .btnContainer:hover .joinHeader {
+    display: none;
+  }
+}
 /* 반응형 헤더 햄버거 버튼 구현 
  header.js에서 확인 가능 */
 @media screen and (max-width: 800px) {
