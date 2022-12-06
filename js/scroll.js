@@ -4,6 +4,8 @@ const options = {
   threshold: 0.5,
 };
 
+// scroll 옵저버
+// 스크롤 변화를 감지하면 class .visible add, remove 동작
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -14,10 +16,9 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
+// join 페이지 element, apply
 const elementList = document.querySelectorAll(".element");
 const sbContainerList = document.querySelectorAll(".sbContainer");
-// const historyList = document.querySelectorAll(".scrollHistory");
-
 const countUpSection = document.querySelectorAll(".history");
 
 
@@ -26,6 +27,5 @@ const countUpSection = document.querySelectorAll(".history");
 // 반복문을 돌려 모든 DOM에 적용
 elementList.forEach((el) => observer.observe(el));
 sbContainerList.forEach((el) => observer.observe(el));
-// historyList.forEach((el) => observer.observe(el));
 countUpSection.forEach((el)=>observer.observe(el));
 

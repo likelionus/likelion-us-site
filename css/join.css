@@ -4,8 +4,6 @@
 @import "header.css";
 @import "footer.css";
 
-/*main color : #ff7710, point color : #96FF00, black: #1C1B1A */
-
 * {
   scroll-behavior: smooth;
 }
@@ -34,6 +32,7 @@ body {
   padding: 50px 0;
 }
 
+/* intro P1, P2 모두 fadeIn 애니메이션 */
 :is(.introP1, .introP2) {
   animation: fadeInUp 2s;
   animation-fill-mode: forwards;
@@ -56,6 +55,7 @@ body {
   animation-delay: 1s;
 }
 
+/* 배경 섹션 */
 .bg {
   background-position: center;
   background-size: cover;
@@ -63,6 +63,7 @@ body {
   animation: fadeIn 2s forwards;
 }
 
+/* 랜덤 배경 클래스, bg.js 에서 확인 */
 .bg.bg01 {
   background-image: linear-gradient(
       rgba(0, 0, 0, 1),
@@ -99,6 +100,7 @@ body {
     url("../img/slide_4.jpg");
 }
 
+/* join page 모든 모바일 반응형 크기 800 고정 */
 @media screen and (max-width: 800px) {
   .intro {
     height: 500px;
@@ -120,7 +122,6 @@ body {
 }
 
 /* elements */
-
 .elements {
   display: flex;
   justify-content: center;
@@ -163,11 +164,13 @@ body {
   opacity: 0;
 }
 
+/* element 스크롤 시 visible 클래스 추가, scroll.js 에서 확인 가능 */
 .element.visible {
   animation: fadeLeftIn 2s;
   animation-fill-mode: forwards;
 }
 
+/* 아이콘 이미지 X, p로 넣은 실제 아이콘 */
 .element_icon {
   font-size: 5rem;
   padding-bottom: 10px;
@@ -238,6 +241,7 @@ body {
   padding: 50px 0 150px 0;
 }
 
+/* swiper 컨테이너, 이미지 사이즈 여기서 결정 */
 .swiper-container {
   width: 250px;
   height: 250px;
@@ -307,16 +311,19 @@ body {
   display: flex;
 }
 
+/* 구글맵 */
 #map {
   flex: 4;
   height: 600px;
 }
 
+/* 구글맵 조작 UI 삭제 */
 .gmnoprint,
 .gm-control-active.gm-fullscreen-control {
   display: none;
 }
 
+/* 마커 */
 .marker {
   width: 100px;
   color: var(--main-color);
@@ -327,9 +334,9 @@ body {
 }
 
 .univList {
+  box-sizing: border-box;
   position: absolute;
   right: 0;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   padding: 0 40px;
@@ -375,6 +382,7 @@ body {
   color: var(--main-color);
 }
 
+/* univList a hover 시 인스타그램 아이콘 visible */
 .univList a:hover .fa-instagram {
   visibility: visible;
 }
@@ -385,6 +393,7 @@ body {
     padding-bottom: 150px;
   }
 
+  /* 모바일 시 map, univList 수직 정렬 */
   .mapContainer {
     position: relative;
     display: flex;
@@ -485,11 +494,13 @@ body {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+/* 운영진, 학생 버튼 hover 좌우 tossing 효과 */
 .executive:hover,
 .student:hover {
   animation: tossing 2s infinite;
 }
 
+/* 버튼 hover 전 버튼 style */
 .before {
   font-size: 2rem;
   font-weight: 700;
@@ -500,6 +511,7 @@ body {
   padding: 5px;
 }
 
+/* 버튼 hover 후 버튼 style */
 .after {
   display: none;
 }
@@ -546,6 +558,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+/* joinUs 버튼 hover 이벤트, index 페이지 버튼 hover와 통일 */
 .joinUs:hover {
   box-shadow: 300px 0 0 0 rgba(0, 0, 0, 0.5) inset;
 }
@@ -689,7 +702,6 @@ body {
 
 .question {
   background-color: whitesmoke;
-  /* border: 2px solid white; */
   margin-right: 300px;
 }
 
@@ -716,6 +728,7 @@ body {
   margin: 0 20px;
 }
 
+/* 아래 반응형은 UI가 깨지는 시점 기준입니다 */
 @media screen and (max-width: 980px) {
   .sbContainer {
     width: 100%;
@@ -783,9 +796,8 @@ body {
   }
 
   .speechBubble {
-    /* width: 280px; */
     font-size: 0.8rem;
-    padding: 15px;
+    padding: 13px;
     border-radius: 30px;
   }
 
@@ -842,10 +854,12 @@ body {
   font-weight: 500;
 }
 
+/* input 체크박스 안보이도록 */
 #toggle {
   display: none;
 }
 
+/* input 체크박스가 체크됐을때 -> more 아티클 보이도록 */
 #toggle:checked ~ .more_container {
   display: block;
   animation: pullDown 0.5s ease-out forwards;
