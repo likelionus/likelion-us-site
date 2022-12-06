@@ -2,6 +2,7 @@
 @import "styles.css";
 @import "reset.css";
 @import "animations.css";
+@import "footer.css";
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
@@ -138,7 +139,7 @@ a {
   padding: 200px 40px;
   background-color: #ff7710;
 }
-.missionText {
+.missionText { /* 미션 타이틀  */
   color: white;
   max-width: 1000px;
   font-size: 35px;
@@ -170,7 +171,7 @@ a {
   padding: 120px 12% 0 12%;
   background-color: #1c1b1a;
 }
-.activityTitle {
+.activityTitle { /* We do 타이틀 */
   color: white;
   font-size: 30px;
   text-align: center;
@@ -211,20 +212,20 @@ a {
   position: relative;
 }
 
-.activityImgContainer h1 {
+.activityImgContainer h1 { /* 각 활동 타이틀: 해커톤 등등 */
   text-align: center;
   font-size: xx-large;
   background-color: #ff7710;
   border-radius: 100px;
   font-weight: 600;
 }
-.activityImgContainer p {
+.activityImgContainer p { /* 활동 설명 부분 */
   text-align: center;
   font-size: 22px;
   padding: 10px 0 0 0;
-  line-height: 1.2; /* 줄 간격 */
+  line-height: 1.2;
 }
-.acts:hover .activityImg { /* 사진에 마우스 올렸을 때 사진 어둡게 */
+.acts:hover .activityImg {  /* 사진에 마우스 올렸을 때 사진 어둡게 */
   opacity: 0.2;
 }
 
@@ -232,7 +233,7 @@ a {
 .IdeathonContents,
 .HackathonContents,
 .MentoringContents,
-.NetworkingContents {
+.NetworkingContents { /* 활동 타이틀과 설명 둘다 선택 */
   display: block;
   position: absolute;
   top: 50%;
@@ -245,7 +246,7 @@ a {
 .Ideathon:hover .IdeathonContents, 
 .Hackathon:hover .HackathonContents,
 .Mentoring:hover .MentoringContents,
-.Networking:hover .NetworkingContents { /* 마우스 올리면 내용 나타나게 */
+.Networking:hover .NetworkingContents { /* 마우스 올리면 내용 나타나도록 */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -274,6 +275,7 @@ a {
   }
 }
 
+/* 화면 줄어들면 사진 배열 일렬로 */
 @media screen and (max-width: 901px) {
   .activity {
     padding: 100px 12% 0px 12%;
@@ -350,7 +352,7 @@ a {
   padding: 10% 12% 10% 12%;
   background-color: #1c1b1a;
 }
-.historyTitle {
+.historyTitle { /* 숫자올라가는 부분 타이틀 */
   color: white;
   text-align: center;
   font-weight: 700;
@@ -373,16 +375,11 @@ a {
   width: 100%;
   text-align: center;
 }
-.unitafter {
-  margin: 0px;
-  display: inline;
-}
-
-.unitbefore4::after {
+.unitafter::after { /* + 부분 */
   content: "+";
   font-size: 20px;
 }
-.unit { 
+.unit {
   text-align: center;
   font-size: 25px;
   font-weight: 500;
@@ -402,9 +399,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .historyList {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin: 40px auto;
     width: 476px;
     padding: 0px;
@@ -426,12 +421,8 @@ a {
     font-size: 30px;
   }
   .historyList {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px auto;
-    width: 476px;
-    padding: 0px;
   }
   .historyListContent {
     width: 160px;
@@ -444,8 +435,6 @@ a {
   .count-num {
     text-align: center;
     font-size: 35px;
-    font-weight: 700;
-    display: inline;
   }
 }
 @media screen and (max-width: 462px) {
@@ -457,8 +446,6 @@ a {
     font-size: 30px;
   }
   .historyList {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     width: 100%;
@@ -468,27 +455,10 @@ a {
     width: 180px;
   }
   .historyListContent img {
-    display: block;
     width: 90px;
-    height: auto;
   }
 }
 @media screen and (max-width: 375px) {
-  .history {
-    padding: 60px 0;
-  }
-  .historyTitle {
-    padding: 32px;
-    font-size: 30px;
-  }
-  .historyList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    width: 100%;
-    padding: 0px;
-  }
   .historyListContent {
     width: 130px;
   }
@@ -602,7 +572,6 @@ a {
 @media screen and (max-width: 1200px) {
   .worldwide {
     padding: 20px 12% 120px 12%;
-    background-color: #1c1b1a;
   }
   .coverimg {
     width: 100%;
@@ -643,7 +612,7 @@ a {
     height: 415px;
   }
 }
-
+/* 사이즈 줄어들면 세로로 정렬 */
 @media screen and (max-width: 989px) {
   .row {
     flex-direction: column;
@@ -662,7 +631,6 @@ a {
     font-size: 15px;
   }
 }
-
 @media screen and (max-width: 933px) {
   .flip-card-back p {
     margin: 0 2%;
@@ -678,6 +646,7 @@ a {
     font-size: 15px;
   }
 }
+/* 카드 가로가 화면의 90%가 되도록 사이즈 조절 */
 @media screen and (max-width: 609px) {
   .flip-card {
     width: 90%;
@@ -738,40 +707,4 @@ a {
 .slide img {
   width: 1500px;
   height: 200px;
-}
-
-
-
-
-/*푸터*/
-footer {
-  background-color: #1c1b1a;
-  color: white;
-  margin: 0;
-  padding: 50px 50px 20px;
-  display: relative;
-}
-.footerlist {
-  display: flex;
-  flex-direction: column;
-}
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 50px;
-}
-footer li {
-  padding: 3px;
-  font-size: 14px;
-}
-.last {
-  display: flex;
-  justify-content: space-between;
-}
-.icons {
-  display: inline;
-  left: 90%;
-}
-.icons a {
-  margin: 5px;
 }
