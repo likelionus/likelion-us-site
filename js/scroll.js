@@ -19,7 +19,13 @@ const observer = new IntersectionObserver((entries) => {
 // join 페이지 element, apply
 const elementList = document.querySelectorAll(".element");
 const sbContainerList = document.querySelectorAll(".sbContainer");
+const countUpSection = document.querySelectorAll(".history");
+
+
+
 
 // 반복문을 돌려 모든 DOM에 적용
 elementList.forEach((el) => observer.observe(el));
 sbContainerList.forEach((el) => observer.observe(el));
+countUpSection.forEach((el)=>observer.observe(el));
+

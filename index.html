@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sns 공유를 위한 og태그 -->
     <meta
       property="og:url"
       content="https://likelionus.github.io/likelion-us-site/"
@@ -15,6 +16,7 @@
       content="Learn about and participate in LIKELION US"
     />
     <meta property="og:image" content="https://ifh.cc/g/kMQ6l4.png" />
+    <!-- 파비콘 -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/index.css" />
     <title>LIKELION US</title>
@@ -23,12 +25,15 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body onload="upNumber()">
     <div>
+      <!-- 헤더 -->
       <div class="header" id="header">
         <a href="index.html" class="logo"
           ><img src="img/LIKELION_LOGO.png" alt="logo" />
         </a>
+        <!-- 중앙 nav -->
         <ul class="menu">
           <li>
             <a onclick="toMission()">Mission</a>
@@ -39,6 +44,7 @@
             <a onclick="toFrom()">Companies</a>
           </li>
         </ul>
+        <!-- 우측 버튼 -->
         <div class="headerBtns">
           <div class="btnContainer">
             <a href="join.html">
@@ -69,12 +75,12 @@
         <i class="fas fa-times fa-lg mobileBtn"></i>
       </div>
 
+      <!-- 메인 -->
       <section class="main">
         <div class="titleandpic">
-          <p class="title">
+          <p class="title"> <!-- 메인 타이틀 -->
             <font color="#ff7710">POSSIBIL</font>ITY<br />
             TO&nbsp;<font color="#ff7710" class="line">――――</font><br />
-            <!-- <div>-</div> -->
             <font color="#ff7710">REAL</font>ITY
           </p>
         </div>
@@ -87,6 +93,8 @@
           Learn More
         </button>
       </section>
+
+      <!-- 미션 -->
       <section class="mission" id="mission">
         <h2 class="missionText">
           Our mission is to help people with no background in coding to build a
@@ -95,10 +103,12 @@
         </h2>
       </section>
 
+      <!-- 활동 -->
       <section class="activity">
-        <p class="activityTitle">We do</p>
+        <!-- 활동 타이틀 -->
+        <p class="activityTitle" id="story">We do</p>
         <section class="activityImgContainer">
-          <div class="Ideathon acts">
+          <div class="Ideathon acts"> <!-- 아이디어톤 -->
             <img src="img\idea.jpg" alt="" class="activityImg" />
             <div class="IdeathonContents Contents">
               <h1>&nbsp;&nbsp;Ideathon&nbsp;&nbsp;</h1>
@@ -108,8 +118,7 @@
               </p>
             </div>
           </div>
-
-          <div class="Hackathon acts">
+          <div class="Hackathon acts"> <!-- 해커톤 -->
             <img src="img\did_hak2.png" alt="" class="activityImg" />
             <div class="HackathonContents Contents">
               <h1>Hackathon</h1>
@@ -119,7 +128,7 @@
               </p>
             </div>
           </div>
-          <div class="Mentoring acts">
+          <div class="Mentoring acts"> <!-- 멘토링 -->
             <img src="img\mentoring2.jpg" alt="" class="activityImg" />
             <div class="MentoringContents Contents">
               <h1>&nbsp;&nbsp;Mentoring&nbsp;&nbsp;</h1>
@@ -129,7 +138,7 @@
               </p>
             </div>
           </div>
-          <div class="Networking acts">
+          <div class="Networking acts"> <!--네트워킹 -->
             <img src="img\IMG_00232.jpg" alt="" class="activityImg" />
             <div class="NetworkingContents Contents">
               <h1>&nbsp;&nbsp;Networking&nbsp;&nbsp;</h1>
@@ -139,50 +148,53 @@
         </section>
       </section>
 
-      <section class="history" id="story">
+      <!-- 역사 -->
+      <section class="history">
+        <!-- 역사 타이틀-->
         <p class="historyTitle">Starting with 30 students,</p>
         <div class="historyList">
-          <div class="historyListContent">
+          <div class="historyListContent"> <!--연도 -->
             <img src="img\time.png" alt="" />
             <div class="count">
-              <p class="count-num unitbefore1" data-count="10">0</p>
+              <p class="count-num" data-count="10">0</p> <!-- data-count에 최종 숫자-->
               <p class="unit">Years</p>
             </div>
           </div>
-          <div class="historyListContent">
+          <div class="historyListContent"> <!-- 대학 -->
             <img src="img\school.png" alt="" />
             <div class="count">
-              <p class="count-num unitbefore2" data-count="130">0</p>
+              <p class="count-num" data-count="130">0</p> 
               <p class="unit">Universities</p>
             </div>
           </div>
-          <div class="historyListContent historyListContent2">
+          <div class="historyListContent"> <!-- 학생 -->
             <img src="img\students.png" alt="" />
             <div class="count">
-              <p class="count-num unitbefore3" data-count="8400">0</p>
+              <p class="count-num" data-count="8400">0</p>
               <p class="unit">Students</p>
             </div>
           </div>
-          <div class="historyListContent">
+          <div class="historyListContent"> <!-- 서비스 -->
             <img src="img\services.png" alt="" />
             <div class="count">
-              <p class="count-num unitbefore4" data-count="1000">0</p>
+              <p class="count-num unitafter" data-count="1000">0</p>
               <p class="unit">Services</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 전세계 각국 -->
       <section class="worldwide" id="global">
-        <p class="worldwideTitle">WorldWide LIKELION</p>
+        <p class="worldwideTitle">WorldWide LIKELION</p> <!-- 세계 타이틀 -->
         <div class="row">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div class="flip-card"> <!-- 미국 플립카드 -->
+            <div class="flip-card-inner"> <!-- 플립카드 내에 앞면과 뒷면으로 나눔-->
+              <div class="flip-card-front"> <!--플립카드 앞면 -->
                 <img src="img\IMG_7687.jpg" alt="미국" class="coverimg" />
                 <img src="img\uslogo.png" alt="" class="flag" />
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back"> <!-- 플립카드 뒷면-->
                 <h1>US</h1>
                 <p>
                   In 2017, we introduced our programs in partnership with
@@ -198,21 +210,20 @@
                 </p>
                 <br />
                 <a
-                  href="https://us.likelion.net/2db1bcf0-d1ab-4bb5-90a6-f546db01da72"
+                  href="https://us.likelion.net/2db1bcf0-d1ab-4bb5-90a6-f546db01da72"  target="_blank"
                   >More Details ➨</a
                 >
               </div>
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div class="flip-card"> <!-- 한국 플립카드 -->
+            <div class="flip-card-inner"> <!-- 플립카드 내에 앞면과 뒷면으로 나눔 -->
+              <div class="flip-card-front"> <!--플립카드 앞면 -->
                 <img src="img\kor.jpg" alt="한국" class="coverimg" />
                 <img src="img\skorealogo.png" alt="" class="flag" />
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back"> <!-- 플립카드 뒷면 -->
                 <h1>S.Korea</h1>
-
                 <p>Korea is LIKELION’s birthplace.</p>
                 <br />
                 <p>
@@ -222,23 +233,23 @@
                   technology.
                 </p>
                 <br />
-                <p class="korContent">
+                <p>
                   In 2018, LIKELION launched B2C, B2B, and B2G services to
                   assist individuals and organizations—both private and
                   public—tap into the power of technology.
                 </p>
                 <br />
-                <a href="https://likelion.net/">More Details➨</a>
+                <a href="https://likelion.net/" target="_blank">More Details➨</a>
               </div>
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div class="flip-card"> <!-- 베트남 플립카드 -->
+            <div class="flip-card-inner"> <!-- 플립카드 내에 앞면과 뒷면으로 나눔 -->
+              <div class="flip-card-front"> <!-- 플립카드 앞면 -->
                 <img src="img\vetnam.jpg" alt="베트남" class="coverimg" />
                 <img src="img\vietnamlogo.png" alt="" class="flag" />
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back"> <!-- 플립카드 뒷면-->
                 <h1>Vietnam</h1>
                 <p>
                   Since first entering Vietnam in January 2020, we have been
@@ -262,10 +273,14 @@
         </div>
       </section>
 
+      <!-- 기업 리스트-->
       <section class="enterprise" id="from">
         <p class="companyTitle">Companies started from LIKELION</p>
-        <div class="slider">
+        <div class="slider"> <!-- 기업 첫째줄 -->
           <div class="slide-track">
+            <div class="slide">
+              <img src="img\1_200.png" alt="" />
+            </div>
             <div class="slide">
               <img src="img\1_200.png" alt="" />
             </div>
@@ -280,7 +295,7 @@
             </div>
           </div>
         </div>
-        <div class="slider">
+        <div class="slider"> <!-- 기업 둘째줄 -->
           <div class="slide-track2">
             <div class="slide">
               <img src="img\2_200.png" alt="" />
@@ -294,10 +309,16 @@
             <div class="slide">
               <img src="img\2_200.png" alt="" />
             </div>
+            <div class="slide">
+              <img src="img\2_200.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="slider">
+        <div class="slider"> <!-- 기업 셋째줄 -->
           <div class="slide-track">
+            <div class="slide">
+              <img src="img\3_200.png" alt="" />
+            </div>
             <div class="slide">
               <img src="img\3_200.png" alt="" />
             </div>
@@ -313,59 +334,61 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footerlist">
-          <img src="img\LIKELION US_white_logo.svg" alt="" width="140px" />
-          <ul>
-            <li>
-              <span>LIKELION, INC | CEO Duhee Lee</span>
-            </li>
-            <li><span>400 Concar Dr, San Mateo, CA 94402</span></li>
-            <br /><br />
-            <li class="last">
-              <span>simba@likelion.net</span>
-              <div class="icons">
-                <a href="https://www.instagram.com/likelion.us/" target="_blank"
-                  ><?xml version="1.0" ?><svg
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8,2 L16,2 C19.3137085,2 22,4.6862915 22,8 L22,16 C22,19.3137085 19.3137085,22 16,22 L8,22 C4.6862915,22 2,19.3137085 2,16 L2,8 C2,4.6862915 4.6862915,2 8,2 Z M8,4 C5.790861,4 4,5.790861 4,8 L4,16 C4,18.209139 5.790861,20 8,20 L16,20 C18.209139,20 20,18.209139 20,16 L20,8 C20,5.790861 18.209139,4 16,4 L8,4 Z M12,17 C9.23857625,17 7,14.7614237 7,12 C7,9.23857625 9.23857625,7 12,7 C14.7614237,7 17,9.23857625 17,12 C17,14.7614237 14.7614237,17 12,17 Z M12,15 C13.6568542,15 15,13.6568542 15,12 C15,10.3431458 13.6568542,9 12,9 C10.3431458,9 9,10.3431458 9,12 C9,13.6568542 10.3431458,15 12,15 Z M17,8 C16.4477153,8 16,7.55228475 16,7 C16,6.44771525 16.4477153,6 17,6 C17.5522847,6 18,6.44771525 18,7 C18,7.55228475 17.5522847,8 17,8 Z"
-                      fill-rule="evenodd"
-                      style="fill: #ffffff"
-                    /></svg
-                ></a>
-                <a href="https://www.facebook.com/likelion.us" target="_blank"
-                  ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-                  <svg
-                    height="24"
-                    style="
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                      stroke-linejoin: round;
-                      stroke-miterlimit: 2;
-                    "
-                    version="1.1"
-                    viewBox="0 0 512 512"
-                    width="24px"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:serif="http://www.serif.com/"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <path
-                      d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
-                      style="fill-rule: nonzero; fill: #ffffff"
-                    /></svg
-                ></a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </footer>
+    
+      <!-- 푸터 -->
+    <footer>
+      <div class="footerlist">
+        <img src="img\LIKELION US_white_logo.svg" alt="" width="140px" />
+        <ul>
+          <li>
+            <span>LIKELION, INC | CEO Duhee Lee</span>
+          </li>
+          <li><span>400 Concar Dr, San Mateo, CA 94402</span></li>
+          <br /><br />
+          <li class="last">
+            <span>simba@likelion.net</span>
+            <div class="icons">
+              <a href="https://www.instagram.com/likelion.us/" target="_blank"
+                ><?xml version="1.0" ?><svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8,2 L16,2 C19.3137085,2 22,4.6862915 22,8 L22,16 C22,19.3137085 19.3137085,22 16,22 L8,22 C4.6862915,22 2,19.3137085 2,16 L2,8 C2,4.6862915 4.6862915,2 8,2 Z M8,4 C5.790861,4 4,5.790861 4,8 L4,16 C4,18.209139 5.790861,20 8,20 L16,20 C18.209139,20 20,18.209139 20,16 L20,8 C20,5.790861 18.209139,4 16,4 L8,4 Z M12,17 C9.23857625,17 7,14.7614237 7,12 C7,9.23857625 9.23857625,7 12,7 C14.7614237,7 17,9.23857625 17,12 C17,14.7614237 14.7614237,17 12,17 Z M12,15 C13.6568542,15 15,13.6568542 15,12 C15,10.3431458 13.6568542,9 12,9 C10.3431458,9 9,10.3431458 9,12 C9,13.6568542 10.3431458,15 12,15 Z M17,8 C16.4477153,8 16,7.55228475 16,7 C16,6.44771525 16.4477153,6 17,6 C17.5522847,6 18,6.44771525 18,7 C18,7.55228475 17.5522847,8 17,8 Z"
+                    fill-rule="evenodd"
+                    style="fill: #ffffff"
+                  /></svg
+              ></a>
+              <a href="https://www.facebook.com/likelion.us" target="_blank"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  height="24"
+                  style="
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 2;
+                  "
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="24px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:serif="http://www.serif.com/"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
+                    style="fill-rule: nonzero; fill: #ffffff"
+                  /></svg
+              ></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
     </div>
     <script src="js/scroll.js"></script>
     <script src="js/menu1.js"></script>
