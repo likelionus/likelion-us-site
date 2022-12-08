@@ -494,6 +494,42 @@ body {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+
+.newslist{ /* 지난활동 4개 전체부분 */
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 10px;
+  margin: 150px 30px; /* 임시로 준 마진 */
+}
+.aflex{ /* 각각 하나 활동 display: flex */
+  display: flex;
+  flex-direction: column;
+  background-color: #e0cec7;
+  height: 100%;
+  color: black;
+}
+.image{
+  width: 100%;
+  height: 100%;
+}
+
+.titleandcontents{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+  align-self: stretch;
+  height: 100%;
+}
+
+/* 화면 줄어들면 2x2 정렬로 수정 */
+@media screen and (max-width: 800px){
+  .newslist{
+      grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  
+}
 /* 운영진, 학생 버튼 hover 좌우 tossing 효과 */
 .executive:hover,
 .student:hover {
